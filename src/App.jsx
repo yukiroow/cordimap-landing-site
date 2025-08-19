@@ -32,13 +32,14 @@ const App = () => {
         {/* CAR */}
         <section className="flex flex-col items-center justify-center space-y-6 pl-20 pr-15">
             <h1 className="text-5xl font-bold">CORDILLERA ADMINISTRATIVE REGION</h1>
-            <div className="flex gap-6">
-                <img src="src/assets/Province of Benguet Logo.png" alt="Province of Benguet Logo" className="w-32 h-32" />
-                <img src="src/assets/Province of Kalinga Logo.png" alt="Province of Kalinga Logo" className="w-32 h-32 rounded-lg" />
-                <img src="src/assets/Mountain Province Logo.png" alt="Mountain Province Logo" className="w-32 h-32 rounded-lg" />
-                <img src="src/assets/Province of Abra Logo.png" alt="Province of Abra Logo" className="w-32 h-32 rounded-lg" />
-                <img src="src/assets/Province of Apayao Logo.png" alt="Province of Apayao Logo" className="w-32 h-32 rounded-lg" />
-                <img src="src/assets/Province of Ifugao Logo.png" alt="Province of Ifugao Logo" className="w-32 h-32 rounded-lg" />
+            <div className="flex flex-wrap gap-6 justify-center">
+                <img src="scr/assets/Logos/Province-of-Benguet-Logo.png" alt="Province of Benguet Logo" className="w-32 h-32" />
+                <img src="src/assets/Logos/Province-of-Kalinga-Logo.png" alt="Province of Kalinga Logo" className="w-32 h-32 rounded-lg" />
+                <img src="src/assets/Logos/Mountain-Province-Logo.png" alt="Mountain Province Logo" className="w-32 h-32 rounded-lg" />
+                <img src="src/assets/Logos/Province-of-Abra-Logo.png" alt="Province of Abra Logo" className="w-32 h-32 rounded-lg" />
+                <img src="src/assets/Logos/Province-of-Apayao-Logo.png" alt="Province of Apayao Logo" className="w-32 h-32 rounded-lg" />
+                <img src="src/assets/Logos/Province-of-Ifugao-Logo.png" alt="Province of Ifugao Logo" className="w-32 h-32 rounded-lg" />
+
             </div>
             <p className="text-xl text-justify">
                 The Cordillera Administrative Region (CAR) was established on July 15, 1987
@@ -73,23 +74,23 @@ const App = () => {
                 </p>
                 <div className="flex gap-4 mt-4">
                     <div className="flex flex-col items-center">
-                        <img src="src/assets/Anguib Beach Cagayan.png" alt="Anuib Beach Cagayan" className="w-64 h-48 rounded-lg" />
+                       <img src="src/assets/Biophysical-images/Anguib Beach Cagayan.png" alt="Anguib Beach Cagayan" className="w-64 h-48 rounded-lg" />
                         <p className="text-sm">Anguib Beach Cagayan</p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <img src="src/assets/Enchanted Cave Pangasinan.png" alt="Enchanted Cave Pangasinan" className="w-64 h-48 rounded-lg" />
+                        <img src="src/assets/Biophysical-images/Enchanted Cave Pangasinan.png" alt="Enchanted Cave Pangasinan" className="w-64 h-48 rounded-lg" />
                         <p className="text-sm">Enchanted Cave Pangasinan</p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <img src="src/assets/Bangui Windmills Ilocos Norte.png" alt="Bangui Windmills Ilocos Norte" className="w-64 h-48 rounded-lg" />
+                        <img src="src/assets/Biophysical-images/Bangui Windmills Ilocos Norte.png" alt="Bangui Windmills Ilocos Norte" className="w-64 h-48 rounded-lg" />
                         <p className="text-sm">Bangui Windmills Ilocos Norte</p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <img src="src/assets/Mt. Malusong Summit Nueva Viscaya.png" alt="Mt. Malusong Summit Nueva Viscaya" className="w-64 h-48 rounded-lg" />
+                        <img src="src/assets/Biophysical-images/Mt-Malusong-Summit-Nueva-Viscaya.png" alt="Mt. Malusong Summit Nueva Viscaya" className="w-64 h-48 rounded-lg" />
                         <p className="text-sm">Mt. Malusong Summit Nueva Viscaya</p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <img src="src/assets/Calle Crisologo Ilocos Sur.png" alt="Calle Crisologo Ilocos Sur" className="w-64 h-48 rounded-lg" />
+                        <img src="src/assets/Biophysical-images/Calle-Crisologo-Ilocos-Sur.png" alt="Calle Crisologo Ilocos Sur" className="w-64 h-48 rounded-lg" />
                         <p className="text-sm">Calle Crisologo Ilocos Sur</p>
                     </div>
                 </div>
@@ -185,24 +186,24 @@ const App = () => {
                     Balbalasang-Balbalan National Park, and Mt. Data National Park.
                 </p>
                 {/* Image Grid */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                    <div className="flex flex-col items-center">
-                        <img src="src/assets/cassamata.png" alt="Cassamata Hill National Park" className="w-48 h-32 object-cover rounded-lg shadow-lg"/>
-                        <p className="mt-2 text-sm">Cassamata Hill National Park</p>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                        <div className="flex flex-col items-center">
+                            <img src="src/assets/Biodiversity-images/cassamata.png" alt="Cassamata Hill National Park" className="w-48 h-32 object-cover rounded-lg shadow-lg"/>
+                            <p className="mt-2 text-sm">Cassamata Hill National Park</p>
+                         </div>
+                        <div className="flex flex-col items-center">
+                            <img src="src/assets/Biodiversity-images/mt-pulag.png" alt="Mt. Pulag National Park" className="w-48 h-32 object-cover rounded-lg shadow-lg" />
+                            <p className="mt-2 text-sm">Mt. Pulag National Park</p>
+                         </div>
+                        <div className="flex flex-col items-center">
+                            <img src="src/assets/Biodiversity-images/balbalasang.png" alt="Balbalasang-Balbalan National Park" className="w-48 h-32 object-cover rounded-lg shadow-lg"/>
+                            <p className="mt-2 text-sm">Balbalasang Balbalan National Park</p>
+                         </div>
+                        <div className="flex flex-col items-center">
+                            <img src="src/assets/Biodiversity-images/mt-data.png" alt="Mt. Data National Park" className="w-48 h-32 object-cover rounded-lg shadow-lg" />
+                            <p className="mt-2 text-sm">Mt. Data National Park</p>
+                        </div>
                     </div>
-                    <div className="flex flex-col items-center">
-                        <img src="src/assets/mt-pulag.png" alt="Mt. Pulag National Park" className="w-48 h-32 object-cover rounded-lg shadow-lg" />
-                        <p className="mt-2 text-sm">Mt. Pulag National Park</p>
-                    </div>
-                    <div className="flex flex-col items-center">
-                        <img src="src/assets/balbalasang.png" alt="Balbalasang-Balbalan National Park" className="w-48 h-32 object-cover rounded-lg shadow-lg"/>
-                        <p className="mt-2 text-sm">Balbalasang Balbalan National Park</p>
-                    </div>
-                    <div className="flex flex-col items-center">
-                        <img src="src/assets/mt-data.png" alt="Mt. Data National Park" className="w-48 h-32 object-cover rounded-lg shadow-lg" />
-                        <p className="mt-2 text-sm">Mt. Data National Park</p>
-                    </div>
-                </div>
                 <div className="border-2 border-blue-800 p-6 rounded-lg text-center">
                     <p className="text-lg text-justify">
                         CAR’s Biodiversity is constantly threatened with undue pressure from
