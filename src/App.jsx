@@ -148,10 +148,10 @@ const App = () => {
                 agricultural, power generation and industrial needs.
                 </p>
                 <div className="flex gap-4 mt-4">
-                    <img src="src/assets/cagayan-river-basin.png" alt="Cagayan River Basin" className="w-[200px]" />
-                    <img src="src/assets/abra-river-basin.png" alt="Abra River Basin" className="w-[200px]" />
-                    <img src="src/assets/agno-river-basin.png" alt="Agno River Basin" className="w-[200px]" />
-                    <img src="src/assets/abulog-river-basin.png" alt="Abulog River Basin" className="w-[200px]" />
+                    <img src="src/assets/Water-resources/cagayan-river-basin.png" alt="Cagayan River Basin" className="w-[200px]" />
+                    <img src="src/assets/Water-resources/abra-river-basin.png" alt="Abra River Basin" className="w-[200px]" />
+                    <img src="src/assets/Water-resources/agno-river-basin.png" alt="Agno River Basin" className="w-[200px]" />
+                    <img src="src/assets/Water-resources/abulog-river-basin.png" alt="Abulog River Basin" className="w-[200px]" />
                 </div>
             </div>
             {/* Watershed */}
