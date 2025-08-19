@@ -33,7 +33,7 @@ const App = () => {
         <section className="flex flex-col items-center justify-center space-y-6 pl-20 pr-15">
             <h1 className="text-5xl font-bold">CORDILLERA ADMINISTRATIVE REGION</h1>
             <div className="flex flex-wrap gap-6 justify-center">
-                <img src="scr/assets/Logos/Province-of-Benguet-Logo.png" alt="Province of Benguet Logo" className="w-32 h-32" />
+                <img src="src/assets/Logos/Province-of-Benguet-Logo.png" alt="Province of Benguet Logo" className="w-32 h-32" />
                 <img src="src/assets/Logos/Province-of-Kalinga-Logo.png" alt="Province of Kalinga Logo" className="w-32 h-32 rounded-lg" />
                 <img src="src/assets/Logos/Mountain-Province-Logo.png" alt="Mountain Province Logo" className="w-32 h-32 rounded-lg" />
                 <img src="src/assets/Logos/Province-of-Abra-Logo.png" alt="Province of Abra Logo" className="w-32 h-32 rounded-lg" />
@@ -86,11 +86,11 @@ const App = () => {
                         <p className="text-sm">Bangui Windmills Ilocos Norte</p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <img src="src/assets/Biophysical-images/Mt-Malusong-Summit-Nueva-Viscaya.png" alt="Mt. Malusong Summit Nueva Viscaya" className="w-64 h-48 rounded-lg" />
+                        <img src="src/assets/Biophysical-images/Mt. Malusong Summit Nueva Viscaya.png" alt="Mt. Malusong Summit Nueva Viscaya" className="w-64 h-48 rounded-lg" />
                         <p className="text-sm">Mt. Malusong Summit Nueva Viscaya</p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <img src="src/assets/Biophysical-images/Calle-Crisologo-Ilocos-Sur.png" alt="Calle Crisologo Ilocos Sur" className="w-64 h-48 rounded-lg" />
+                        <img src="src/assets/Biophysical-images/Calle Crisologo Ilocos Sur.png" alt="Calle Crisologo Ilocos Sur" className="w-64 h-48 rounded-lg" />
                         <p className="text-sm">Calle Crisologo Ilocos Sur</p>
                     </div>
                 </div>
