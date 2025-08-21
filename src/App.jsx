@@ -96,10 +96,12 @@ const App = () => {
         </section>
 
         {/* BIOPHYSICAL PROFILE */}
-        <div className="flex flex-col items-center justify-center space-y-6 pl-20 pr-15">
-            <h1 className="text-5xl font-bold">BIOPHYSICAL PROFILE</h1>
-            <div className="flex flex-col w-full">
-                <h2 className="text-2xl">Geographical Location, Land Area and Political Subdivision</h2>
+        <div  className="relative flex flex-col items-center justify-center space-y-6 bg-repeat-x bg-contain"
+        style={{ backgroundImage: "url('src/assets/Biophysical-images/bg.png')" }} >
+            <h1 className="text-5xl pt-10 pb-8 font-bold text-white">BIOPHYSICAL PROFILE</h1>
+            
+            <div className="flex flex-col w-full pl-25 pr-25">
+                <h2 className="text-2xl font-semibold py-3">Geographical Location, Land Area and Political Subdivision</h2>
                 <p className="text-xl text-justify">
                     Cordillera Administrative Region is the only landlocked region in the Philippines,
                     located in the mountain ranges of the north central part of Luzon. It is bounded on 
@@ -129,8 +131,8 @@ const App = () => {
                     </div>
                 </div>
             </div> 
-            <div className="flex flex-col items-center">
-                <p className="flex text-xl text-justify">
+            <div className="flex flex-col items-center pl-25 pr-25 pb-10">
+                <p className="flex text-xl text-justify pb-5">
                     It is politically subdivided into 77 municipalities and 1,176 barangays that makes up to 6.6 percent of the total land area of
                     the Philippines. The total area of the region of about 1,865,454 hectares based on the approved cadastral boundary map. The 
                     Alienable and Disposable lands is 15.05% of the total land area while 84.95% is forestland. Mountain Province has the least 
