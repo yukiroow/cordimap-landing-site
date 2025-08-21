@@ -4,35 +4,67 @@ const App = () => {
     return (
         <>
         {/* LANDING PAGE */}
-        <section className="flex flex-col items-center justify-center w-screen h-screen space-y-6">
-            <h1 className="text-5xl">One Cordillera</h1>
-            <h2 className="text-3xl">A Glimpse of the Mountainous Region</h2>
-            <p className="text-xl">DENR - CAR <br></br>2025</p>
-                <div className="flex gap-4 text-xl">
-                    <button className="px-4 py-2 rounded-lg bg-green-600 text-white cursor-pointer">
-                        Land Cover
-                    </button>
-                    <button className="px-4 py-2 rounded-lg bg-blue-600 text-white cursor-pointer">
+        <section className="relative flex flex-col items-center justify-center w-screen h-screen text-center text-gray-900 overflow-hidden">
+            <img src="src/assets/Landing-page/bgleft.png" alt="background" className="absolute left-0 top-0 h-full object-contain -z-10"/>
+            <img src="src/assets/Landing-page/bgright.png" alt="background" className="absolute right-0 top-0 h-full object-contain -z-10"/>
+            <img src="src/assets/Landing-page/igorot.png" alt="background" className="absolute right-0 bottom-0 w-1/2 object-contain -z-15"/>
+
+            <h1 className="text-5xl font-bold">One Cordillera</h1>
+            <h2 className="text-2xl md:text-3xl mt-2">A Glimpse of the <br /> Mountainous Region</h2>
+            <p className="text-xl mt-2">DENR - CAR <br/> 2025 </p>
+
+            <div className="flex gap-4 mt-6">
+                <button className="px-6 py-2 rounded-lg bg-green-600 text-white cursor-pointer">
+                    Land Cover
+                </button>
+                <button className="px-6 py-2 rounded-lg bg-blue-600 text-white cursor-pointer">
                         Water Cover
                     </button>
-                </div>
+            </div>
         </section>
         
         {/* ABOUT */}
-        <section className="flex flex-col items-center justify-center space-y-6">
-            <h1 className="text-5xl font-bold">ABOUT</h1>
-            <div className="flex gap-6">
-                <button className="cursor-pointer">CAR</button>
-                <button className="cursor-pointer">Biophysical Profile</button>
-                <button className="cursor-pointer">DENR Resources</button>
-                <button className="cursor-pointer">Socio-Cultural and Economic Profile</button>
+        <section className="relative flex flex-col items-center justify-center space-y-6 h-screen bg-cover bg-center"
+        style={{ backgroundImage: "url('src/assets/About-images/Falls.png')" }} >
+
+            <div className="absolute inset-0 bg-black/40 -z-0"></div>
+
+            <div className="relative z-10 flex flex-col items-center space-y-20">
+                <h1 className="text-5xl font-bold text-white">ABOUT</h1>
+                
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-5 text-center">
+                <button className="flex flex-col items-center space-y-3 text-white hover:scale-110 transition">
+                    <img src="src/assets/About-images/CAR.svg" alt="CAR" className="w-23 h-20" />
+                    <span className="text-lg font-medium">CAR</span>
+                </button>
+
+                {/* Biophysical Profile */}
+                <button className="flex flex-col items-center space-y-3 text-white hover:scale-110 transition">
+                    <img src="src/assets/About-images/Biophysical.svg" alt="Biophysical Profile" className="w-20 h-20" />
+                    <span className="text-lg font-medium">Biophysical Profile</span>
+                </button>
+
+                {/* ENR Resources */}
+                <button className="flex flex-col items-center space-y-3 text-white hover:scale-110 transition">
+                    <img src="src/assets/About-images/Earth.svg" alt="ENR Resources" className="w-23 h-20" />
+                    <span className="text-lg font-medium">ENR Resources</span>
+                </button>
+
+                {/* Socio-Cultural and Economic Profile */}
+                <button className="flex flex-col items-center space-y-3 text-white hover:scale-110 transition">
+                    <img src="src/assets/About-images/SCE.svg" alt="Socio-Cultural and Economic Profile" className="w-27 h-20" />
+                    <span className="text-lg font-medium text-center">
+                    Socio-Cultural and Economic Profile
+                    </span>
+                </button>
+                </div>
             </div>
         </section>
         
         {/* CAR */}
-        <section className="flex flex-col items-center justify-center space-y-6 pl-20 pr-15">
-            <h1 className="text-5xl font-bold">CORDILLERA ADMINISTRATIVE REGION</h1>
-            <div className="flex flex-wrap gap-6 justify-center">
+        <section className="flex flex-col items-center justify-center space-y-6 pl-25 pr-25 py-10 bg-gradient-to-b from-[#3b82f640] to-white">
+            <h1 className="text-5xl pb-5 font-bold">CORDILLERA ADMINISTRATIVE REGION</h1>
+            <div className="flex flex-wrap gap-20 pb-5 justify-center">
                 <img src="src/assets/Logos/Province-of-Benguet-Logo.png" alt="Province of Benguet Logo" className="w-32 h-32" />
                 <img src="src/assets/Logos/Province-of-Kalinga-Logo.png" alt="Province of Kalinga Logo" className="w-32 h-32 rounded-lg" />
                 <img src="src/assets/Logos/Mountain-Province-Logo.png" alt="Mountain Province Logo" className="w-32 h-32 rounded-lg" />
