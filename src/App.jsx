@@ -9,17 +9,19 @@ const App = () => {
             <img src="src/assets/Landing-page/bgright.png" alt="background" className="absolute right-0 top-0 h-full object-contain -z-10"/>
             <img src="src/assets/Landing-page/igorot.png" alt="background" className="absolute right-0 bottom-0 w-1/2 object-contain -z-15"/>
 
-            <h1 className="text-5xl font-bold">One Cordillera</h1>
-            <h2 className="text-2xl md:text-3xl mt-2">A Glimpse of the <br /> Mountainous Region</h2>
-            <p className="text-xl mt-2">DENR - CAR <br/> 2025 </p>
+            <div className="relative bottom-17 right-35">
+                <h1 className="text-7xl pb-5 font-bold">One Cordillera</h1>
+                <h2 className="text-4xl md:text-5xl pb-3 mt-2">A Glimpse of the <br /> Mountainous Region</h2>
+                <p className="text-3xl mt-2">DENR - CAR <br/> 2025 </p>
 
-            <div className="flex gap-4 mt-6">
-                <button className="px-6 py-2 rounded-lg bg-green-600 text-white cursor-pointer">
-                    Land Cover
-                </button>
-                <button className="px-6 py-2 rounded-lg bg-blue-600 text-white cursor-pointer">
+                <div className="flex justify-center gap-4 mt-6">
+                    <button className="text-xl px-6 py-2 rounded-lg bg-green-600 text-white cursor-pointer hover:scale-110 transition">
+                        Land Cover
+                    </button>
+                    <button className="text-xl px-6 py-2 rounded-lg bg-blue-600 text-white cursor-pointer hover:scale-110 transition">
                         Water Cover
                     </button>
+                </div>
             </div>
         </section>
         
@@ -52,7 +54,7 @@ const App = () => {
 
                 {/* Socio-Cultural and Economic Profile */}
                 <button className="flex flex-col items-center space-y-3 text-white hover:scale-110 transition">
-                    <img src="src/assets/About-images/SCE.svg" alt="Socio-Cultural and Economic Profile" className="w-27 h-20" />
+                    <img src="src/assets/About-images/SCE.svg" alt="Socio-Cultural and Economic Profile" className="w-29 h-20" />
                     <span className="text-lg font-medium text-center">
                     Socio-Cultural and Economic Profile
                     </span>
