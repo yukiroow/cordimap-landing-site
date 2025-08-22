@@ -99,38 +99,66 @@ const App = () => {
         <div  className="relative flex flex-col items-center justify-center space-y-6 bg-repeat-x bg-contain"
         style={{ backgroundImage: "url('src/assets/Biophysical-images/bg.png')" }} >
             <h1 className="text-5xl pt-10 pb-8 font-bold text-white">BIOPHYSICAL PROFILE</h1>
-            
-            <div className="flex flex-col w-full pl-25 pr-25">
-                <h2 className="text-2xl font-semibold py-3">Geographical Location, Land Area and Political Subdivision</h2>
-                <p className="text-xl text-justify">
-                    Cordillera Administrative Region is the only landlocked region in the Philippines,
-                    located in the mountain ranges of the north central part of Luzon. It is bounded on 
-                    the north by the province of Cagayan, on the East by Isabela and Nueva Viscaya, on 
-                    the South by Pangasinan and on the West by La Union, Ilocos Sur and Ilocos Norte.
-                </p>
-                <div className="flex gap-4 mt-4">
+ 
+            <div className="flex flex-col items-center mt-6 space-y-8">
+                
+                <div className="flex flex-col md:flex-row items-center gap-6 w-full pr-25 pl-25">
+                    <p className="text-lg text-justify flex-1 pr-15">
+                    <span className="text-2xl font-semibold">
+                    Geographical Location, Land Area and Political Subdivision.
+                    </span>
+                    <br></br>Cordillera Administrative Region is the only landlocked region in the
+                    Philippines, located in the mountain ranges of the north central part of
+                    Luzon. It is bounded on the north by the province of Cagayan, on the East
+                    by Isabela and Nueva Viscaya, on the South by Pangasinan and on the West
+                    by La Union, Ilocos Sur and Ilocos Norte.
+                    </p>
                     <div className="flex flex-col items-center">
-                       <img src="src/assets/Biophysical-images/Anguib Beach Cagayan.png" alt="Anguib Beach Cagayan" className="w-64 h-48 rounded-lg" />
-                        <p className="text-sm">Anguib Beach Cagayan</p>
-                    </div>
-                    <div className="flex flex-col items-center">
-                        <img src="src/assets/Biophysical-images/Enchanted Cave Pangasinan.png" alt="Enchanted Cave Pangasinan" className="w-64 h-48 rounded-lg" />
-                        <p className="text-sm">Enchanted Cave Pangasinan</p>
-                    </div>
-                    <div className="flex flex-col items-center">
-                        <img src="src/assets/Biophysical-images/Bangui Windmills Ilocos Norte.png" alt="Bangui Windmills Ilocos Norte" className="w-64 h-48 rounded-lg" />
-                        <p className="text-sm">Bangui Windmills Ilocos Norte</p>
-                    </div>
-                    <div className="flex flex-col items-center">
-                        <img src="src/assets/Biophysical-images/Mt. Malusong Summit Nueva Viscaya.png" alt="Mt. Malusong Summit Nueva Viscaya" className="w-64 h-48 rounded-lg" />
-                        <p className="text-sm">Mt. Malusong Summit Nueva Viscaya</p>
-                    </div>
-                    <div className="flex flex-col items-center">
-                        <img src="src/assets/Biophysical-images/Calle Crisologo Ilocos Sur.png" alt="Calle Crisologo Ilocos Sur" className="w-64 h-48 rounded-lg" />
-                        <p className="text-sm">Calle Crisologo Ilocos Sur</p>
+                    <img
+                        src="src/assets/Biophysical-images/Anguib Beach Cagayan.png"
+                        alt="Anguib Beach Cagayan"
+                        className="w-70 h-50 object-cover rounded-lg shadow"
+                    />
+                    <p className="text-sm mt-2">Anguib Beach Cagayan</p>
                     </div>
                 </div>
-            </div> 
+
+                {/* Row 2: 4 Images */}
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-13">
+                    <div className="flex flex-col items-center">
+                    <img
+                        src="src/assets/Biophysical-images/Enchanted Cave Pangasinan.png"
+                        alt="Enchanted Cave Pangasinan"
+                        className="w-70 h-50 object-cover rounded-lg shadow"
+                    />
+                    <p className="text-sm mt-2">Enchanted Cave Pangasinan</p>
+                    </div>
+                    <div className="flex flex-col items-center">
+                    <img
+                        src="src/assets/Biophysical-images/Bangui Windmills Ilocos Norte.png"
+                        alt="Bangui Windmills Ilocos Norte"
+                        className="w-70 h-50 object-cover rounded-lg shadow"
+                    />
+                    <p className="text-sm mt-2">Bangui Windmills Ilocos Norte</p>
+                    </div>
+                    <div className="flex flex-col items-center">
+                    <img
+                        src="src/assets/Biophysical-images/Mt. Malusong Summit Nueva Viscaya.png"
+                        alt="Mt. Malusong Summit Nueva Viscaya"
+                        className="w-70 h-50 object-cover rounded-lg shadow"
+                    />
+                    <p className="text-sm mt-2">Mt. Malusong Summit Nueva Viscaya</p>
+                    </div>
+                    <div className="flex flex-col items-center">
+                    <img
+                        src="src/assets/Biophysical-images/Calle Crisologo Ilocos Sur.png"
+                        alt="Calle Crisologo Ilocos Sur"
+                        className="w-70 h-50 object-cover rounded-lg shadow"
+                    />
+                    <p className="text-sm mt-2">Calle Crisologo Ilocos Sur</p>
+                    </div>
+                </div>
+            </div>
             <div className="flex flex-col items-center pl-25 pr-25 pb-10">
                 <p className="flex text-xl text-justify pb-5">
                     It is politically subdivided into 77 municipalities and 1,176 barangays that makes up to 6.6 percent of the total land area of
@@ -138,7 +166,7 @@ const App = () => {
                     Alienable and Disposable lands is 15.05% of the total land area while 84.95% is forestland. Mountain Province has the least 
                     area coverage with a total of 231,486 hectares. The chartered city of Baguio is less than 1% of the total area of the region.
                 </p>
-                <button className="px-4 py-2 mt-4 rounded-lg bg-blue-600 text-white cursor-pointer">
+                <button className="px-10 py-2 mt-4 rounded-lg bg-blue-600 text-white cursor-pointer hover:scale-110 transition">
                     See More
                 </button>
             </div>
