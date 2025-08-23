@@ -541,7 +541,7 @@ const App = () => {
 
       {/* FOOTER */}
       <div className="w-full">
-        <div className="bg-green-700 text-white py-10 px-6">
+        <div className="bg-green-700 text-white py-12 px-6">
           <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center">
             <div className="flex items-center space-x-4 mb-6 md:mb-0">
               <div className="w-20 h-20 rounded-full flex items-center justify-center flex-shrink-0 p-2">
