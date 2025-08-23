@@ -45,39 +45,39 @@ const App = () => {
             <div className="absolute inset-0 bg-black/40 -z-0"></div>
 
             <div className="relative z-10 flex flex-col items-center space-y-20">
-                <h1 className="text-7xl font-bold text-white pb-25">ABOUT</h1>
+                <h1 className="text-7xl font-bold text-white pb-20">ABOUT</h1>
                 
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-10 text-center pb-25">
-                <button className="flex flex-col items-center space-y-3 text-white hover:scale-110 transition">
+                <a href="#car" className="flex flex-col items-center space-y-3 text-white hover:scale-110 transition">
                     <img src="src/assets/About-images/CAR.svg" alt="CAR" className="w-35 h-30" />
                     <span className="text-xl font-medium">CAR</span>
-                </button>
+                </a>
 
                 {/* Biophysical Profile */}
-                <button className="flex flex-col items-center space-y-3 text-white hover:scale-110 transition">
+                <a href="#bio" className="flex flex-col items-center space-y-3 text-white hover:scale-110 transition">
                     <img src="src/assets/About-images/Biophysical.svg" alt="Biophysical Profile" className="w-30 h-30" />
                     <span className="text-xl font-medium">Biophysical Profile</span>
-                </button>
+                </a>
 
                 {/* ENR Resources */}
-                <button className="flex flex-col items-center space-y-3 text-white hover:scale-110 transition">
+                <a href="#enr" className="flex flex-col items-center space-y-3 text-white hover:scale-110 transition">
                     <img src="src/assets/About-images/Earth.svg" alt="ENR Resources" className="w-33 h-30" />
                     <span className="text-xl font-medium">ENR Resources</span>
-                </button>
+                </a>
 
                 {/* Socio-Cultural and Economic Profile */}
-                <button className="flex flex-col items-center space-y-3 text-white hover:scale-110 transition">
+                <a href="#socio" className="flex flex-col items-center space-y-3 text-white hover:scale-110 transition">
                     <img src="src/assets/About-images/SCE.svg" alt="Socio-Cultural and Economic Profile" className="w-39 h-30" />
                     <span className="text-xl font-medium text-center">
                     Socio-Cultural and Economic Profile
                     </span>
-                </button>
+                </a>
                 </div>
             </div>
         </section>
         
         {/* CAR */}
-        <section className="flex flex-col items-center justify-center  min-h-screen w-screen overflow-hidden m-0 p-0 pl-25 pr-25 bg-gradient-to-b from-[#3b82f640] to-white">
+        <section id="car" className="flex flex-col items-center justify-center  min-h-screen w-screen overflow-hidden m-0 p-0 pl-25 pr-25 bg-gradient-to-b from-[#3b82f640] to-white">
             <h1 className="text-7xl pb-20 font-bold">CORDILLERA ADMINISTRATIVE REGION</h1>
             <div className="flex flex-wrap gap-20 pb-20 justify-center">
                 <img src="src/assets/Logos/Province-of-Benguet-Logo.png" alt="Province of Benguet Logo" className="w-45 h-45" />
@@ -109,7 +109,7 @@ const App = () => {
         </section>
 
         {/* BIOPHYSICAL PROFILE */}
-        <div className="flex flex-col items-center justify-center">
+        <div id="bio" className="flex flex-col items-center justify-center">
             {/* Title with thinner background */}
             <div
                 className="w-full flex items-center justify-center py-10 bg-cover bg-center"
@@ -120,7 +120,7 @@ const App = () => {
  
             <div className="flex flex-col items-center mt-6 space-y-8">
                 
-                <div className="flex flex-col md:flex-row items-center gap-6 w-full pr-25 pl-25">
+                <div className="flex flex-col md:flex-row items-center gap-6 w-full px-25">
                     <p className="text-2xl text-justify flex-1 pr-15">
                     <span className="text-4xl font-semibold">
                     Geographical Location, Land Area and Political Subdivision.
@@ -194,7 +194,7 @@ const App = () => {
 
         {/* ENR RESOURCES */}
         <section>
-            <div className="flex flex-row items-center justify-center space-x-6 pr-25"> 
+            <div id="enr" className="flex flex-row items-center justify-center space-x-6 pr-25"> 
                 <div className="w-full h-full flew items-center justify-center py-10 bg-cover bg-center"
                     style={{backgroundImage: "url('src/assets/Biophysical-images/ENR.png"}}>
                     <h1 className="text-5xl font-bold text-white text-center">ENR RESOURCES</h1>
@@ -310,7 +310,7 @@ const App = () => {
 
         {/* SOCIO-CULTURAL and ECONOMIC PROFILE */}
         <section>
-            <div className="flex flex-col pl-20 pr-15">
+            <div id="socio" className="flex flex-col pl-20 pr-15">
                 <h1 className="text-5xl font-bold text-center"> SOCIO-CULTURAL AND ECONOMIC PROFILE </h1>
                 <div className="space-y-3 text-lg text-justify">
                     <h2 className="text-3xl">Demography</h2>
