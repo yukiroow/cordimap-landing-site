@@ -350,10 +350,6 @@ const App = () => {
             </div>
         </div>
 
-        <Routes>
-            <Route path="/biophysical" element={<BiophysicalProfile/>} />
-        </Routes>
-
         </>
             }
         />
