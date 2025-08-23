@@ -1,10 +1,16 @@
 // Touch me
+import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
+import BiophysicalProfile from "./BiophysicalProfile";
 
 const App = () => {
     return (
+        <BrowserRouter>
+        <Routes>
+            <Route path="/"
+            element={
         <>
         {/* LANDING PAGE */}
-        <section className="relative flex flex-col items-center justify-center w-screen h-screen text-center text-gray-900 overflow-hidden">
+        <section className="relative flex flex-col items-center justify-center w-full h-screen text-center text-gray-900 overflow-hidden">
             <img src="src/assets/Landing-page/bgleft.png" alt="background" className="absolute left-0 top-0 h-full object-contain -z-10"/>
             <img src="src/assets/Landing-page/bgright.png" alt="background" className="absolute right-0 top-0 h-full object-contain -z-10"/>
             <img src="src/assets/Landing-page/igorot.png" alt="background" className="absolute right-0 bottom-0 w-1/2 object-contain -z-15"/>
@@ -166,9 +172,11 @@ const App = () => {
                     Alienable and Disposable lands is 15.05% of the total land area while 84.95% is forestland. Mountain Province has the least 
                     area coverage with a total of 231,486 hectares. The chartered city of Baguio is less than 1% of the total area of the region.
                 </p>
-                <button className="px-10 py-2 mt-4 rounded-lg bg-blue-600 text-white cursor-pointer hover:scale-110 transition">
-                    See More
-                </button>
+                <Link to="/biophysical">
+                    <button className="px-10 py-2 mt-4 rounded-lg bg-blue-600 text-white cursor-pointer hover:scale-110 transition">
+                        See More
+                    </button>
+                </Link>
             </div>
         </div>
 
@@ -341,7 +349,18 @@ const App = () => {
                 © 2025 Kotl. All rights reserved
             </div>
         </div>
+
+        <Routes>
+            <Route path="/biophysical" element={<BiophysicalProfile/>} />
+        </Routes>
+
         </>
+            }
+        />
+
+        <Route path="/biophysical" element={<BiophysicalProfile/>} />
+        </Routes>
+        </BrowserRouter>
     );
 };
 export default App;
