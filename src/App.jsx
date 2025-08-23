@@ -128,7 +128,7 @@ const App = () => {
                     </p>
                     <div className="flex flex-col items-center">
                     <img
-                        src="src/assets/Biophysical-images/Anguib Beach Cagayan.png"
+                        src="src/assets/Biophysical-images/anguib.png"
                         alt="Anguib Beach Cagayan"
                         className="w-70 h-50 object-cover rounded-lg shadow"
                     />
@@ -140,7 +140,7 @@ const App = () => {
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-13">
                     <div className="flex flex-col items-center">
                     <img
-                        src="src/assets/Biophysical-images/Enchanted Cave Pangasinan.png"
+                        src="src/assets/Biophysical-images/enchanted.png"
                         alt="Enchanted Cave Pangasinan"
                         className="w-70 h-50 object-cover rounded-lg shadow"
                     />
@@ -148,7 +148,7 @@ const App = () => {
                     </div>
                     <div className="flex flex-col items-center">
                     <img
-                        src="src/assets/Biophysical-images/Bangui Windmills Ilocos Norte.png"
+                        src="src/assets/Biophysical-images/bangui.png"
                         alt="Bangui Windmills Ilocos Norte"
                         className="w-70 h-50 object-cover rounded-lg shadow"
                     />
@@ -156,7 +156,7 @@ const App = () => {
                     </div>
                     <div className="flex flex-col items-center">
                     <img
-                        src="src/assets/Biophysical-images/Mt. Malusong Summit Nueva Viscaya.png"
+                        src="src/assets/Biophysical-images/malusong.png"
                         alt="Mt. Malusong Summit Nueva Viscaya"
                         className="w-70 h-50 object-cover rounded-lg shadow"
                     />
@@ -164,7 +164,7 @@ const App = () => {
                     </div>
                     <div className="flex flex-col items-center">
                     <img
-                        src="src/assets/Biophysical-images/Calle Crisologo Ilocos Sur.png"
+                        src="src/assets/Biophysical-images/calle.png"
                         alt="Calle Crisologo Ilocos Sur"
                         className="w-70 h-50 object-cover rounded-lg shadow"
                     />
