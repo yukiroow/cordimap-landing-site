@@ -77,9 +77,9 @@ const App = () => {
         </section>
         
         {/* CAR */}
-        <section className="flex flex-col items-center justify-center space-y-6 pl-25 pr-25 py-10 bg-gradient-to-b from-[#3b82f640] to-white">
-            <h1 className="text-5xl pb-5 font-bold">CORDILLERA ADMINISTRATIVE REGION</h1>
-            <div className="flex flex-wrap gap-20 pb-5 justify-center">
+        <section className="flex flex-col items-center justify-center  min-h-screen w-screen overflow-hidden m-0 p-0 pl-25 pr-25 py-5 bg-gradient-to-b from-[#3b82f640] to-white">
+            <h1 className="text-5xl pb-15 font-bold">CORDILLERA ADMINISTRATIVE REGION</h1>
+            <div className="flex flex-wrap gap-20 pb-15 justify-center">
                 <img src="src/assets/Logos/Province-of-Benguet-Logo.png" alt="Province of Benguet Logo" className="w-32 h-32" />
                 <img src="src/assets/Logos/Province-of-Kalinga-Logo.png" alt="Province of Kalinga Logo" className="w-32 h-32 rounded-lg" />
                 <img src="src/assets/Logos/Mountain-Province-Logo.png" alt="Mountain Province Logo" className="w-32 h-32 rounded-lg" />
