@@ -4,6 +4,10 @@ import SocioCultural from "./SocioCultural";
 
 const App = () => {
     return (
+        <BrowserRouter>
+        <Routes>
+            <Route path="/"
+            element={
         <>
         {/* LANDING PAGE */}
         <section className="relative flex flex-col items-center justify-center w-screen h-screen text-center text-gray-900 overflow-hidden">
@@ -313,7 +317,13 @@ const App = () => {
                 © 2025 Kotl. All rights reserved
             </div>
         </div>
+        
         </>
+            }
+        />
+        <Route path="/socio-cultural" element={<SocioCultural/>} />
+        </Routes>
+        </BrowserRouter>
     );
 };
 export default App;
