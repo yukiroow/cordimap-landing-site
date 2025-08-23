@@ -251,25 +251,23 @@ const App = () => {
             backgroundImage: "url('src/assets/Map-images/Land.png')",
           }}
         >
-          <div className="bg-green-800 bg-opacity-50 text-white w-[35rem] h-[25rem] p-8 rounded-lg shadow-xl mr-12 ml-40">
+          <div className="bg-green-800 bg-opacity-50 text-white w-[35rem] h-[25rem] p-8 rounded-lg shadow-xl mr-12 ml-50">
             <h2 className="text-2xl font-semibold">Land Resources</h2>
 
             <article>
-              <h3 className="text-xl font-semibold mb-2">
+              <h3 className="text-xl font-semibold mt-5 mb-3">
                 Land Classification
               </h3>
               <p className="text-base leading-relaxed">
-                Table 7 presents that the Cordillera Administrative Region is
-                classified as eighty five percent (85%) forestland and fifteen
+                Cordillera Administrative Region is classified as eighty five percent (85%) forestland and fifteen
                 percent (15%) alienable and disposable (A & D) lands.
               </p>
             </article>
 
             <article>
-              <h3 className="text-xl font-semibold mb-2">Land Use</h3>
+              <h3 className="text-xl font-semibold mt-5 mb-2">Land Use</h3>
               <p className="text-base leading-relaxed">
-                Table 8 categorizes the land in the region into uses following a
-                land classification system based on land use suitability
+                Land in the region into follows a land classification system based on land use suitability
                 analysis.
               </p>
             </article>
