@@ -346,80 +346,83 @@ const App = () => {
           </div>
           {/* BIODIVERSITY SECTION */}
           <section className="relative bg-white text-gray-900 py-16 px-8 md:px-20">
-            <h1 className="text-3xl font-bold mb-6">
+            <h1 className="text-3xl font-bold mb-10">
               Biodiversity (Flora / Fauna)
             </h1>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+              <div>
+                <p className="text-lg leading-relaxed text-justify mb-4">
+                  The Philippines is a treasure trove of biodiversity or the
+                  variety of life on earth. It is believed to harbor more
+                  diversity of life than any other country on earth on a per
+                  hectare basis. It is in fact one of the 17 megadiverse
+                  countries which host 70–80% of the world’s biodiversity. Yet,
+                  Philippine biodiversity is alarmingly endangered, making it a
+                  biodiversity hotspot as well.
+                </p>
 
-            <p className="text-lg leading-relaxed text-justify mb-4">
-              The Philippines is a treasure trove of biodiversity or the variety
-              of life on earth. It is believed to harbor more diversity of life
-              than any other country on earth on a per hectare basis. It is in
-              fact one of the 17 megadiverse countries which host 70–80% of the
-              world’s biodiversity. Yet, Philippine biodiversity is alarmingly
-              endangered, making it a biodiversity hotspot as well.
-            </p>
-
-            <p className="text-lg leading-relaxed text-justify mb-8">
-              The Cordillera Administrative Region is not spared from this
-              situation. Four initial protected areas are found in the region
-              namely: Cassamata Hill National Park, Mt. Pulag National Park,
-              Balbalasang-Balbalan National Park, and Mt. Data National Park.
-            </p>
-
-            {/* Image Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-10">
-              <div className="flex flex-col items-center">
-                <img
-                  src="src/assets/Biodiversity-images/cassamata.png"
-                  alt="Cassamata Hill"
-                  className="w-48 h-32 object-cover rounded-lg shadow-md"
-                />
-                <p className="mt-2 text-sm text-gray-700">
-                  Cassamata Hill National Park
+                <p className="text-lg leading-relaxed text-justify">
+                  The Cordillera Administrative Region is not spared from this
+                  situation. Four initial protected areas are found in the
+                  region namely: Cassamata Hill National Park, Mt. Pulag
+                  National Park, Balbalasang-Balbalan National Park, and Mt.
+                  Data National Park.
                 </p>
               </div>
-              <div className="flex flex-col items-center">
-                <img
-                  src="src/assets/Biodiversity-images/mt-pulag.png"
-                  alt="Mt. Pulag"
-                  className="w-48 h-32 object-cover rounded-lg shadow-md"
-                />
-                <p className="mt-2 text-sm text-gray-700">
-                  Mt. Pulag National Park
-                </p>
-              </div>
-              <div className="flex flex-col items-center">
-                <img
-                  src="src/assets/Biodiversity-images/balbalasang.png"
-                  alt="Balbalasang"
-                  className="w-48 h-32 object-cover rounded-lg shadow-md"
-                />
-                <p className="mt-2 text-sm text-gray-700">
-                  Balbalasang-Balbalan National Park
-                </p>
-              </div>
-              <div className="flex flex-col items-center">
-                <img
-                  src="src/assets/Biodiversity-images/mt-data.png"
-                  alt="Mt. Data"
-                  className="w-48 h-32 object-cover rounded-lg shadow-md"
-                />
-                <p className="mt-2 text-sm text-gray-700">
-                  Mt. Data National Park
-                </p>
+
+              <div className="grid grid-cols-2 gap-6">
+                <div className="flex flex-col items-center">
+                  <img
+                    src="src/assets/Biodiversity-images/cassamata.png"
+                    alt="Cassamata Hill"
+                    className="w-full h-40 object-cover rounded-lg shadow-md"
+                  />
+                  <p className="mt-2 text-sm text-gray-700">
+                    Cassamata Hill National Park
+                  </p>
+                </div>
+                <div className="flex flex-col items-center">
+                  <img
+                    src="src/assets/Biodiversity-images/mt-pulag.png"
+                    alt="Mt. Pulag"
+                    className="w-full h-40 object-cover rounded-lg shadow-md"
+                  />
+                  <p className="mt-2 text-sm text-gray-700">
+                    Mt. Pulag National Park
+                  </p>
+                </div>
+                <div className="flex flex-col items-center">
+                  <img
+                    src="src/assets/Biodiversity-images/balbalasang.png"
+                    alt="Balbalasang"
+                    className="w-full h-40 object-cover rounded-lg shadow-md"
+                  />
+                  <p className="mt-2 text-sm text-gray-700">
+                    Balbalasang-Balbalan National Park
+                  </p>
+                </div>
+                <div className="flex flex-col items-center">
+                  <img
+                    src="src/assets/Biodiversity-images/mt-data.png"
+                    alt="Mt. Data"
+                    className="w-full h-40 object-cover rounded-lg shadow-md"
+                  />
+                  <p className="mt-2 text-sm text-gray-700">
+                    Mt. Data National Park
+                  </p>
+                </div>
               </div>
             </div>
 
-            {/* Highlight Box */}
-            <div className="border-2 border-blue-800 bg-blue-50/30 p-6 rounded-lg">
+            <div className="mt-12 border-2 border-blue-800 bg-blue-50/30 p-6 rounded-lg">
               <p className="text-lg leading-relaxed text-justify text-gray-800">
                 CAR’s Biodiversity is{" "}
                 <span className="text-blue-700 font-semibold">
-                  constantly threatened
+                  constantly threatened{" "}
                 </span>
                 with undue pressure from{" "}
                 <span className="text-blue-700 font-semibold">
-                  human activities
+                  human activities{" "}
                 </span>
                 such as timber poaching and forest landuse conversion to
                 agricultural use, among others, that are inimical to the
