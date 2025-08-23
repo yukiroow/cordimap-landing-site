@@ -4,6 +4,7 @@ import SocioCultural from "./SocioCultural";
 
 const App = () => {
     return (
+        <div data-theme="light" className="min-h-screen">
         <BrowserRouter>
         <Routes>
             <Route path="/"
@@ -324,6 +325,7 @@ const App = () => {
         <Route path="/socio-cultural" element={<SocioCultural/>} />
         </Routes>
         </BrowserRouter>
+        </div>
     );
 };
 export default App;
