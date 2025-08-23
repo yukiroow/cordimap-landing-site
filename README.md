@@ -4,8 +4,10 @@
 
 - How to setup
 
+daisyUi
+lucide react
+
 ```bash
 npm i
-npm i daisyui@latest
 npm run dev
 ```
