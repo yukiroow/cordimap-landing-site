@@ -32,8 +32,15 @@ const App = () => {
         </section>
         
         {/* ABOUT */}
-        <section className="relative flex flex-col items-center justify-center space-y-6 h-screen bg-cover bg-center"
-        style={{ backgroundImage: "url('src/assets/About-images/Falls.png')" }} >
+        <section className="relative flex flex-col items-center justify-center  min-h-screen w-screen overflow-hidden m-0 p-0">
+            <video
+            className="absolute inset-0 w-full h-full object-cover -z-10"
+            src="src/assets/About-images/Falls.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            />
 
             <div className="absolute inset-0 bg-black/40 -z-0"></div>
 
@@ -349,11 +356,10 @@ const App = () => {
                 © 2025 Kotl. All rights reserved
             </div>
         </div>
-
+        
         </>
             }
         />
-
         <Route path="/biophysical" element={<BiophysicalProfile/>} />
         </Routes>
         </BrowserRouter>
