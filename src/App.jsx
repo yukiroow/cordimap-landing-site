@@ -4,7 +4,7 @@ const App = () => {
     return (
       <>
         {/* LANDING PAGE */}
-        <section className="relative flex flex-col items-center justify-center min-w-screen h-screen text-center text-gray-900 overflow-hidden">
+        <section className="relative flex flex-col items-center justify-center w-full h-screen text-center text-gray-900 overflow-hidden">
           <img
             src="src/assets/Landing-page/bgleft.png"
             alt="background"
@@ -344,10 +344,13 @@ const App = () => {
               </article>
             </div>
           </div>
-          {/* Biodiversity */}
-          <div className="flex flex-col space-y-8 pl-20 pr-15">
-            <h1 className="text-3xl">Biodiversity (Flora / Fauna)</h1>
-            <p className="text-xl text-justify">
+          {/* BIODIVERSITY SECTION */}
+          <section className="relative bg-white text-gray-900 py-16 px-8 md:px-20">
+            <h1 className="text-3xl font-bold mb-6">
+              Biodiversity (Flora / Fauna)
+            </h1>
+
+            <p className="text-lg leading-relaxed text-justify mb-4">
               The Philippines is a treasure trove of biodiversity or the variety
               of life on earth. It is believed to harbor more diversity of life
               than any other country on earth on a per hectare basis. It is in
@@ -355,62 +358,79 @@ const App = () => {
               world’s biodiversity. Yet, Philippine biodiversity is alarmingly
               endangered, making it a biodiversity hotspot as well.
             </p>
-            <p className="text-xl text-justify">
+
+            <p className="text-lg leading-relaxed text-justify mb-8">
               The Cordillera Administrative Region is not spared from this
               situation. Four initial protected areas are found in the region
               namely: Cassamata Hill National Park, Mt. Pulag National Park,
               Balbalasang-Balbalan National Park, and Mt. Data National Park.
             </p>
+
             {/* Image Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-10">
               <div className="flex flex-col items-center">
                 <img
                   src="src/assets/Biodiversity-images/cassamata.png"
-                  alt="Cassamata Hill National Park"
-                  className="w-48 h-32 object-cover rounded-lg shadow-lg"
+                  alt="Cassamata Hill"
+                  className="w-48 h-32 object-cover rounded-lg shadow-md"
                 />
-                <p className="mt-2 text-sm">Cassamata Hill National Park</p>
+                <p className="mt-2 text-sm text-gray-700">
+                  Cassamata Hill National Park
+                </p>
               </div>
               <div className="flex flex-col items-center">
                 <img
                   src="src/assets/Biodiversity-images/mt-pulag.png"
-                  alt="Mt. Pulag National Park"
-                  className="w-48 h-32 object-cover rounded-lg shadow-lg"
+                  alt="Mt. Pulag"
+                  className="w-48 h-32 object-cover rounded-lg shadow-md"
                 />
-                <p className="mt-2 text-sm">Mt. Pulag National Park</p>
+                <p className="mt-2 text-sm text-gray-700">
+                  Mt. Pulag National Park
+                </p>
               </div>
               <div className="flex flex-col items-center">
                 <img
                   src="src/assets/Biodiversity-images/balbalasang.png"
-                  alt="Balbalasang-Balbalan National Park"
-                  className="w-48 h-32 object-cover rounded-lg shadow-lg"
+                  alt="Balbalasang"
+                  className="w-48 h-32 object-cover rounded-lg shadow-md"
                 />
-                <p className="mt-2 text-sm">
-                  Balbalasang Balbalan National Park
+                <p className="mt-2 text-sm text-gray-700">
+                  Balbalasang-Balbalan National Park
                 </p>
               </div>
               <div className="flex flex-col items-center">
                 <img
                   src="src/assets/Biodiversity-images/mt-data.png"
-                  alt="Mt. Data National Park"
-                  className="w-48 h-32 object-cover rounded-lg shadow-lg"
+                  alt="Mt. Data"
+                  className="w-48 h-32 object-cover rounded-lg shadow-md"
                 />
-                <p className="mt-2 text-sm">Mt. Data National Park</p>
+                <p className="mt-2 text-sm text-gray-700">
+                  Mt. Data National Park
+                </p>
               </div>
             </div>
-            <div className="border-2 border-blue-800 p-6 rounded-lg text-center">
-              <p className="text-lg text-justify">
-                CAR’s Biodiversity is constantly threatened with undue pressure
-                from human activities such as timber poaching and forest lands
-                conversion to agricultural use, among others, that are inimical
-                to the intrinsic requirement for biodiversity and its
-                sustainable existence. The abundance, distribution and degree of
-                threat to which these resources are exposed calls for a rapid
-                and effective response to accelerate the coverage of
-                conservation efforts in the region.
+
+            {/* Highlight Box */}
+            <div className="border-2 border-blue-800 bg-blue-50/30 p-6 rounded-lg">
+              <p className="text-lg leading-relaxed text-justify text-gray-800">
+                CAR’s Biodiversity is{" "}
+                <span className="text-blue-700 font-semibold">
+                  constantly threatened
+                </span>
+                with undue pressure from{" "}
+                <span className="text-blue-700 font-semibold">
+                  human activities
+                </span>
+                such as timber poaching and forest landuse conversion to
+                agricultural use, among others, that are inimical to the
+                pristine requirement for rich biodiversity and its sustainable
+                existence. The abundance, distribution and degree of threat to
+                which these resources are exposed calls for a rapid and
+                effective response to accelerate the coverage of conservation
+                efforts in the region.
               </p>
             </div>
-          </div>
+          </section>
         </section>
 
         {/* SOCIO-CULTURAL and ECONOMIC PROFILE */}
