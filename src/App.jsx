@@ -297,7 +297,6 @@ const App = () => {
             />
           </div>
 
-          {/* Overlay */}
           <div className="absolute inset-0 bg-black/40"></div>
 
           {/* Content */}
@@ -342,7 +341,8 @@ const App = () => {
             </article>
           </div>
         </div>
-        {/* BIODIVERSITY SECTION */}
+
+        {/* BIODIVERSITY  */}
         <section className="relative bg-white text-gray-900 py-16 px-8 md:px-20">
           <h1 className="text-3xl font-bold mb-10">
             Biodiversity (Flora / Fauna)
@@ -446,7 +446,7 @@ const App = () => {
           </h1>
         </div>
 
-        {/* Content Section */}
+        {/* Content */}
         <div className="relative z-10 max-w-6xl px-8 py-12 text-black text-justify bg-white">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">
@@ -464,8 +464,7 @@ const App = () => {
               <div className="space-y-4 mb-6">
                 <p className="text-gray-600 leading-relaxed text-justify">
                   Based on the 2015 Census of Population (POPCEN 2015), showing
-                  significant growth compared to the 2010 population of
-                  1,612,820.
+                  significant growth compared to the 2010 population of 1,612,820.
                 </p>
                 <div className="flex justify-between items-center p-4 bg-blue-50 rounded-lg">
                   <span className="text-gray-600 font-medium">
@@ -553,7 +552,6 @@ const App = () => {
                 />
               </div>
 
-              {/* Add your address text here */}
               <div>
                 <h3 className="text-lg font-semibold leading-tight">
                   DENR Compound, Gibraltar
@@ -571,21 +569,6 @@ const App = () => {
                 <li>Blog</li>
                 <li>Contact Us</li>
               </ul>
-              {/* Social Icons */}
-              <div className="flex justify-center md:justify-end space-x-4 mt-3 text-xl">
-                <a href="#">
-                  <i className="fab fa-facebook"></i>
-                </a>
-                <a href="#">
-                  <i className="fab fa-youtube"></i>
-                </a>
-                <a href="#">
-                  <i className="fab fa-twitter"></i>
-                </a>
-                <a href="#">
-                  <i className="fas fa-times"></i>
-                </a>
-              </div>
             </div>
           </div>
         </div>
