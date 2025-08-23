@@ -4,7 +4,7 @@ const App = () => {
     return (
       <>
         {/* LANDING PAGE */}
-        <section className="relative flex flex-col items-center justify-center w-screen h-screen text-center text-gray-900 overflow-hidden">
+        <section className="relative flex flex-col items-center justify-center min-w-screen h-screen text-center text-gray-900 overflow-hidden">
           <img
             src="src/assets/Landing-page/bgleft.png"
             alt="background"
@@ -249,8 +249,7 @@ const App = () => {
           <div
             className="relative bg-cover bg-center min-h-screen flex items-center justify-start"
             style={{
-              backgroundImage:
-                "url('src/assets/Map-images/Land.png')",
+              backgroundImage: "url('src/assets/Map-images/Land.png')",
             }}
           >
             <div className="bg-green-800 bg-opacity-50 text-white w-[35rem] h-[25rem] p-8 rounded-lg shadow-xl mr-12 ml-40">
@@ -279,54 +278,59 @@ const App = () => {
           </div>
 
           {/* Water Resources */}
-          <div className="flex flex-col space-y-6 pl-20 pr-15">
-            <h2 className="text-3xl">Water Resources</h2>
-            <h3 className="text-2xl">Major River Basins</h3>
-            <p className="text-xl text-justify">
+          <div className="grid grid-cols-4 h-[300px]">
+            <img
+              src="src/assets/Water-resources/cagayan-river-basin.png"
+              className="object-cover w-full h-full"
+            />
+            <img
+              src="src/assets/Water-resources/abulog-river-basin.png"
+              className="object-cover w-full h-full"
+            />
+            <img
+              src="src/assets/Water-resources/abra-river-basin.png"
+              className="object-cover w-full h-full"
+            />
+            <img
+              src="src/assets/Water-resources/agno-river-basin.png"
+              className="object-cover w-full h-full"
+            />
+          </div>
+
+          <div className="relative z-10 max-w-3xl text-white px-12 py-8">
+            <h2 className="text-4xl font-bold mb-4">Water Resources</h2>
+            <h3 className="text-2xl font-semibold mb-2">Major River Basins</h3>
+            <p className="text-lg leading-relaxed text-justify">
               There are four (4) major river basins covering the region namely:
               Cagayan River Basin, Apayao-Abulug River Basin, Abra Riverbasin
               and Agno River basin. It is home to 13 major watersheds, playing a
-              key role in maintaining ecological-balance in Northern
-              Philippines.Most of the major river basins drain to Regions 1 and
+              key role in maintaining ecological balance in Northern
+              Philippines. Most of the major river basins drain to Regions 1 and
               2 that serves as the major sources of water for domestic,
               agricultural, power generation and industrial needs.
             </p>
-            <div className="flex gap-4 mt-4">
-              <img
-                src="src/assets/Water-resources/cagayan-river-basin.png"
-                alt="Cagayan River Basin"
-                className="w-[200px]"
-              />
-              <img
-                src="src/assets/Water-resources/abra-river-basin.png"
-                alt="Abra River Basin"
-                className="w-[200px]"
-              />
-              <img
-                src="src/assets/Water-resources/agno-river-basin.png"
-                alt="Agno River Basin"
-                className="w-[200px]"
-              />
-              <img
-                src="src/assets/Water-resources/abulog-river-basin.png"
-                alt="Abulog River Basin"
-                className="w-[200px]"
-              />
-            </div>
           </div>
+
           {/* Watershed */}
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8 py-12">
-            <div className="bg-blue-900 text-white p-6 rounded-lg shadow-lg max-w-md">
+          <div
+            className="relative bg-cover bg-center min-h-screen flex items-center justify-start"
+            style={{
+              backgroundImage: "url('src/assets/Map-images/Watershed 1.png')",
+            }}
+          >
+            <div className="bg-blue-800 bg-opacity-50 text-white w-[35rem] h-[25rem] p-8 rounded-lg shadow-xl mr-12 ml-40">
               <h1 className="text-3xl font-bold mb-4">Watersheds</h1>
-              <p className="text-lg leading-relaxed">
-                CAR serves as the watershed of North Luzon. The region cradles
-                13 watersheds which have been affirmed to have enormous
-                water-bearing capacity. These watersheds make CAR a major
-                contributor to the Luzon Power Grid and are also a source of
-                irrigation for the region’s agricultural lands. It is also a
-                source of water for domestic consumption, agriculture and
-                industrial needs of the region.
-              </p>
+              <article>
+                <p className="text-lg leading-relaxed">
+                  CAR serves as the watershed of North Luzon. The region cradles
+                  13 watersheds which have been affirmed to have enormous
+                  water-bearing capacity. These watersheds make CAR a major
+                  contributor to the Luzon Power Grid and are also a source of
+                  irrigation for the region’s agricultural lands. It is also a
+                  source of water for domestic consumption, agriculture and
+                  industrial needs of the region.
+                </p>
+              </article>
             </div>
           </div>
           {/* Biodiversity */}
