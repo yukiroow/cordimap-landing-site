@@ -277,38 +277,49 @@ const App = () => {
             </div>
           </div>
 
-          {/* Water Resources */}
-          <div className="grid grid-cols-4 h-[300px]">
-            <img
-              src="src/assets/Water-resources/cagayan-river-basin.png"
-              className="object-cover w-full h-full"
-            />
-            <img
-              src="src/assets/Water-resources/abulog-river-basin.png"
-              className="object-cover w-full h-full"
-            />
-            <img
-              src="src/assets/Water-resources/abra-river-basin.png"
-              className="object-cover w-full h-full"
-            />
-            <img
-              src="src/assets/Water-resources/agno-river-basin.png"
-              className="object-cover w-full h-full"
-            />
-          </div>
+          {/* Water Resources Section */}
+          <div className="relative min-h-screen flex items-center justify-center">
+            <div className="absolute inset-0 grid grid-cols-4">
+              <img
+                src="src/assets/Water-resources/cagayan-river-basin.png"
+                className="object-cover w-full h-full"
+              />
+              <img
+                src="src/assets/Water-resources/abulog-river-basin.png"
+                className="object-cover w-full h-full"
+              />
+              <img
+                src="src/assets/Water-resources/abra-river-basin.png"
+                className="object-cover w-full h-full"
+              />
+              <img
+                src="src/assets/Water-resources/agno-river-basin.png"
+                className="object-cover w-full h-full"
+              />
+            </div>
 
-          <div className="relative z-10 max-w-3xl text-white px-12 py-8">
-            <h2 className="text-4xl font-bold mb-4">Water Resources</h2>
-            <h3 className="text-2xl font-semibold mb-2">Major River Basins</h3>
-            <p className="text-lg leading-relaxed text-justify">
-              There are four (4) major river basins covering the region namely:
-              Cagayan River Basin, Apayao-Abulug River Basin, Abra Riverbasin
-              and Agno River basin. It is home to 13 major watersheds, playing a
-              key role in maintaining ecological balance in Northern
-              Philippines. Most of the major river basins drain to Regions 1 and
-              2 that serves as the major sources of water for domestic,
-              agricultural, power generation and industrial needs.
-            </p>
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black/40"></div>
+
+            {/* Content */}
+            <div className="absolute inset-0 z-10 flex items-center justify-center">
+              <div className="max-w-3xl text-white px-12 py-8">
+                <h2 className="text-4xl font-bold mb-4">Water Resources</h2>
+                <h3 className="text-2xl font-semibold mb-2">
+                  Major River Basins
+                </h3>
+                <p className="text-lg leading-relaxed text-justify">
+                  There are four (4) major river basins covering the region
+                  namely: Cagayan River Basin, Apayao-Abulug River Basin, Abra
+                  Riverbasin and Agno River basin. It is home to 13 major
+                  watersheds, playing a key role in maintaining ecological
+                  balance in Northern Philippines. Most of the major river
+                  basins drain to Regions 1 and 2 that serves as the major
+                  sources of water for domestic, agricultural, power generation
+                  and industrial needs.
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Watershed */}
