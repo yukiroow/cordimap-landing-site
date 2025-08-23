@@ -6,5 +6,6 @@
 
 ```bash
 npm i
+npm i daisyui@latest
 npm run dev
 ```
