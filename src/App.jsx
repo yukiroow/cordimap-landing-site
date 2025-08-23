@@ -1,4 +1,6 @@
 // Touch me
+import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
+import SocioCultural from "./SocioCultural";
 
 const App = () => {
     return (
@@ -272,9 +274,11 @@ const App = () => {
                         to the 4th income class provinces.
                     </p>
                     <div className="flex justify-center">
+                        <Link to="/socio-cultural">
                         <button className="px-4 py-2 rounded-lg bg-blue-600 text-white cursor-pointer">
                         Learn More
                         </button>
+                        </Link>
                     </div>
                 </div>
             </div>
