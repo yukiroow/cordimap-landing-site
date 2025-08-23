@@ -142,7 +142,7 @@ const App = () => {
                 </div>
 
                 {/* Row 2: 4 Images */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-20 pb-5">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-15 pb-5 px-25">
                     <div className="flex flex-col items-center">
                     <img
                         src="src/assets/Biophysical-images/Enchanted Cave Pangasinan.png"
@@ -177,7 +177,7 @@ const App = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col items-center pl-25 pr-25">
+            <div className="flex flex-col items-center px-25">
                 <p className="flex text-2xl text-justify">
                     It is politically subdivided into 77 municipalities and 1,176 barangays that makes up to 6.6 percent of the total land area of
                     the Philippines. The total area of the region of about 1,865,454 hectares based on the approved cadastral boundary map. The 
@@ -195,7 +195,7 @@ const App = () => {
         {/* ENR RESOURCES */}
         <section>
             <div className="flex flex-row items-center justify-center space-x-6 pr-25"> 
-                <div className="w-full flew items-center justify-center py-10 bg-cover bg-center"
+                <div className="w-full h-full flew items-center justify-center py-10 bg-cover bg-center"
                     style={{backgroundImage: "url('src/assets/Biophysical-images/ENR.png"}}>
                     <h1 className="text-5xl font-bold text-white text-center">ENR RESOURCES</h1>
                 </div>
