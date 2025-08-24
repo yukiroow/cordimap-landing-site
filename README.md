@@ -6,6 +6,9 @@
 
 daisyUi
 lucide react
+react-router
+tailwind
+react-router-hash-link
 
 ```bash
 npm i
