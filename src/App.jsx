@@ -756,7 +756,7 @@ const App = () => {
         {/* Bottom Copyright Bar */}
         <div className="w-full bg-blue-900 text-white py-3">
           <div className="max-w-6xl mx-auto px-6">
-            <p className="text-center text-sm">
+            <p className="text-center text-m font-medium">
               © Copyright @ 2025 Kotl. All rights reserved
             </p>
           </div>
