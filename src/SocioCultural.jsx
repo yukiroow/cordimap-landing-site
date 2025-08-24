@@ -4,7 +4,7 @@ const SocioCultural = () => {
     return (
         <div className="min-h-screen ml-15 mr-15">
             {/* SOCIO CULTURAL AND ECONOMIC PROFILE */}
-            <div className="relative flex items-center mb-20 w-full">
+            <div className="relative flex items-center mb-20 w-full pt-8">
                 <ChevronLeft className="absolute left-0 cursor-pointer w-5 h-5 text-black-600" /> 
                 <h1 className="text-5xl font-extrabold text-center tracking-wide w-full pt-8 mb-8">SOCIO-CULTURAL AND ECONOMIC PROFILE</h1>
             </div>
@@ -150,8 +150,8 @@ const SocioCultural = () => {
             </div>
 
             {/* GALLERY */}
-            <h1 className="text-4xl font-bold text-center mt-8 mb-8">Gallery</h1>
-            <div className="flex flex-row w-full justify-center mb-8">
+            <h1 className="text-4xl font-bold text-center mt-8 mb-">Gallery</h1>
+            <div className="flex flex-row w-full justify-center">
                 <div className="tabs tabs-box w-[80%]">
                     {/* Abra */}
                     <input type="radio" name="my_tabs_6" className="tab" aria-label="Abra"/>
@@ -226,7 +226,7 @@ const SocioCultural = () => {
                                 </div>
                             </div>
                             <div id="apayao4" className="carousel-item relative w-full flex flex-col items-center">
-                                <img src="src\assets\SCEP-Gallery\lusok-caves.jpg" alt="lusok-caves" className="object-cover w-full h-[700px]" />
+                                <img src="src\assets\SCEP-Gallery\placeholder.jpg" alt="lusok-caves" className="object-cover w-full h-[700px]" />
                                 <h2 className="text-lg font-semibold mt-2">Bacut Lake</h2>
                                 <p className="text-sm text-center mb-4 px-[10%]">This body of water supplies 80 – 100 hectares of rice lands. Its exceptional islet at the lake’s core keeps it unique from the other Lakes in the Philippines.
                                     It is a potential place for camping, boating, off-road biking, resting and outing. </p>
@@ -236,7 +236,7 @@ const SocioCultural = () => {
                                 </div>
                             </div>
                             <div id="apayao5" className="carousel-item relative w-full flex flex-col items-center">
-                                <img src="src\assets\SCEP-Gallery\lusok-caves.jpg" alt="lusok-caves" className="object-cover w-full h-[700px]" />
+                                <img src="src\assets\SCEP-Gallery\placeholder.jpg" alt="lusok-caves" className="object-cover w-full h-[700px]" />
                                 <h2 className="text-lg font-semibold mt-2">Manacota Cave and Underground River</h2>
                                 <p className="text-sm text-center mb-4 px-[10%]">A 20-minute hike upstream the Manacota River, this through and through underground river hides numerous chambers of crystallized and untouched stalactites and stalagmites
                                     and a hidden pool about 12 meters wide where one can dive and swim to experience its cool and refreshing water. </p>
@@ -246,7 +246,7 @@ const SocioCultural = () => {
                                 </div>
                             </div>
                             <div id="apayao6" className="carousel-item relative w-full flex flex-col items-center">
-                                <img src="src\assets\SCEP-Gallery\lusok-caves.jpg" alt="lusok-caves" className="object-cover w-full h-[700px]" />
+                                <img src="src\assets\SCEP-Gallery\galolan-falls.jpg" alt="lusok-caves" className="object-cover w-full h-[700px]" />
                                 <h2 className="text-lg font-semibold mt-2">Gololan Falls</h2>
                                 <p className="text-sm text-center mb-4 px-[10%]">This beautiful falls with 3 successive pools rising about 30m high is hidden within the heart of Paco Valley, Lenneng, Kabugao. The drop-off point is around 45 minutes ride
                                     from Poblacion, plus another 30-minute hike </p>
@@ -256,7 +256,7 @@ const SocioCultural = () => {
                                 </div>
                             </div>
                             <div id="apayao7" className="carousel-item relative w-full flex flex-col items-center">
-                                <img src="src\assets\SCEP-Gallery\lusok-caves.jpg" alt="lusok-caves" className="object-cover w-full h-[700px]" />
+                                <img src="src\assets\SCEP-Gallery\placeholder.jpg" alt="lusok-caves" className="object-cover w-full h-[700px]" />
                                 <h2 className="text-lg font-semibold mt-2">Nagan River</h2>
                                 <p className="text-sm text-center mb-4 px-[10%]">The cleanest inland river in the Cordilleras and the 1st Runner Up During the Nation-wide Search for the Cleanest Inland Body of Water in 1998. </p>
                                 <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -300,7 +300,7 @@ const SocioCultural = () => {
                                 </div>
                             </div>
                             <div id="benguet4" className="carousel-item relative w-full flex flex-col items-center">
-                                <img src="src\assets\SCEP-Gallery\mt-purgatory.jpg" alt="mt-purgatory" className="object-cover w-full h-[700px]" />
+                                <img src="src\assets\SCEP-Gallery\ambongdolan.jpg" alt="mt-purgatory" className="object-cover w-full h-[700px]" />
                                 <h2 className="text-lg font-semibold mt-2">Ambongdolan Caves</h2>
                                 <p className="text-sm text-center mb-4 px-[10%]">Located in in Tublay Benguet features spacious chambers and various speleothem/ speleogen formations. A unique waterfall
                                     flows from the ceiling in one chamber of Bingaongao Cave.</p>
@@ -310,7 +310,7 @@ const SocioCultural = () => {
                                 </div>
                             </div>
                             <div id="benguet5" className="carousel-item relative w-full flex flex-col items-center">
-                                <img src="src\assets\SCEP-Gallery\mt-purgatory.jpg" alt="mt-purgatory" className="object-cover w-full h-[700px]" />
+                                <img src="src\assets\SCEP-Gallery\placeholder.jpg" alt="mt-purgatory" className="object-cover w-full h-[700px]" />
                                 <h2 className="text-lg font-semibold mt-2">Burial Caves in Kabayan and Buguias</h2>
                                 <p className="text-sm text-center mb-4 px-[10%]">These are considered sacred grounds and home to naturally preserved mummies and skulls.</p>
                                 <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -363,7 +363,7 @@ const SocioCultural = () => {
                                 </div>
                             </div>
                             <div id="ifugao4" className="carousel-item relative w-full flex flex-col items-center">
-                                <img src="src\assets\SCEP-Gallery\batad-rice-terraces.jpg" alt="batad-rice-terraces" className="object-cover w-full h-[700px]" />
+                                <img src="src\assets\SCEP-Gallery\placeholder.jpg" alt="batad-rice-terraces" className="object-cover w-full h-[700px]" />
                                 <h2 className="text-lg font-semibold mt-2">Bakung “Spider Web” Rice Terraces</h2>
                                 <p className="text-sm text-center mb-4 px-[10%]">
                                     This rice terrace cluster is located in Poblacion, Hungduan. From an aerial view,
@@ -377,7 +377,7 @@ const SocioCultural = () => {
                                 </div>
                             </div>
                             <div id="ifugao5" className="carousel-item relative w-full flex flex-col items-center">
-                                <img src="src\assets\SCEP-Gallery\batad-rice-terraces.jpg" alt="batad-rice-terraces" className="object-cover w-full h-[700px]" />
+                                <img src="src\assets\SCEP-Gallery\napulawan.jpg" alt="batad-rice-terraces" className="object-cover w-full h-[700px]" />
                                 <h2 className="text-lg font-semibold mt-2">Mount Napulawan</h2>
                                 <p className="text-sm text-center mb-4 px-[10%]">
                                     This historic mountain is believed to be the last refuge of General Tomoyuki Yamashita,
@@ -392,7 +392,7 @@ const SocioCultural = () => {
                                 </div>
                             </div>
                             <div id="ifugao6" className="carousel-item relative w-full flex flex-col items-center">
-                                <img src="src\assets\SCEP-Gallery\batad-rice-terraces.jpg" alt="batad-rice-terraces" className="object-cover w-full h-[700px]" />
+                                <img src="src\assets\SCEP-Gallery\placeholder.jpg" alt="batad-rice-terraces" className="object-cover w-full h-[700px]" />
                                 <h2 className="text-lg font-semibold mt-2">Dakkitan Rice Terraces and Natural Pool</h2>
                                 <p className="text-sm text-center mb-4 px-[10%]">
                                     Situated beside the road at Poblacion, Hungduan is the Dakkitan rice terraces
@@ -406,7 +406,7 @@ const SocioCultural = () => {
                                 </div>
                             </div>
                             <div id="ifugao7" className="carousel-item relative w-full flex flex-col items-center">
-                                <img src="src\assets\SCEP-Gallery\batad-rice-terraces.jpg" alt="batad-rice-terraces" className="object-cover w-full h-[700px]" />
+                                <img src="src\assets\SCEP-Gallery\tappiyah-waterfalls.jpg" alt="batad-rice-terraces" className="object-cover w-full h-[700px]" />
                                 <h2 className="text-lg font-semibold mt-2">Tappiyah Waterfalls</h2>
                                 <p className="text-sm text-center mb-4 px-[10%]">
                                     This spectacular waterfall drops to a natural swimming pool. A visit to
@@ -419,7 +419,7 @@ const SocioCultural = () => {
                                 </div>
                             </div>
                             <div id="ifugao8" className="carousel-item relative w-full flex flex-col items-center">
-                                <img src="src\assets\SCEP-Gallery\batad-rice-terraces.jpg" alt="batad-rice-terraces" className="object-cover w-full h-[700px]" />
+                                <img src="src\assets\SCEP-Gallery\bangaan-village.jpg" alt="batad-rice-terraces" className="object-cover w-full h-[700px]" />
                                 <h2 className="text-lg font-semibold mt-2">Bangaan Village</h2>
                                 <p className="text-sm text-center mb-4 px-[10%]">
                                     It represents the typical native Ifugao village surrounded by terraces.
@@ -432,7 +432,7 @@ const SocioCultural = () => {
                                 </div>
                             </div>
                             <div id="ifugao9" className="carousel-item relative w-full flex flex-col items-center">
-                                <img src="src\assets\SCEP-Gallery\batad-rice-terraces.jpg" alt="batad-rice-terraces" className="object-cover w-full h-[700px]" />
+                                <img src="src\assets\SCEP-Gallery\batad-village.jpg" alt="batad-rice-terraces" className="object-cover w-full h-[700px]" />
                                 <h2 className="text-lg font-semibold mt-2">Batad Village</h2>
                                 <p className="text-sm text-center mb-4 px-[10%]">
                                     The village is at the center of the gigantic amphitheater rice terraces
@@ -445,7 +445,7 @@ const SocioCultural = () => {
                                 </div>
                             </div>
                             <div id="ifugao10" className="carousel-item relative w-full flex flex-col items-center">
-                                <img src="src\assets\SCEP-Gallery\batad-rice-terraces.jpg" alt="batad-rice-terraces" className="object-cover w-full h-[700px]" />
+                                <img src="src\assets\SCEP-Gallery\placeholder.jpg" alt="batad-rice-terraces" className="object-cover w-full h-[700px]" />
                                 <h2 className="text-lg font-semibold mt-2">Nahtoban Caves</h2>
                                 <p className="text-sm text-center mb-4 px-[10%]">
                                     The caves have three different descending entrances, which makes it exciting for
@@ -486,7 +486,7 @@ const SocioCultural = () => {
                                 </div>
                             </div>
                             <div id="kalinga2" className="carousel-item relative w-full flex flex-col items-center">
-                                <img src="src\assets\SCEP-Gallery\bruh.jpg" alt="wala akong mahanap na landscape search: banga banga falls" className="object-cover w-full h-[700px]" />
+                                <img src="src\assets\SCEP-Gallery\placeholder.jpg" alt="banga banga falls" className="object-cover w-full h-[700px]" />
                                 <h2 className="text-lg font-semibold mt-2">Banga-Banga, Matambong & Panpanay Falls</h2>
                                 <p className="text-sm text-center mb-4 px-[10%]">
                                     These are series of three waterfalls located at the mountains of Barangay Amlao passing through Balawag.
@@ -500,7 +500,7 @@ const SocioCultural = () => {
                                 </div>
                             </div>
                             <div id="kalinga3" className="carousel-item relative w-full flex flex-col items-center">
-                                <img src="src\assets\SCEP-Gallery\guilum-canyon-falls.jpg" alt="guilum-canyon-falls" className="object-cover w-full h-[700px]" />
+                                <img src="src\assets\SCEP-Gallery\guilum.jpg" alt="guilum-canyon-falls" className="object-cover w-full h-[700px]" />
                                 <h2 className="text-lg font-semibold mt-2">Guilum Canyon Falls</h2>
                                 <p className="text-sm text-center mb-4 px-[10%]">
                                     Considered one of the hidden gems of Tabuk City, it is a series of waterfalls and
@@ -517,7 +517,7 @@ const SocioCultural = () => {
                                 </div>
                             </div>
                             <div id="kalinga4" className="carousel-item relative w-full flex flex-col items-center">
-                                <img src="src\assets\SCEP-Gallery\guilum-canyon-falls.jpg" alt="guilum-canyon-falls" className="object-cover w-full h-[700px]" />
+                                <img src="src\assets\SCEP-Gallery\placeholder.jpg" alt="guilum-canyon-falls" className="object-cover w-full h-[700px]" />
                                 <h2 className="text-lg font-semibold mt-2">Malalao Rolling Hills</h2>
                                 <p className="text-sm text-center mb-4 px-[10%]">
                                     The Malalao hills form a rolling terrain of haycock hills – mounds of generally conical and almost
@@ -614,7 +614,7 @@ const SocioCultural = () => {
                                 </div>
                             </div>
                             <div id="manmade4" className="carousel-item relative w-full flex flex-col items-center">
-                                <img src="src\assets\SCEP-Gallery\mataguisi-church-ruins.jpg" alt="mataguisi-church-ruins" className="object-cover w-full h-[700px]" />
+                                <img src="src\assets\SCEP-Gallery\winaca.jpg" alt="mataguisi-church-ruins" className="object-cover w-full h-[700px]" />
                                 <h2 className="text-lg font-semibold mt-2">WINACA Eco Cultural Village</h2>
                                 <p className="text-sm text-center mb-4 px-[10%]">at Ambassador, Tublay, Benguet</p>
                                 <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -623,7 +623,7 @@ const SocioCultural = () => {
                                 </div>
                             </div>
                             <div id="manmade5" className="carousel-item relative w-full flex flex-col items-center">
-                                <img src="src\assets\SCEP-Gallery\mataguisi-church-ruins.jpg" alt="mataguisi-church-ruins" className="object-cover w-full h-[700px]" />
+                                <img src="src\assets\SCEP-Gallery\half-tunnel.jpg" alt="mataguisi-church-ruins" className="object-cover w-full h-[700px]" />
                                 <h2 className="text-lg font-semibold mt-2">Half Tunnel and Highest Point</h2>
                                 <p className="text-sm text-center mb-4 px-[10%]">at Atok, Benguet</p>
                                 <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -632,7 +632,7 @@ const SocioCultural = () => {
                                 </div>
                             </div>
                             <div id="manmade6" className="carousel-item relative w-full flex flex-col items-center">
-                                <img src="src\assets\SCEP-Gallery\mataguisi-church-ruins.jpg" alt="mataguisi-church-ruins" className="object-cover w-full h-[700px]" />
+                                <img src="src\assets\SCEP-Gallery\ph-war.jpg" alt="mataguisi-church-ruins" className="object-cover w-full h-[700px]" />
                                 <h2 className="text-lg font-semibold mt-2">Philippine War Memorial Shrine</h2>
                                 <p className="text-sm text-center mb-4 px-[10%]">
                                     Following the architectural design of the native Ifugao hut, the memorial
@@ -646,7 +646,7 @@ const SocioCultural = () => {
                                 </div>
                             </div>
                             <div id="manmade7" className="carousel-item relative w-full flex flex-col items-center">
-                                <img src="src\assets\SCEP-Gallery\mataguisi-church-ruins.jpg" alt="mataguisi-church-ruins" className="object-cover w-full h-[700px]" />
+                                <img src="src\assets\SCEP-Gallery\ifugao-mus.jpg" alt="mataguisi-church-ruins" className="object-cover w-full h-[700px]" />
                                 <h2 className="text-lg font-semibold mt-2">Ifugao Museum</h2>
                                 <p className="text-sm text-center mb-4 px-[10%]">
                                     Within the same vicinity as the Philippine War Memorial Shrine is the Ifugao Museum,
@@ -660,7 +660,7 @@ const SocioCultural = () => {
                                 </div>
                             </div>
                             <div id="manmade8" className="carousel-item relative w-full flex flex-col items-center">
-                                <img src="src\assets\SCEP-Gallery\mataguisi-church-ruins.jpg" alt="mataguisi-church-ruins" className="object-cover w-full h-[700px]" />
+                                <img src="src\assets\SCEP-Gallery\magat-dam.jpg" alt="mataguisi-church-ruins" className="object-cover w-full h-[700px]" />
                                 <h2 className="text-lg font-semibold mt-2">Magat Dam</h2>
                                 <p className="text-sm text-center mb-4 px-[10%]">
                                     Built in 1970’s, it is reputedly the biggest dam in Asia. It is located
@@ -673,7 +673,7 @@ const SocioCultural = () => {
                                 </div>
                             </div>
                             <div id="manmade9" className="carousel-item relative w-full flex flex-col items-center">
-                                <img src="src\assets\SCEP-Gallery\mataguisi-church-ruins.jpg" alt="mataguisi-church-ruins" className="object-cover w-full h-[700px]" />
+                                <img src="src\assets\SCEP-Gallery\kalinga-tourism.jpg" alt="mataguisi-church-ruins" className="object-cover w-full h-[700px]" />
                                 <h2 className="text-lg font-semibold mt-2">Kalinga Capitol Tourism Plaza</h2>
                                 <p className="text-sm text-center mb-4 px-[10%]">
                                     A refreshing park located in front of the Provincial Capitol Building,
@@ -685,7 +685,7 @@ const SocioCultural = () => {
                                 </div>
                             </div>
                             <div id="manmade10" className="carousel-item relative w-full flex flex-col items-center">
-                                <img src="src\assets\SCEP-Gallery\mataguisi-church-ruins.jpg" alt="mataguisi-church-ruins" className="object-cover w-full h-[700px]" />
+                                <img src="src\assets\SCEP-Gallery\neneng-heritage.jpg" alt="mataguisi-church-ruins" className="object-cover w-full h-[700px]" />
                                 <h2 className="text-lg font-semibold mt-2">Naneng Heritage Village</h2>
                                 <p className="text-sm text-center mb-4 px-[10%]">
                                     The only declared heritage village in Kalinga, it was established by the Catholic
@@ -700,7 +700,7 @@ const SocioCultural = () => {
                                 </div>
                             </div>
                             <div id="manmade11" className="carousel-item relative w-full flex flex-col items-center">
-                                <img src="src\assets\SCEP-Gallery\mataguisi-church-ruins.jpg" alt="mataguisi-church-ruins" className="object-cover w-full h-[700px]" />
+                                <img src="src\assets\SCEP-Gallery\grand-zion.jpg" alt="mataguisi-church-ruins" className="object-cover w-full h-[700px]" />
                                 <h2 className="text-lg font-semibold mt-2">Grand Zion Garden Resort Hotel, Inc.</h2>
                                 <p className="text-sm text-center mb-4 px-[10%]">
                                     The only DOT accredited resort in Kalinga, with complete amenities of a standard
@@ -713,7 +713,7 @@ const SocioCultural = () => {
                                 </div>
                             </div>
                             <div id="manmade12" className="carousel-item relative w-full flex flex-col items-center">
-                                <img src="src\assets\SCEP-Gallery\mataguisi-church-ruins.jpg" alt="mataguisi-church-ruins" className="object-cover w-full h-[700px]" />
+                                <img src="src\assets\SCEP-Gallery\placeholder.jpg" alt="mataguisi-church-ruins" className="object-cover w-full h-[700px]" />
                                 <h2 className="text-lg font-semibold mt-2">Chico River Diversion Dam</h2>
                                 <p className="text-sm text-center mb-4 px-[10%]">
                                     The Chico River is referred to as a "river of life" for the Kalinga people
@@ -730,7 +730,9 @@ const SocioCultural = () => {
                         </div>
                     </div>
                 </div>
+                
             </div>
+            
         </div>
     );
 };
