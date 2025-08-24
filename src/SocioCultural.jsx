@@ -146,7 +146,7 @@ const SocioCultural = () => {
             
             {/* GALLERY */}
             <h1 className="text-4xl font-bold text-center mt-8 mb-8">Gallery</h1>
-            <div className="tabs tabs-box">
+            <div className="tabs tabs-box mb-10">
                 {/* Abra */}
                 <input type="radio" name="my_tabs_6" className="tab" aria-label="Abra" />
                 <div className="tab-content bg-base-100 border-base-300 p-6">
@@ -293,7 +293,7 @@ const SocioCultural = () => {
                                 <a href="#benguet1" className="btn btn-circle">❯</a>
                             </div>
                         </div>
-                         <div id="benguet3" className="carousel-item relative w-full flex flex-col items-center">
+                        <div id="benguet3" className="carousel-item relative w-full flex flex-col items-center">
                             <img src="src\assets\SCEP-Gallery\mt-purgatory.jpg" alt="mt-purgatory" className="w-full" />
                             <h2 className="text-lg font-semibold mt-2">Ambongdolan Caves</h2>
                             <p className="text-sm text-center mb-4">Located in in Tublay Benguet features spacious chambers and various speleothem/ speleogen formations. A unique waterfall 
@@ -303,7 +303,7 @@ const SocioCultural = () => {
                                 <a href="#benguet1" className="btn btn-circle">❯</a>
                             </div>
                         </div>
-                         <div id="benguet3" className="carousel-item relative w-full flex flex-col items-center">
+                        <div id="benguet3" className="carousel-item relative w-full flex flex-col items-center">
                             <img src="src\assets\SCEP-Gallery\mt-purgatory.jpg" alt="mt-purgatory" className="w-full" />
                             <h2 className="text-lg font-semibold mt-2">Burial Caves in Kabayan and Buguias</h2>
                             <p className="text-sm text-center mb-4">These are considered sacred grounds and home to naturally preserved mummies and skulls.</p>
@@ -331,7 +331,13 @@ const SocioCultural = () => {
                         <div id="ifugao2" className="carousel-item relative w-full flex flex-col items-center">
                             <img src="src\assets\SCEP-Gallery\bangaan-rice-terraces.jpg" alt="bangaan-rice-terraces" className="w-full" />
                             <h2 className="text-lg font-semibold mt-2">Bangaan Rice Terraces</h2>
-                            <p className="text-sm text-center mb-4">DESCRIPTION HERE</p>
+                            <p className="text-sm text-center mb-4">
+                                Surrounded by scenic terraced rice fields is a picturesque village 
+                                whose inhabitants continue to preserve their traditional way of life. 
+                                Unfortunately, the indigenous architectural assembly of traditional Ifugao 
+                                huts is undergoing a transformation with the construction of new houses using 
+                                modern materials and designs
+                            </p>
                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                 <a href="#ifugao1" className="btn btn-circle">❮</a>
                                 <a href="#ifugao3" className="btn btn-circle">❯</a>
@@ -340,7 +346,11 @@ const SocioCultural = () => {
                         <div id="ifugao3" className="carousel-item relative w-full flex flex-col items-center">
                             <img src="src\assets\SCEP-Gallery\batad-rice-terraces.jpg" alt="batad-rice-terraces" className="w-full" />
                             <h2 className="text-lg font-semibold mt-2">Hapao Rice Terraces</h2>
-                            <p className="text-sm text-center mb-4">DESCRIPTION HERE</p>
+                            <p className="text-sm text-center mb-4">
+                                This terrace cluster is one of the few stone-walled terraces of the province 
+                                that date back to 650 A.D. The stone walls protect the rice terraces from 
+                                erosion caused by the meandering Hapao River.
+                            </p>
                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                 <a href="#ifugao2" className="btn btn-circle">❮</a>
                                 <a href="#ifugao1" className="btn btn-circle">❯</a>
@@ -349,7 +359,12 @@ const SocioCultural = () => {
                         <div id="ifugao3" className="carousel-item relative w-full flex flex-col items-center">
                             <img src="src\assets\SCEP-Gallery\batad-rice-terraces.jpg" alt="batad-rice-terraces" className="w-full" />
                             <h2 className="text-lg font-semibold mt-2">Bakung “Spider Web” Rice Terraces</h2>
-                            <p className="text-sm text-center mb-4">DESCRIPTION HERE</p>
+                            <p className="text-sm text-center mb-4">
+                                This rice terrace cluster is located in Poblacion, Hungduan. From an aerial view, 
+                                the Bakung rice terraces appear like a spider web. However, many parts were damaged 
+                                from bombing during World War II while other portions were abandoned due to erosion 
+                                caused by natural calamities.
+                            </p>
                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                 <a href="#ifugao2" className="btn btn-circle">❮</a>
                                 <a href="#ifugao1" className="btn btn-circle">❯</a>
@@ -358,7 +373,13 @@ const SocioCultural = () => {
                         <div id="ifugao3" className="carousel-item relative w-full flex flex-col items-center">
                             <img src="src\assets\SCEP-Gallery\batad-rice-terraces.jpg" alt="batad-rice-terraces" className="w-full" />
                             <h2 className="text-lg font-semibold mt-2">Mount Napulawan</h2>
-                            <p className="text-sm text-center mb-4">DESCRIPTION HERE</p>
+                            <p className="text-sm text-center mb-4">
+                                This historic mountain is believed to be the last refuge of General Tomoyuki Yamashita, 
+                                the commander of the Japanese imperial army during World War II. Towering at 2,642 
+                                meters above sea level, Mount Napulawan is the highest mountain peak in the municipality 
+                                and the second-highest in the province. It is the habitat of indigenous flora and fauna. 
+                                The mountain has become a popular destination for trekkers and campers.
+                            </p>
                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                 <a href="#ifugao2" className="btn btn-circle">❮</a>
                                 <a href="#ifugao1" className="btn btn-circle">❯</a>
@@ -367,7 +388,12 @@ const SocioCultural = () => {
                         <div id="ifugao3" className="carousel-item relative w-full flex flex-col items-center">
                             <img src="src\assets\SCEP-Gallery\batad-rice-terraces.jpg" alt="batad-rice-terraces" className="w-full" />
                             <h2 className="text-lg font-semibold mt-2">Dakkitan Rice Terraces and Natural Pool</h2>
-                            <p className="text-sm text-center mb-4">DESCRIPTION HERE</p>
+                            <p className="text-sm text-center mb-4">
+                                Situated beside the road at Poblacion, Hungduan is the Dakkitan rice terraces 
+                                where tourists can participate in agricultural activities such as planting or 
+                                harvesting rice. Near the terraces is a natural pool with water flowing from 
+                                the foot of Mount Napulawan.
+                            </p>
                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                 <a href="#ifugao2" className="btn btn-circle">❮</a>
                                 <a href="#ifugao1" className="btn btn-circle">❯</a>
@@ -376,7 +402,11 @@ const SocioCultural = () => {
                         <div id="ifugao3" className="carousel-item relative w-full flex flex-col items-center">
                             <img src="src\assets\SCEP-Gallery\batad-rice-terraces.jpg" alt="batad-rice-terraces" className="w-full" />
                             <h2 className="text-lg font-semibold mt-2">Tappiyah Waterfalls</h2>
-                            <p className="text-sm text-center mb-4">DESCRIPTION HERE</p>
+                            <p className="text-sm text-center mb-4">
+                                This spectacular waterfall drops to a natural swimming pool. A visit to 
+                                Batad would not be complete without enjoying a dip in the cool and refreshing 
+                                waters of the Tappiyah waterfall.
+                            </p>
                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                 <a href="#ifugao2" className="btn btn-circle">❮</a>
                                 <a href="#ifugao1" className="btn btn-circle">❯</a>
@@ -385,7 +415,11 @@ const SocioCultural = () => {
                         <div id="ifugao3" className="carousel-item relative w-full flex flex-col items-center">
                             <img src="src\assets\SCEP-Gallery\batad-rice-terraces.jpg" alt="batad-rice-terraces" className="w-full" />
                             <h2 className="text-lg font-semibold mt-2">Bangaan Village</h2>
-                            <p className="text-sm text-center mb-4">DESCRIPTION HERE</p>
+                            <p className="text-sm text-center mb-4">
+                                It represents the typical native Ifugao village surrounded by terraces. 
+                                It is a 40minute drive from Banaue town center and is also a walking distance 
+                                from Ducligan Hot Springs.
+                            </p>
                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                 <a href="#ifugao2" className="btn btn-circle">❮</a>
                                 <a href="#ifugao1" className="btn btn-circle">❯</a>
@@ -394,7 +428,11 @@ const SocioCultural = () => {
                         <div id="ifugao3" className="carousel-item relative w-full flex flex-col items-center">
                             <img src="src\assets\SCEP-Gallery\batad-rice-terraces.jpg" alt="batad-rice-terraces" className="w-full" />
                             <h2 className="text-lg font-semibold mt-2">Batad Village</h2>
-                            <p className="text-sm text-center mb-4">DESCRIPTION HERE</p>
+                            <p className="text-sm text-center mb-4">
+                                The village is at the center of the gigantic amphitheater rice terraces 
+                                of Batad. It can be reached by a two (2) hours hike from the Banaue-Mayoyao 
+                                road starting at the Batad junction.
+                            </p>
                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                 <a href="#ifugao2" className="btn btn-circle">❮</a>
                                 <a href="#ifugao1" className="btn btn-circle">❯</a>
@@ -403,7 +441,14 @@ const SocioCultural = () => {
                         <div id="ifugao3" className="carousel-item relative w-full flex flex-col items-center">
                             <img src="src\assets\SCEP-Gallery\batad-rice-terraces.jpg" alt="batad-rice-terraces" className="w-full" />
                             <h2 className="text-lg font-semibold mt-2">Nahtoban Caves</h2>
-                            <p className="text-sm text-center mb-4">DESCRIPTION HERE</p>
+                            <p className="text-sm text-center mb-4">
+                                The caves have three different descending entrances, which makes it exciting for 
+                                cave spelunking. Huge quantities of guano are found in the caves. Atop the hill 
+                                where these caves are located is Sitio Callubung. When inside the caves you may 
+                                the reverberations of the pounding of rice (the traditional mortar and pestle) 
+                                by the villagers. It is located at Boliwong, Lagawe and could be reached by a 
+                                10-minute ride and a kilometer hike from the barangay center.
+                            </p>
                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                 <a href="#ifugao2" className="btn btn-circle">❮</a>
                                 <a href="#ifugao1" className="btn btn-circle">❯</a>
@@ -418,7 +463,17 @@ const SocioCultural = () => {
                         <div id="kalinga1" className="carousel-item relative w-full flex flex-col items-center">
                             <img src="src\assets\SCEP-Gallery\chico-river.jpg" alt="chico-river" className="w-full" />
                             <h2 className="text-lg font-semibold mt-2">Chico River</h2>
-                            <p className="text-sm text-center mb-4">DESCRIPTION HERE</p>
+                            <p className="text-sm text-center mb-4">
+                                It is referred to as a "river of life" for the Kalinga people who live along the riverbank, 
+                                and is well known among development workers because of the Chico River Dam Project, 
+                                an electric power generation project which local residents resisted for three decades 
+                                before it was finally shelved in the 1980s - a landmark case study concerning ancestral 
+                                domain issues in the Philippines. It has a length of 174.67 kilometers and a major tributary 
+                                of the Cagayan River. Its highest headwaters begin at Tinoc, Ifugao; Buguias, Benguet; and 
+                                Mountain Province, and its tributaries are the Bonnong River to the south, It is also where 
+                                the renowned Chico River White Water rafting is experienced with its world class rapids, 
+                                complete with breathtaking scenery along the way.
+                            </p>
                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                 <a href="#kalinga3" className="btn btn-circle">❮</a>
                                 <a href="#kalinga2" className="btn btn-circle">❯</a>
@@ -427,7 +482,12 @@ const SocioCultural = () => {
                         <div id="kalinga2" className="carousel-item relative w-full flex flex-col items-center">
                             <img src="src\assets\SCEP-Gallery\bruh.jpg" alt="wala akong mahanap na landscape search: banga banga falls" className="w-full" />
                             <h2 className="text-lg font-semibold mt-2">Banga-Banga, Matambong & Panpanay Falls</h2>
-                            <p className="text-sm text-center mb-4">DESCRIPTION HERE</p>
+                            <p className="text-sm text-center mb-4">
+                                These are series of three waterfalls located at the mountains of Barangay Amlao passing through Balawag. 
+                                If you’re looking for a nature trip and adventure then this is the place to go, you can do rock 
+                                climbing and swim at the end of a rainbow. The cool waters of the falls will surely refresh and 
+                                soothe one’s body. The waterfalls are also known for its healing wonders according to locals. 
+                            </p>
                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                 <a href="#kalinga1" className="btn btn-circle">❮</a>
                                 <a href="#kalinga3" className="btn btn-circle">❯</a>
@@ -436,16 +496,29 @@ const SocioCultural = () => {
                         <div id="kalinga3" className="carousel-item relative w-full flex flex-col items-center">
                             <img src="src\assets\SCEP-Gallery\guilum-canyon-falls.jpg" alt="guilum-canyon-falls" className="w-full" />
                             <h2 className="text-lg font-semibold mt-2">Guilum Canyon Falls</h2>
-                            <p className="text-sm text-center mb-4">DESCRIPTION HERE</p>
+                            <p className="text-sm text-center mb-4">
+                                Considered one of the hidden gems of Tabuk City, it is a series of waterfalls and 
+                                slides cascading into water sculpted rocks and stones that created natural pools, and 
+                                descends down to meet the Chico River, it is located at Bagumbayan, it is ideal for swimming, 
+                                rock climbing, picnics, trekking and a side trip for white water rafters. This is not a major 
+                                waterfall, but it is an interesting combination of water and rock. The falls has carved out a lot 
+                                of large and interesting curves into the rock. You have to see it to fully appreciate these wonderful 
+                                creations of nature.
+                            </p>
                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                 <a href="#kalinga2" className="btn btn-circle">❮</a>
                                 <a href="#kalinga1" className="btn btn-circle">❯</a>
                             </div>
                         </div>
-                         <div id="kalinga3" className="carousel-item relative w-full flex flex-col items-center">
+                        <div id="kalinga3" className="carousel-item relative w-full flex flex-col items-center">
                             <img src="src\assets\SCEP-Gallery\guilum-canyon-falls.jpg" alt="guilum-canyon-falls" className="w-full" />
                             <h2 className="text-lg font-semibold mt-2">Malalao Rolling Hills</h2>
-                            <p className="text-sm text-center mb-4">DESCRIPTION HERE</p>
+                            <p className="text-sm text-center mb-4">
+                                The Malalao hills form a rolling terrain of haycock hills – mounds of generally conical and almost 
+                                symmetrical shape covered in green grass. The domes vary in sizes, these unique mound-shaped hills 
+                                are scattered throughout the barangay of Malalao. Excellent for sightseeing, biking, day 
+                                hiking and picnics. This place is also frequented by migratorybirds during the summer season.
+                            </p>
                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                 <a href="#kalinga2" className="btn btn-circle">❮</a>
                                 <a href="#kalinga1" className="btn btn-circle">❯</a>
@@ -460,7 +533,16 @@ const SocioCultural = () => {
                         <div id="mtprovince1" className="carousel-item relative w-full flex flex-col items-center">
                             <img src="src\assets\SCEP-Gallery\mabarotbot-oil-seepage.jpg" alt="mabarotbot-oil-seepage" className="w-full" />
                             <h2 className="text-lg font-semibold mt-2">Mabarotbot Oil Seepage</h2>
-                            <p className="text-sm text-center mb-4">DESCRIPTION HERE</p>
+                            <p className="text-sm text-center mb-4">
+                                This tourist site is located at Sitio Mabullog which is being frequented by local people 
+                                as a picnic site. It is also the place where local tourists can see bubbling 
+                                pools of mud caused by deposits of suspected methane gas. <br></br><br></br>
+                                Falls and Rivers There are three (3) falls popular among the elder generations of the 
+                                place. These are the Canabo and Balinsawang Falls both located in Upper Poblacion, and 
+                                Butang Falls in Makilo, Buringal. The features of these falls include tall and abundant 
+                                trees, clear cool waters with naturally built swim pools. These sites are ideal for family 
+                                and group outings.  
+                            </p>
                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                 <a href="#mtprovince2" className="btn btn-circle">❮</a>
                                 <a href="#mtprovince2" className="btn btn-circle">❯</a>
@@ -469,7 +551,11 @@ const SocioCultural = () => {
                         <div id="mtprovince2" className="carousel-item relative w-full flex flex-col items-center">
                             <img src="src\assets\SCEP-Gallery\natonin-and-apatan-rice-terraces.jpg" alt="natonin-and-apatan-rice-terraces" className="w-full" />
                             <h2 className="text-lg font-semibold mt-2">Natonin and Apatan Rice Terraces</h2>
-                            <p className="text-sm text-center mb-4">DESCRIPTION HERE</p>
+                            <p className="text-sm text-center mb-4">
+                                Centuries old Rice Terraces were carved in the mountains of Natonin that has 
+                                provided rice supply not only for local residents but also to the neighboring 
+                                towns of Barlig and Paracelis.
+                            </p>
                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                 <a href="#mtprovince1" className="btn btn-circle">❮</a>
                                 <a href="#mtprovince1" className="btn btn-circle">❯</a>
@@ -484,7 +570,11 @@ const SocioCultural = () => {
                         <div id="manmade1" className="carousel-item relative w-full flex flex-col items-center">
                             <img src="src\assets\SCEP-Gallery\tangadan-tunnel.jpg" alt="tangadan-tunnel" className="w-full" />
                             <h2 className="text-lg font-semibold mt-2">Tangadan Tunnel</h2>
-                            <p className="text-sm text-center mb-4">DESCRIPTION HERE</p>
+                            <p className="text-sm text-center mb-4">
+                                This is a 40-meter tunnel located along the Abra-Ilocos Sur National Road. 
+                                The tunnel is a popular benchmark to most of the provinces' populace as well 
+                                as to visitors where dignitaries and other prominent visitors are being welcomed.
+                            </p>
                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                 <a href="#manmade3" className="btn btn-circle">❮</a>
                                 <a href="#manmade2" className="btn btn-circle">❯</a>
@@ -493,7 +583,11 @@ const SocioCultural = () => {
                         <div id="manmade2" className="carousel-item relative w-full flex flex-col items-center">
                             <img src="src\assets\SCEP-Gallery\victoria-national-park.jpg" alt="victoria-national-park" className="w-full" />
                             <h2 className="text-lg font-semibold mt-2">Victoria National Park</h2>
-                            <p className="text-sm text-center mb-4">DESCRIPTION HERE</p>
+                            <p className="text-sm text-center mb-4">
+                                located atop a hill overlooking the town of Bangued and neighboring municipalities of Tayum, 
+                                La Paz, Pidigan and Peñarrubia. A shrine of the blessed mother cradling Infant Jesus was 
+                                built near a reservoir of Bangued waterworks. A swimming pool is also available for swimmers. 
+                            </p>
                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                 <a href="#manmade1" className="btn btn-circle">❮</a>
                                 <a href="#manmade3" className="btn btn-circle">❯</a>
@@ -502,95 +596,131 @@ const SocioCultural = () => {
                         <div id="manmade3" className="carousel-item relative w-full flex flex-col items-center">
                             <img src="src\assets\SCEP-Gallery\mataguisi-church-ruins.jpg" alt="mataguisi-church-ruins" className="w-full" />
                             <h2 className="text-lg font-semibold mt-2">Emilia Church Ruins And The Mataguisi Church</h2>
-                            <p className="text-sm text-center mb-4">DESCRIPTION HERE</p>
+                            <p className="text-sm text-center mb-4">
+                                These two churches are the only landmarks of the spread of Christianity 
+                                in Apayao and the conversion of local’s beliefs from paganism to Christianity. 
+                            </p>
                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                 <a href="#manmade2" className="btn btn-circle">❮</a>
                                 <a href="#manmade1" className="btn btn-circle">❯</a>
                             </div>
                         </div>
-                        <div id="manmade3" className="carousel-item relative w-full flex flex-col items-center">
+                        <div id="manmade4" className="carousel-item relative w-full flex flex-col items-center">
                             <img src="src\assets\SCEP-Gallery\mataguisi-church-ruins.jpg" alt="mataguisi-church-ruins" className="w-full" />
                             <h2 className="text-lg font-semibold mt-2">WINACA Eco Cultural Village</h2>
-                            <p className="text-sm text-center mb-4">DESCRIPTION HERE</p>
+                            <p className="text-sm text-center mb-4">at Ambassador, Tublay, Benguet</p>
                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                 <a href="#manmade2" className="btn btn-circle">❮</a>
                                 <a href="#manmade1" className="btn btn-circle">❯</a>
                             </div>
                         </div>
-                        <div id="manmade3" className="carousel-item relative w-full flex flex-col items-center">
+                        <div id="manmade5" className="carousel-item relative w-full flex flex-col items-center">
                             <img src="src\assets\SCEP-Gallery\mataguisi-church-ruins.jpg" alt="mataguisi-church-ruins" className="w-full" />
                             <h2 className="text-lg font-semibold mt-2">Half Tunnel and Highest Point</h2>
-                            <p className="text-sm text-center mb-4">DESCRIPTION HERE</p>
+                            <p className="text-sm text-center mb-4">at Atok, Benguet</p>
                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                 <a href="#manmade2" className="btn btn-circle">❮</a>
                                 <a href="#manmade1" className="btn btn-circle">❯</a>
                             </div>
                         </div>
-                        <div id="manmade3" className="carousel-item relative w-full flex flex-col items-center">
+                        <div id="manmade6" className="carousel-item relative w-full flex flex-col items-center">
                             <img src="src\assets\SCEP-Gallery\mataguisi-church-ruins.jpg" alt="mataguisi-church-ruins" className="w-full" />
                             <h2 className="text-lg font-semibold mt-2">Philippine War Memorial Shrine</h2>
-                            <p className="text-sm text-center mb-4">DESCRIPTION HERE</p>
+                            <p className="text-sm text-center mb-4">
+                                Following the architectural design of the native Ifugao hut, the memorial 
+                                shrine was built to commemorate the end of World War II and the beginning 
+                                of peace. From its rooftop, one can view nearby villages and the pastoral 
+                                scenery of the municipalities of Kiangan and Lagawe.
+                            </p>
                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                 <a href="#manmade2" className="btn btn-circle">❮</a>
                                 <a href="#manmade1" className="btn btn-circle">❯</a>
                             </div>
                         </div>
-                        <div id="manmade3" className="carousel-item relative w-full flex flex-col items-center">
+                        <div id="manmade7" className="carousel-item relative w-full flex flex-col items-center">
                             <img src="src\assets\SCEP-Gallery\mataguisi-church-ruins.jpg" alt="mataguisi-church-ruins" className="w-full" />
                             <h2 className="text-lg font-semibold mt-2">Ifugao Museum</h2>
-                            <p className="text-sm text-center mb-4">DESCRIPTION HERE</p>
+                            <p className="text-sm text-center mb-4">
+                                Within the same vicinity as the Philippine War Memorial Shrine is the Ifugao Museum, 
+                                which showcases native artifacts ranging from farming and hunting equipment, household 
+                                utensils, weaving and war implements of the olden days. The museum also displays an 
+                                illustrated genealogy of the Ifugao ancestry.
+                            </p>
                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                 <a href="#manmade2" className="btn btn-circle">❮</a>
                                 <a href="#manmade1" className="btn btn-circle">❯</a>
                             </div>
                         </div>
-                        <div id="manmade3" className="carousel-item relative w-full flex flex-col items-center">
+                        <div id="manmade8" className="carousel-item relative w-full flex flex-col items-center">
                             <img src="src\assets\SCEP-Gallery\mataguisi-church-ruins.jpg" alt="mataguisi-church-ruins" className="w-full" />
                             <h2 className="text-lg font-semibold mt-2">Magat Dam</h2>
-                            <p className="text-sm text-center mb-4">DESCRIPTION HERE</p>
+                            <p className="text-sm text-center mb-4">
+                                Built in 1970’s, it is reputedly the biggest dam in Asia. It is located 
+                                about 25 kilometers from Sta. Maria, Alfonso Lista. It is conducive for 
+                                boating.
+                            </p>
                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                 <a href="#manmade2" className="btn btn-circle">❮</a>
                                 <a href="#manmade1" className="btn btn-circle">❯</a>
                             </div>
                         </div>
-                        <div id="manmade3" className="carousel-item relative w-full flex flex-col items-center">
+                        <div id="manmade9" className="carousel-item relative w-full flex flex-col items-center">
                             <img src="src\assets\SCEP-Gallery\mataguisi-church-ruins.jpg" alt="mataguisi-church-ruins" className="w-full" />
                             <h2 className="text-lg font-semibold mt-2">Kalinga Capitol Tourism Plaza</h2>
-                            <p className="text-sm text-center mb-4">DESCRIPTION HERE</p>
+                            <p className="text-sm text-center mb-4">
+                                A refreshing park located in front of the Provincial Capitol Building, 
+                                Barangay Bulanao, where one can have a scenic view of the valley of Tabuk City.
+                            </p>
                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                 <a href="#manmade2" className="btn btn-circle">❮</a>
                                 <a href="#manmade1" className="btn btn-circle">❯</a>
                             </div>
                         </div>
-                        <div id="manmade3" className="carousel-item relative w-full flex flex-col items-center">
+                        <div id="manmade10" className="carousel-item relative w-full flex flex-col items-center">
                             <img src="src\assets\SCEP-Gallery\mataguisi-church-ruins.jpg" alt="mataguisi-church-ruins" className="w-full" />
                             <h2 className="text-lg font-semibold mt-2">Naneng Heritage Village</h2>
-                            <p className="text-sm text-center mb-4">DESCRIPTION HERE</p>
+                            <p className="text-sm text-center mb-4">
+                                The only declared heritage village in Kalinga, it was established by the Catholic 
+                                Church in the 1920’s, the houses in this village were built using narra, guijo, 
+                                and lauan hardwood which are now very rare. The inhabitants are well known for 
+                                their hospitality and  jovial  disposition; they are also famous for their 
+                                native rice cake “Inandila”.  
+                            </p>
                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                 <a href="#manmade2" className="btn btn-circle">❮</a>
                                 <a href="#manmade1" className="btn btn-circle">❯</a>
                             </div>
                         </div>
-                        <div id="manmade3" className="carousel-item relative w-full flex flex-col items-center">
+                        <div id="manmade11" className="carousel-item relative w-full flex flex-col items-center">
                             <img src="src\assets\SCEP-Gallery\mataguisi-church-ruins.jpg" alt="mataguisi-church-ruins" className="w-full" />
                             <h2 className="text-lg font-semibold mt-2">Grand Zion Garden Resort Hotel, Inc.</h2>
-                            <p className="text-sm text-center mb-4">DESCRIPTION HERE</p>
+                            <p className="text-sm text-center mb-4">
+                                The only DOT accredited resort in Kalinga, with complete amenities of a standard 
+                                hotel resort.The resort  also offers function rooms for meetings and special 
+                                occasions like birthdays and other celebrations.
+                            </p>
                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                 <a href="#manmade2" className="btn btn-circle">❮</a>
                                 <a href="#manmade1" className="btn btn-circle">❯</a>
                             </div>
                         </div>
-                        <div id="manmade3" className="carousel-item relative w-full flex flex-col items-center">
+                        <div id="manmade12" className="carousel-item relative w-full flex flex-col items-center">
                             <img src="src\assets\SCEP-Gallery\mataguisi-church-ruins.jpg" alt="mataguisi-church-ruins" className="w-full" />
                             <h2 className="text-lg font-semibold mt-2">Chico River Diversion Dam</h2>
-                            <p className="text-sm text-center mb-4">DESCRIPTION HERE</p>
+                            <p className="text-sm text-center mb-4">
+                                The Chico River is referred to as a "river of life" for the Kalinga people 
+                                who live on its banks, because the diversion dam diverts and regulates water from the 
+                                Chico River into the irrigation area. This Diversion Dam is part of NIA’s Irrigation Scheme 
+                                designed to harness the massive volume of water that flows down the Chico River for use 
+                                in farming.
+                            </p>
                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                 <a href="#manmade2" className="btn btn-circle">❮</a>
                                 <a href="#manmade1" className="btn btn-circle">❯</a>
                             </div>
                         </div>
                     </div>
-                     <p className="text-sm text-center mb-4">These tourist sites supplement the natural sites and serves as potential tourist destinations. 
+                    <p className="text-sm text-center mb-4">These tourist sites supplement the natural sites and serves as potential tourist destinations. 
                         Remnants of Spanish settlements are preserved in the old church ruins of Barangays Mataguisi and Poblacion, Pudtol respectively. </p>
                 </div>
             </div>
