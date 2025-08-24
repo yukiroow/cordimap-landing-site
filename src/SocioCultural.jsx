@@ -2,6 +2,7 @@ import { ChevronLeft, Users, TrendingUp, ComponentIcon, LibraryBig, Car, Podcast
 
 const SocioCultural = () => {
     return (
+    <>
         <div className="min-h-screen ml-15 mr-15">
             {/* SOCIO CULTURAL AND ECONOMIC PROFILE */}
             <div className="relative flex items-center mb-20 w-full pt-8">
@@ -150,7 +151,7 @@ const SocioCultural = () => {
             </div>
 
             {/* GALLERY */}
-            <h1 className="text-4xl font-bold text-center mt-8 mb-">Gallery</h1>
+            <h1 className="text-4xl font-bold text-center mt-8 mb-8">Gallery</h1>
             <div className="flex flex-row w-full justify-center">
                 <div className="tabs tabs-box w-[80%]">
                     {/* Abra */}
@@ -734,6 +735,7 @@ const SocioCultural = () => {
             </div>
             
         </div>
+        </>
     );
 };
 
