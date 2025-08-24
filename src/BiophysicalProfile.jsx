@@ -1,6 +1,9 @@
+import { Phone, Mail, Facebook } from "lucide-react";
+
 const BiophysicalProfile = () => {
     return (
-        <div className="mt-8 mx-13">
+        <div>
+            <div className="mt-8 mx-16">
             <div className="min-h-screen w-full bg-white text-gray-900 px-8 py-12">
                 {/* Title */}
                 <div className="relative flex items-center mb-20 w-full">
@@ -147,10 +150,70 @@ const BiophysicalProfile = () => {
                         for the rest of the year.The provinces that fall under this type are Benguet including Baguio City; eastern part of Abra, Ifugao and Mountain Province. Type III has
                         no pronounced maximum rain period with a short dry season lasting only from one to three months.
                     </p>
-                </section>
+                </section>  
             </div>
+            </div>
+            
+        {/* FOOTER */}
+      <div className="w-full">
+        <div className="bg-green-700 text-white py-12 px-6">
+          <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center">
+            <div className="flex items-center space-x-4 mb-6 md:mb-0">
+              <div className="w-20 h-20 rounded-full flex items-center justify-center flex-shrink-0 p-3">
+                <img
+                  src="src/assets/Logos/DENR.png"
+                  alt="DENR Logo"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold leading-tight">
+                  DENR Compound, Gibraltar
+                  <br />
+                  Rd, Baguio, Benguet
+                </h3>
+              </div>
+            </div>
+
+            {/* Directory */}
+            <div className="text-left mt-6 md:mt-0 md:mr-30">
+              <h3 className="font-semibold text-xl mb-5">Directory</h3>
+              <ul className="space-y-3">
+                <li className="flex items-center justify-start space-x-2">
+                  <Phone className="w-5 h-5" />
+                  <span>(074) 442 4531</span>
+                </li>
+                <li className="flex items-center justify-start space-x-2">
+                  <Mail className="w-5 h-5" />
+                  <span>car@denr.gov.ph</span>
+                </li>
+                <li className="flex items-center justify-start space-x-2">
+                  <Facebook className="w-5 h-5" />
+                  <a
+                    href="https://www.facebook.com/DENRCAROfficial"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline hover:text-gray-200"
+                  >
+                    <span>DENR-CAR</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-    );
+
+        {/* Bottom Bar */}
+        <div className="w-full bg-blue-900 text-white py-3">
+          <div className="max-w-6xl mx-auto px-6">
+            <p className="text-center text-m font-medium">
+              © Copyright @ 2025 Kotl. All rights reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default BiophysicalProfile;
