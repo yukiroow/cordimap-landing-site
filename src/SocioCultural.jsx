@@ -151,7 +151,7 @@ const SocioCultural = () => {
             <div className="flex flex-row w-full justify-center">
                 <div className="tabs tabs-box w-[80%]">
                     {/* Abra */}
-                    <input type="radio" name="my_tabs_6" className="tab" aria-label="Abra" checked="checked" />
+                    <input type="radio" name="my_tabs_6" className="tab" aria-label="Abra"/>
                     <div className="tab-content bg-base-100 border-base-300 p-6">
                         <div className="carousel w-full mx-auto rounded-lg shadow-md">
                             <div id="abra1" className="carousel-item relative w-full flex flex-col items-center">

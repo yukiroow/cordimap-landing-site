@@ -33,37 +33,34 @@ const App = () => {
         {/* ABOUT */}
         <section className="relative flex flex-col items-center justify-center space-y-6 h-screen bg-cover bg-center"
         style={{ backgroundImage: "url('src/assets/About-images/Falls.png')" }} >
-
             <div className="absolute inset-0 bg-black/40 -z-0"></div>
-
             <div className="relative z-10 flex flex-col items-center space-y-20">
                 <h1 className="text-5xl font-bold text-white">ABOUT</h1>
-                
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-5 text-center">
-                <button className="flex flex-col items-center space-y-3 text-white hover:scale-110 transition">
-                    <img src="src/assets/About-images/CAR.svg" alt="CAR" className="w-23 h-20" />
-                    <span className="text-lg font-medium">CAR</span>
-                </button>
+                    <button className="flex flex-col items-center space-y-3 text-white hover:scale-110 transition">
+                        <img src="src/assets/About-images/CAR.svg" alt="CAR" className="w-23 h-20" />
+                        <span className="text-lg font-medium">CAR</span>
+                    </button>
 
-                {/* Biophysical Profile */}
-                <button className="flex flex-col items-center space-y-3 text-white hover:scale-110 transition">
-                    <img src="src/assets/About-images/Biophysical.svg" alt="Biophysical Profile" className="w-20 h-20" />
-                    <span className="text-lg font-medium">Biophysical Profile</span>
-                </button>
+                    {/* Biophysical Profile */}
+                    <button className="flex flex-col items-center space-y-3 text-white hover:scale-110 transition">
+                        <img src="src/assets/About-images/Biophysical.svg" alt="Biophysical Profile" className="w-20 h-20" />
+                        <span className="text-lg font-medium">Biophysical Profile</span>
+                    </button>
 
-                {/* ENR Resources */}
-                <button className="flex flex-col items-center space-y-3 text-white hover:scale-110 transition">
-                    <img src="src/assets/About-images/Earth.svg" alt="ENR Resources" className="w-23 h-20" />
-                    <span className="text-lg font-medium">ENR Resources</span>
-                </button>
+                    {/* ENR Resources */}
+                    <button className="flex flex-col items-center space-y-3 text-white hover:scale-110 transition">
+                        <img src="src/assets/About-images/Earth.svg" alt="ENR Resources" className="w-23 h-20" />
+                        <span className="text-lg font-medium">ENR Resources</span>
+                    </button>
 
-                {/* Socio-Cultural and Economic Profile */}
-                <button className="flex flex-col items-center space-y-3 text-white hover:scale-110 transition">
-                    <img src="src/assets/About-images/SCE.svg" alt="Socio-Cultural and Economic Profile" className="w-27 h-20" />
-                    <span className="text-lg font-medium text-center">
-                    Socio-Cultural and Economic Profile
-                    </span>
-                </button>
+                    {/* Socio-Cultural and Economic Profile */}
+                    <button className="flex flex-col items-center space-y-3 text-white hover:scale-110 transition">
+                        <img src="src/assets/About-images/SCE.svg" alt="Socio-Cultural and Economic Profile" className="w-27 h-20" />
+                        <span className="text-lg font-medium text-center">
+                        Socio-Cultural and Economic Profile
+                        </span>
+                    </button>
                 </div>
             </div>
         </section>
@@ -113,7 +110,7 @@ const App = () => {
                 </p>
                 <div className="flex gap-4 mt-4">
                     <div className="flex flex-col items-center">
-                       <img src="src/assets/Biophysical-images/Anguib Beach Cagayan.png" alt="Anguib Beach Cagayan" className="w-64 h-48 rounded-lg" />
+                        <img src="src/assets/Biophysical-images/Anguib Beach Cagayan.png" alt="Anguib Beach Cagayan" className="w-64 h-48 rounded-lg" />
                         <p className="text-sm">Anguib Beach Cagayan</p>
                     </div>
                     <div className="flex flex-col items-center">
@@ -151,11 +148,11 @@ const App = () => {
         <section>
             <div className="flex flex-row items-center justify-center space-x-6 pl-20 pr-15"> 
                 <h1 className="text-5xl font-bold">DENR RESOURCES</h1>
-                    <p className="text-xl text-justify">
-                        The Cordillera Region is very rich in natural resources. It is especially famed for its huge gold
-                        deposits, pure stands of pine forest, and rich soils and water sources that have enabled its people
-                        to sustain agriculture on mountainside rice terraces.
-                    </p>
+                <p className="text-xl text-justify">
+                    The Cordillera Region is very rich in natural resources. It is especially famed for its huge gold
+                    deposits, pure stands of pine forest, and rich soils and water sources that have enabled its people
+                    to sustain agriculture on mountainside rice terraces.
+                </p>
             </div>
             {/* Land Resources */}
             <div className="flex flex-col space-y-6 py-12 pl-20 pr-15">
@@ -225,24 +222,24 @@ const App = () => {
                     Balbalasang-Balbalan National Park, and Mt. Data National Park.
                 </p>
                 {/* Image Grid */}
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                        <div className="flex flex-col items-center">
-                            <img src="src/assets/Biodiversity-images/cassamata.png" alt="Cassamata Hill National Park" className="w-48 h-32 object-cover rounded-lg shadow-lg"/>
-                            <p className="mt-2 text-sm">Cassamata Hill National Park</p>
-                         </div>
-                        <div className="flex flex-col items-center">
-                            <img src="src/assets/Biodiversity-images/mt-pulag.png" alt="Mt. Pulag National Park" className="w-48 h-32 object-cover rounded-lg shadow-lg" />
-                            <p className="mt-2 text-sm">Mt. Pulag National Park</p>
-                         </div>
-                        <div className="flex flex-col items-center">
-                            <img src="src/assets/Biodiversity-images/balbalasang.png" alt="Balbalasang-Balbalan National Park" className="w-48 h-32 object-cover rounded-lg shadow-lg"/>
-                            <p className="mt-2 text-sm">Balbalasang Balbalan National Park</p>
-                         </div>
-                        <div className="flex flex-col items-center">
-                            <img src="src/assets/Biodiversity-images/mt-data.png" alt="Mt. Data National Park" className="w-48 h-32 object-cover rounded-lg shadow-lg" />
-                            <p className="mt-2 text-sm">Mt. Data National Park</p>
-                        </div>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div className="flex flex-col items-center">
+                        <img src="src/assets/Biodiversity-images/cassamata.png" alt="Cassamata Hill National Park" className="w-48 h-32 object-cover rounded-lg shadow-lg"/>
+                        <p className="mt-2 text-sm">Cassamata Hill National Park</p>
                     </div>
+                    <div className="flex flex-col items-center">
+                        <img src="src/assets/Biodiversity-images/mt-pulag.png" alt="Mt. Pulag National Park" className="w-48 h-32 object-cover rounded-lg shadow-lg" />
+                        <p className="mt-2 text-sm">Mt. Pulag National Park</p>
+                    </div>
+                    <div className="flex flex-col items-center">
+                        <img src="src/assets/Biodiversity-images/balbalasang.png" alt="Balbalasang-Balbalan National Park" className="w-48 h-32 object-cover rounded-lg shadow-lg"/>
+                        <p className="mt-2 text-sm">Balbalasang Balbalan National Park</p>
+                    </div>
+                    <div className="flex flex-col items-center">
+                        <img src="src/assets/Biodiversity-images/mt-data.png" alt="Mt. Data National Park" className="w-48 h-32 object-cover rounded-lg shadow-lg" />
+                        <p className="mt-2 text-sm">Mt. Data National Park</p>
+                    </div>
+                </div>
                 <div className="border-2 border-blue-800 p-6 rounded-lg text-center">
                     <p className="text-lg text-justify">
                         CAR’s Biodiversity is constantly threatened with undue pressure from
