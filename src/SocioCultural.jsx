@@ -1,154 +1,157 @@
-import { Users, TrendingUp, ComponentIcon, Gem, LibraryBig, Car, Podcast, PickaxeIcon, Binoculars } from "lucide-react";
+import { ChevronLeft, Users, TrendingUp, ComponentIcon, LibraryBig, Car, Podcast, PickaxeIcon, Binoculars } from "lucide-react";
 
 const SocioCultural = () => {
     return (
         <div className="min-h-screen ml-15 mr-15">
             {/* SOCIO CULTURAL AND ECONOMIC PROFILE */}
-            <h1 className="text-4xl font-bold text-center pt-8 mb-8">Socio-Cultural and Economic Profile</h1>
+            <div className="relative flex items-center mb-20 w-full">
+                <ChevronLeft className="absolute left-0 cursor-pointer w-5 h-5 text-black-600" /> 
+                <h1 className="text-5xl font-extrabold text-center tracking-wide w-full pt-8 mb-8">SOCIO-CULTURAL AND ECONOMIC PROFILE</h1>
+            </div>
             <div className="w-full px-[12%] flex flex-col justify-center">
-            <h2 className="text-xl font-semibold mb-4">Demography</h2>
-            <div className="collapse collapse-arrow bg-base-100 border border-base-300 mb-2">
-                <input type="radio" name="my-accordion-2" />
-                <div className="collapse-title font-semibold flex items-center gap-2">
-                    <Users className="w-5 h-5 text-black-600" />
-                    Population
+                <h2 className="text-xl font-semibold mb-4">Demography</h2>
+                <div className="collapse collapse-arrow bg-base-100 border border-base-300 mb-2">
+                    <input type="radio" name="my-accordion-2" />
+                    <div className="collapse-title font-semibold flex items-center gap-2">
+                        <Users className="w-5 h-5 text-black-600" />
+                        Population
+                    </div>
+                    <div className="collapse-content text-sm text-justify">
+                        The population of the region as of August 1, 2015 was 1,718,444 based
+                        on the 2015 Census of Population (POPCEN 2015). It is higher by 105,624
+                        compared with the population of 1,612,820 in 2010 with an annual growth
+                        rate of 1.21 at present.
+                    </div>
                 </div>
-                <div className="collapse-content text-sm text-justify">
-                    The population of the region as of August 1, 2015 was 1,718,444 based
-                    on the 2015 Census of Population (POPCEN 2015). It is higher by 105,624
-                    compared with the population of 1,612,820 in 2010 with an annual growth
-                    rate of 1.21 at present.
+                <div className="collapse collapse-arrow bg-base-100 border border-base-300 mb-2">
+                    <input type="radio" name="my-accordion-2" />
+                    <div className="collapse-title font-semibold flex items-center gap-2">
+                        <TrendingUp className="w-5 h-5 text-black-600" />
+                        Income Class
+                    </div>
+                    <div className="collapse-content text-sm text-justify">
+                        Income class of the provinces in the region is determined based on the
+                        Department of Finance, Department Order No.23-08. <br></br><br></br>
+                        Benguet belongs to the 2nd class province; Abra, Apayao and Ifugao are
+                        3rd income class provinces while Kalinga and Mt. Province belong
+                        to the 4th income class provinces.
+                    </div>
                 </div>
-            </div>
-            <div className="collapse collapse-arrow bg-base-100 border border-base-300 mb-2">
-                <input type="radio" name="my-accordion-2" />
-                <div className="collapse-title font-semibold flex items-center gap-2">
-                    <TrendingUp className="w-5 h-5 text-black-600" />
-                    Income Class
+                <div className="collapse collapse-arrow bg-base-100 border border-base-300 mb-2">
+                    <input type="radio" name="my-accordion-2" />
+                    <div className="collapse-title font-semibold flex items-center gap-2">
+                        <ComponentIcon className="w-5 h-5 text-black-600" />
+                        Major Ethnic Tribes
+                    </div>
+                    <div className="collapse-content text-sm text-justify">
+                        The indigenous population of the Cordillera region is collectively known
+                        as Igorots, meaning “mountain people”. These groups are largely swidden
+                        cultivators who depend on farming rice, root crops, and vegetables.
+                        (Indigenous-Peoples-in-the-Philippines.pdf). <br></br> <br></br>
+                        There are twelve (12) ethno-linguistic groups in the region, namely, Bontoc, Applais,
+                        Isnegs, Kalingas, Balangaos, Kankanaey, Tingguian, Ibaloi, Karaos,
+                        Iowaks, Kalanguyas and Ifugaos. <br></br> <br></br> These groupings, while convenient,
+                        do not fully reflect the real particularities and the extent of
+                        diversity among the region's peoples. In fact, most of the indigenous peoples
+                        identify themselves primarily with specific communities called ili (literally,
+                        home village, hometown, or home territory). Each ili is a self-identifying community
+                        with a specific territory, which is its ancestral land. While there are diverse types,
+                        an ili usually consists of a closely-knit cluster of villages, or a core
+                        village and its outlying hamlets, within a more or less defined territory.
+                    </div>
                 </div>
-                <div className="collapse-content text-sm text-justify">
-                    Income class of the provinces in the region is determined based on the
-                    Department of Finance, Department Order No.23-08. <br></br><br></br>
-                    Benguet belongs to the 2nd class province; Abra, Apayao and Ifugao are
-                    3rd income class provinces while Kalinga and Mt. Province belong
-                    to the 4th income class provinces.
+                <div className="collapse collapse-arrow bg-base-100 border border-base-300 mb-2">
+                    <input type="radio" name="my-accordion-2" />
+                    <div className="collapse-title font-semibold flex items-center gap-2">
+                        <LibraryBig className="w-5 h-5 text-black-600" />
+                        Education
+                    </div>
+                    <div className="collapse-content text-sm text-justify">
+                        A highly trainable English speaking and educated work force is easily
+                        available in the region. Baguio City is known as the educational
+                        center north of Manila, hosting world-class learning institutions
+                        like the Philippine Military Academy and Brent International School. <br></br><br></br>
+                        Various colleges and universities offer different fields catering
+                        to the needs of industries. Likewise, technical and vocational
+                        schools abound as a rich source of skilled manpower.
+                    </div>
                 </div>
-            </div>
-            <div className="collapse collapse-arrow bg-base-100 border border-base-300 mb-2">
-                <input type="radio" name="my-accordion-2" />
-                <div className="collapse-title font-semibold flex items-center gap-2">
-                    <ComponentIcon className="w-5 h-5 text-black-600" />
-                    Major Ethnic Tribes
+                <div className="collapse collapse-arrow bg-base-100 border border-base-300 mb-2">
+                    <input type="radio" name="my-accordion-2" />
+                    <div className="collapse-title font-semibold flex items-center gap-2">
+                        <Car className="w-5 h-5 text-black-600" />
+                        Transportation Services
+                    </div>
+                    <div className="collapse-content text-sm text-justify">
+                        Data on the extent and coverage of transportation and communication
+                        networks of an area are essential. The different modes of transportation
+                        and channels and media communication are vital in the economic, social, and
+                        cultural lives of peoples and institutions in the community.
+                        A well-developed transportation system ensures fast and efficient
+                        transfer of goods and services between traders, households and other
+                        institutions within and outside the geographical limits of the community.
+                    </div>
                 </div>
-                <div className="collapse-content text-sm text-justify">
-                    The indigenous population of the Cordillera region is collectively known
-                    as Igorots, meaning “mountain people”. These groups are largely swidden
-                    cultivators who depend on farming rice, root crops, and vegetables.
-                    (Indigenous-Peoples-in-the-Philippines.pdf). <br></br> <br></br>
-                    There are twelve (12) ethno-linguistic groups in the region, namely, Bontoc, Applais,
-                    Isnegs, Kalingas, Balangaos, Kankanaey, Tingguian, Ibaloi, Karaos,
-                    Iowaks, Kalanguyas and Ifugaos. <br></br> <br></br> These groupings, while convenient,
-                    do not fully reflect the real particularities and the extent of
-                    diversity among the region's peoples. In fact, most of the indigenous peoples
-                    identify themselves primarily with specific communities called ili (literally,
-                    home village, hometown, or home territory). Each ili is a self-identifying community
-                    with a specific territory, which is its ancestral land. While there are diverse types,
-                    an ili usually consists of a closely-knit cluster of villages, or a core
-                    village and its outlying hamlets, within a more or less defined territory.
+                <div className="collapse collapse-arrow bg-base-100 border border-base-300 mb-2">
+                    <input type="radio" name="my-accordion-2" />
+                    <div className="collapse-title font-semibold flex items-center gap-2">
+                        <Podcast className="w-5 h-5 text-black-600" />
+                        Communication Services
+                    </div>
+                    <div className="collapse-content text-sm text-justify">
+                        Similarly, breakthroughs in the communication system accelerates the
+                        flow of information. This era of information technology enables a faster
+                        access to and the dissemination of news, events, and developments
+                        in the domestic and international scene. Under this situation, the citizenry
+                        becomes well-informed of events and developments affecting their lives. <br></br><br></br>
+                        In the area of broadband connection, internet access has been made possible
+                        through the rise in the number of internet providers like PLDT – SMART
+                        and GLOBE among others. Notwithstanding these accomplishments,
+                        interconnection issues among telecommunication providers are
+                        yet to be resolved.
+                    </div>
                 </div>
-            </div>
-            <div className="collapse collapse-arrow bg-base-100 border border-base-300 mb-2">
-                <input type="radio" name="my-accordion-2" />
-                <div className="collapse-title font-semibold flex items-center gap-2">
-                    <LibraryBig className="w-5 h-5 text-black-600" />
-                    Education
+                <h2 className="text-xl font-semibold mb-4">Economic Structure</h2>
+                <div className="collapse collapse-arrow bg-base-100 border border-base-300 mb-2">
+                    <input type="radio" name="my-accordion-2" />
+                    <div className="collapse-title font-semibold flex items-center gap-2">
+                        <PickaxeIcon className="w-5 h-5 text-black-600" />
+                        Mining Industry
+                    </div>
+                    <div className="collapse-content text-sm text-justify">
+                        Cordillera has abundant mineral reserves. These include metallic ores
+                        such as gold, copper, silver, zinc, and non-metallic minerals like sand,
+                        gravel and sulfur. Mineral Reserves are found in all provinces. However,
+                        mining is concentrated in the province of Benguet. <br></br><br></br>
+                        Growth of the region’s mining industry continues to be hampered by problems
+                        such as persistent anti-mining sentiments among some sectors and the issue
+                        on unpaid LGU share from the proceeds of mineral wealth development and utilization.
+                        This notwithstanding, mining still continued to contribute significantly
+                        to the region’s economy.
+                    </div>
                 </div>
-                <div className="collapse-content text-sm text-justify">
-                    A highly trainable English speaking and educated work force is easily
-                    available in the region. Baguio City is known as the educational
-                    center north of Manila, hosting world-class learning institutions
-                    like the Philippine Military Academy and Brent International School. <br></br><br></br>
-                    Various colleges and universities offer different fields catering
-                    to the needs of industries. Likewise, technical and vocational
-                    schools abound as a rich source of skilled manpower.
+                <div className="collapse collapse-arrow bg-base-100 border border-base-300 mb-2">
+                    <input type="radio" name="my-accordion-2" />
+                    <div className="collapse-title font-semibold flex items-center gap-2">
+                        <Binoculars className="w-5 h-5 text-black-600" />
+                        Tourism Industry
+                    </div>
+                    <div className="collapse-content text-sm text-justify">
+                        The Cordillera region have much to offer than just cool weather and
+                        some pine trees. Whether its nature, culture, or just the thrill of
+                        finding something new, it’s definitely worth exploring, one province
+                        at a time. <br></br><br></br> The region in itself is marvelous.
+                        Endowed with naturally sculpted areas suited for eco-tourism,
+                        the Cordillera provinces boast of caves, underground rivers and waterfalls,
+                        many of which remain unexplored. Wildlife sanctuaries, scenic spots and
+                        recreational sites provide perfect destinations for ecotourism.
+                    </div>
                 </div>
-            </div>
-            <div className="collapse collapse-arrow bg-base-100 border border-base-300 mb-2">
-                <input type="radio" name="my-accordion-2" />
-                <div className="collapse-title font-semibold flex items-center gap-2">
-                    <Car className="w-5 h-5 text-black-600" />
-                    Transportation Services
-                </div>
-                <div className="collapse-content text-sm text-justify">
-                    Data on the extent and coverage of transportation and communication
-                    networks of an area are essential. The different modes of transportation
-                    and channels and media communication are vital in the economic, social, and
-                    cultural lives of peoples and institutions in the community.
-                    A well-developed transportation system ensures fast and efficient
-                    transfer of goods and services between traders, households and other
-                    institutions within and outside the geographical limits of the community.
-                </div>
-            </div>
-            <div className="collapse collapse-arrow bg-base-100 border border-base-300 mb-2">
-                <input type="radio" name="my-accordion-2" />
-                <div className="collapse-title font-semibold flex items-center gap-2">
-                    <Podcast className="w-5 h-5 text-black-600" />
-                    Communication Services
-                </div>
-                <div className="collapse-content text-sm text-justify">
-                    Similarly, breakthroughs in the communication system accelerates the
-                    flow of information. This era of information technology enables a faster
-                    access to and the dissemination of news, events, and developments
-                    in the domestic and international scene. Under this situation, the citizenry
-                    becomes well-informed of events and developments affecting their lives. <br></br><br></br>
-                    In the area of broadband connection, internet access has been made possible
-                    through the rise in the number of internet providers like PLDT – SMART
-                    and GLOBE among others. Notwithstanding these accomplishments,
-                    interconnection issues among telecommunication providers are
-                    yet to be resolved.
-                </div>
-            </div>
-            <h2 className="text-xl font-semibold mb-4">Economic Structure</h2>
-            <div className="collapse collapse-arrow bg-base-100 border border-base-300 mb-2">
-                <input type="radio" name="my-accordion-2" />
-                <div className="collapse-title font-semibold flex items-center gap-2">
-                    <PickaxeIcon className="w-5 h-5 text-black-600" />
-                    Mining Industry
-                </div>
-                <div className="collapse-content text-sm text-justify">
-                    Cordillera has abundant mineral reserves. These include metallic ores
-                    such as gold, copper, silver, zinc, and non-metallic minerals like sand,
-                    gravel and sulfur. Mineral Reserves are found in all provinces. However,
-                    mining is concentrated in the province of Benguet. <br></br><br></br>
-                    Growth of the region’s mining industry continues to be hampered by problems
-                    such as persistent anti-mining sentiments among some sectors and the issue
-                    on unpaid LGU share from the proceeds of mineral wealth development and utilization.
-                    This notwithstanding, mining still continued to contribute significantly
-                    to the region’s economy.
-                </div>
-            </div>
-            <div className="collapse collapse-arrow bg-base-100 border border-base-300 mb-2">
-                <input type="radio" name="my-accordion-2" />
-                <div className="collapse-title font-semibold flex items-center gap-2">
-                    <Binoculars className="w-5 h-5 text-black-600" />
-                    Tourism Industry
-                </div>
-                <div className="collapse-content text-sm text-justify">
-                    The Cordillera region have much to offer than just cool weather and
-                    some pine trees. Whether its nature, culture, or just the thrill of
-                    finding something new, it’s definitely worth exploring, one province
-                    at a time. <br></br><br></br> The region in itself is marvelous.
-                    Endowed with naturally sculpted areas suited for eco-tourism,
-                    the Cordillera provinces boast of caves, underground rivers and waterfalls,
-                    many of which remain unexplored. Wildlife sanctuaries, scenic spots and
-                    recreational sites provide perfect destinations for ecotourism.
-                </div>
-            </div>
             </div>
 
             {/* GALLERY */}
             <h1 className="text-4xl font-bold text-center mt-8 mb-8">Gallery</h1>
-            <div className="flex flex-row w-full justify-center">
+            <div className="flex flex-row w-full justify-center mb-8">
                 <div className="tabs tabs-box w-[80%]">
                     {/* Abra */}
                     <input type="radio" name="my_tabs_6" className="tab" aria-label="Abra"/>
