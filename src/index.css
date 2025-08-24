@@ -5,3 +5,15 @@
 html {
     scroll-behavior: smooth;
 }
+
+.fade-in {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease, visibility 1s ease;
+}
+
+.fade-in.show {
+  translate: 0px 0px;
+  opacity: 1;
+  visibility: visible;
+}

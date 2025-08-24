@@ -1,27 +1,88 @@
 import { Phone, Mail, Facebook } from "lucide-react";
-import {Link} from "react-router-dom";
-import ScrollToTop from "./ScrollToTop";
+import { Link } from "react-router-dom";
+import { useState, useRef, useEffect } from "react";
+
 const MainPage = () => {
+    const [showButtons, setShowButton] = useState(false);
+    const [activeSection, setActiveSection] = useState(null);
+    const landingRef = useRef(null);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (!landingRef.current) return;
+
+            const landingHeight = landingRef.current.offsetHeight;
+            const scrollY = window.scrollY;
+
+            setShowButton(scrollY > landingHeight);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    useEffect(() => {
+        const sections = document.querySelectorAll("section[id]");
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute("id");
+                        window.history.replaceState(null, "", `#${id}`);
+                        setActiveSection(id)
+                    }
+                });
+            },
+            {
+                threshold: 0.6, // section must be 60% visible
+            }
+        );
+
+        sections.forEach((section) => observer.observe(section));
+
+        return () => {
+            sections.forEach((section) => observer.unobserve(section));
+        };
+    }, []);
+
     return (
-        <>
-            <ScrollToTop />
+        <div className="relative">
             {/* LANDING PAGE */}
-            <img
-                src="src/assets/Landing-page/Bgleft.png"
-                alt="background"
-                className="absolute left-0 top-0 h-full object-contain z-10"
-            />
-            <img
-                src="src/assets/Landing-page/Bgright.png"
-                alt="background"
-                className="absolute right-0 top-0 h-full object-contain z-10"
-            />
-            <img
-                src="src/assets/Landing-page/igorot.png"
-                alt="background"
-                className="absolute right-0 bottom-0 w-1/2 object-contain z-15"
-            />
-            <section className="relative flex flex-col items-center justify-center w-full h-screen text-center text-gray-900 overflow-hidden">
+
+            {/* BACK TO TOP BUTTON */}
+            {showButtons && (
+                <>  
+                    <div className={`flex flex-col w-fit h-fit font-bold p-2 fixed bottom-5 left-5 z-50`}>
+                        <p onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className={`cursor-pointer text-l text-gray-400 opacity-50 hover:text-xl transition-all `}>Back to top</p>
+                        <p onClick={() => document.getElementById('car').scrollIntoView()} className={`cursor-pointer hover:text-xl transition-all opacity-50 ${activeSection == "car" ? 'text-xl text-green-700 opacity-100' : 'text-l text-gray-400'}`}>Cordillera Administrative Region</p>
+                        <p onClick={() => document.getElementById('bio').scrollIntoView()} className={`cursor-pointer hover:text-xl transition-all opacity-50 ${activeSection == "bio" ? 'text-xl text-green-700' : 'text-l text-gray-400'}`}>Biophysical Profile</p>
+                        <p onClick={() => document.getElementById('enr').scrollIntoView()} className={`cursor-pointer hover:text-xl transition-all opacity-50 ${activeSection == "enr" ? 'text-xl text-green-700' : 'text-l text-gray-400'}`}>ENR Resources</p>
+                        <p onClick={() => document.getElementById('socio').scrollIntoView()} className={`cursor-pointer hover:text-xl transition-all opacity-50 ${activeSection == "socio" ? 'text-xl text-green-700' : 'text-l text-gray-400'}`}>Socio-Cultural and Economic Profile</p>
+                    </div>
+                </>
+            )}
+
+            <section
+                ref={landingRef}
+                className="relative flex flex-col items-center justify-center w-full h-screen text-center text-gray-900 overflow-hidden"
+            >
+                <img
+                    src="src/assets/Landing-page/Bgleft.png"
+                    alt="background"
+                    className="absolute left-0 top-0 h-full object-contain z-10"
+                />
+                <img
+                    src="src/assets/Landing-page/Bgright.png"
+                    alt="background"
+                    className="absolute right-0 top-0 h-full object-contain z-10"
+                />
+                <img
+                    src="src/assets/Landing-page/igorot.png"
+                    alt="background"
+                    className="absolute right-0 bottom-0 w-1/2 object-contain z-15"
+                />
+
                 <div className="relative bottom-17 right-45">
                     <h1 className="text-8xl pb-5 font-bold">One Cordillera</h1>
                     <h2 className="text-5xl md:text-6xl pb-3 mt-2">
@@ -188,7 +249,10 @@ const MainPage = () => {
             </section>
 
             {/* BIOPHYSICAL PROFILE */}
-            <div id="bio" className="flex flex-col items-center justify-center">
+            <section
+                id="bio"
+                className="flex flex-col items-center justify-center"
+            >
                 {/* Title with thinner background */}
                 <div
                     className="w-full flex items-center justify-center py-10 bg-cover bg-center"
@@ -290,11 +354,11 @@ const MainPage = () => {
                         </button>
                     </Link>
                 </div>
-            </div>
+            </section>
 
             {/* ENR RESOURCES */}
-            <section>
-                <div
+            <div>
+                <section
                     id="enr"
                     className="flex flex-row items-center justify-center space-x-6 pr-25 mt-12"
                 >
@@ -318,7 +382,7 @@ const MainPage = () => {
                             sustain agriculture on mountainside rice terraces.
                         </p>
                     </div>
-                </div>
+                </section>
 
                 {/* Land Resources */}
                 <div
@@ -690,7 +754,7 @@ const MainPage = () => {
                         </p>
                     </div>
                 </section>
-            </section>
+            </div>
 
             {/* SOCIO-CULTURAL AND ECONOMIC PROFILE */}
             <section
@@ -875,7 +939,7 @@ const MainPage = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

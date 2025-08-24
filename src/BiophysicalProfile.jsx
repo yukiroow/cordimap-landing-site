@@ -1,5 +1,5 @@
 import { Phone, Mail, Facebook } from "lucide-react";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { useEffect } from "react";
 
 const BiophysicalProfile = () => {
@@ -12,11 +12,8 @@ const BiophysicalProfile = () => {
                 <div className="min-h-screen w-full bg-white text-gray-900 px-8 py-12">
                     {/* Title */}
                     <div className="relative flex items-center mb-20 w-full">
-                        <Link
-                            to={{
-                                pathname: "/",
-                                hash: "#bio",
-                            }}
+                        <HashLink
+                            to="/#bio"
                         >
                             <button className="btn btn-circle absolute left-0 cursor-pointer">
                                 <svg
@@ -40,7 +37,7 @@ const BiophysicalProfile = () => {
                                     </g>
                                 </svg>
                             </button>
-                        </Link>
+                        </HashLink>
 
                         <h1 className="text-5xl font-extrabold tracking-wide text-blue-900 text-center w-full">
                             BIOPHYSICAL PROFILE
