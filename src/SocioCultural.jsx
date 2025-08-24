@@ -212,7 +212,7 @@ const SocioCultural = () => {
                                 </div>
                             </div>
                             <div id="apayao3" className="carousel-item relative w-full flex flex-col items-center">
-                                <img src="src\assets\SCEP-Gallery\lusok-caves.jpg" alt="lusok-caves" className="object-cover w-full h-[700px]" />
+                                <img src="src\assets\SCEP-Gallery\lussok-caves.jpg" alt="lusok-caves" className="object-cover w-full h-[700px]" />
                                 <h2 className="text-lg font-semibold mt-2">Lussok Caves</h2>
                                 <p className="text-sm text-center mb-4 px-[10%]">Apayao’s hidden treasure! This cave hides 7 spacious chambers each having a different tale to tell. The crystal clear underground river that runs through its
                                     chambers, passing through its opposite end and exiting through its gigantic entrance adds grandeur to its majestic gift of nature. The caves’ countless stalactites and stalagmites curved perfectly
