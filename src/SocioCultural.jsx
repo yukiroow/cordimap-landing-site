@@ -9,7 +9,7 @@ const SocioCultural = () => {
                     <ChevronLeft className="absolute left-0 cursor-pointer w-5 h-5 text-black-600" />
                     <h1 className="text-5xl font-extrabold text-center text-green-600 tracking-wide w-full pt-8 mb-8">SOCIO-CULTURAL AND ECONOMIC PROFILE</h1>
                 </div>
-                <div className="w-full px-[12%] flex flex-col justify-center">
+                <div className="w-full px-[10%] flex flex-col justify-center">
                     <h2 className="text-xl font-semibold mb-4">Demography</h2>
                     <div className="collapse collapse-arrow bg-base-100 border border-base-300 mb-2">
                         <input type="radio" name="my-accordion-2" />
