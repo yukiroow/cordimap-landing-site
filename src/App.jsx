@@ -373,7 +373,7 @@ const App = () => {
 
           <div className="absolute inset-0 bg-black/40"></div>
 
-        {/* Content */}
+          {/* Content */}
           <div className="absolute inset-0 z-10 flex items-center justify-center">
             <div className="max-w-7xl text-white py-5">
               <h2 className="text-6xl font-bold mb-4">Water Resources</h2>
@@ -400,24 +400,131 @@ const App = () => {
             backgroundImage: "url('src/assets/Map-images/Watershed 1.png')",
           }}
         >
-          <div className="bg-blue-800 bg-opacity-50 text-white w-[35rem] h-[25rem] p-8 rounded-lg shadow-xl mr-12 ml-40">
-            <h1 className="text-3xl font-bold mb-4">Watersheds</h1>
-            <article>
-              <p className="text-lg leading-relaxed">
-                CAR serves as the watershed of North Luzon. The region cradles
-                13 watersheds which have been affirmed to have enormous
-                water-bearing capacity. These watersheds make CAR a major
-                contributor to the Luzon Power Grid and are also a source of
-                irrigation for the region’s agricultural lands. It is also a
-                source of water for domestic consumption, agriculture and
-                industrial needs of the region.
-              </p>
-            </article>
+          <div className="absolute inset-0 overflow-hidden pointer-events-none ml-12 mr-12">
+            <div className="absolute top-10 left-10 w-2 h-2 bg-blue-400/50  rounded-full animate-pulse" />
+          </div>
+
+          {/* Content*/}
+          <div className="relative z-10 ml-40">
+            <div className="group relative">
+              <div className="relative bg-blue-500/20 backdrop-blur-xl border border-white/10 w-full max-w-2xl p-10 rounded-2xl shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-cyan-500/20">
+                <div
+                  className="absolute inset-0 rounded-2xl bg-gradient-to-r 
+                      from-cyan-400/20 via-blue-500/20 to-indigo-600/20 
+                      opacity-0 group-hover:opacity-100 transition-opacity 
+                      duration-500 -z-10 blur-xl"
+                />
+
+                <div className="relative mb-6">
+                  <h1 className="text-4xl font-bold text-white mb-3">
+                    Watersheds
+                  </h1>
+                  <div className="flex space-x-1 mb-4">
+                    <div className="w-8 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full" />
+                  </div>
+
+                  <p className="text-gray-100 leading-relaxed text-base font-light">
+                    CAR serves as the{" "}
+                    <span className="font-semibold text-cyan-300">
+                      watershed of North Luzon.
+                    </span>{" "}
+                    The region cradles 13 watersheds which have been affirmed to
+                    have{" "}
+                    <span className="font-semibold text-cyan-200">
+                      enormous water-bearing capacity.
+                    </span>
+                  </p>
+                </div>
+
+                <div className="bg-cyan-800/30 backdrop-blur-sm rounded-lg p-3 border border-cyan-500/20 hover:border-cyan-400/40 transition-all duration-300 mb-6">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <div className="text-2xl font-bold text-cyan-300 mb-1">
+                        13
+                      </div>
+                      <div className="text-xs text-cyan-100/80">
+                        Major Watersheds
+                      </div>
+                    </div>
+                    <div className="text-right">
+                      <div className="text-base font-semibold text-blue-300">
+                        North Luzon
+                      </div>
+                      <div className="text-xs text-blue-200/70">
+                        Primary Watershed
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-2 gap-4">
+                  <div
+                    className="bg-blue-800/20 backdrop-blur-sm rounded-lg p-4 
+                        border border-blue-500/20 hover:border-blue-400/40 
+                        transition-all duration-300 hover:scale-105 
+                        flex flex-col justify-center text-center"
+                  >
+                    <div className="w-3 h-3 bg-yellow-400 rounded-full mx-auto mb-2 animate-pulse" />
+                    <h4 className="font-bold text-yellow-300 mb-2 text-sm">
+                      Power Generation
+                    </h4>
+                    <p className="text-xs text-blue-100/80 leading-relaxed">
+                      Major contributor to Luzon Power Grid
+                    </p>
+                  </div>
+
+                  <div
+                    className="bg-emerald-800/20 backdrop-blur-sm rounded-lg p-4 
+                        border border-emerald-500/20 hover:border-emerald-400/40 
+                        transition-all duration-300 hover:scale-105 
+                        flex flex-col justify-center text-center"
+                  >
+                    <div className="w-3 h-3 bg-green-400 rounded-full mx-auto mb-2 animate-pulse delay-300" />
+                    <h4 className="font-bold text-green-300 mb-2 text-sm">
+                      Agricultural Support
+                    </h4>
+                    <p className="text-xs text-emerald-100/80 leading-relaxed">
+                      Irrigation for regional farmlands
+                    </p>
+                  </div>
+
+                  <div
+                    className="bg-purple-800/20 backdrop-blur-sm rounded-lg p-4 
+                        border border-purple-500/20 hover:border-purple-400/40 
+                        transition-all duration-300 hover:scale-105 
+                        flex flex-col justify-center text-center"
+                  >
+                    <div className="w-3 h-3 bg-purple-400 rounded-full mx-auto mb-2 animate-pulse delay-600" />
+                    <h4 className="font-bold text-purple-300 mb-2 text-sm">
+                      Domestic Use
+                    </h4>
+                    <p className="text-xs text-purple-100/80 leading-relaxed">
+                      Household water consumption
+                    </p>
+                  </div>
+
+                  <div
+                    className="bg-orange-800/20 backdrop-blur-sm rounded-lg p-4 
+                        border border-orange-500/20 hover:border-orange-400/40 
+                        transition-all duration-300 hover:scale-105 
+                        flex flex-col justify-center text-center"
+                  >
+                    <div className="w-3 h-3 bg-orange-400 rounded-full mx-auto mb-2 animate-pulse delay-900" />
+                    <h4 className="font-bold text-orange-300 mb-2 text-sm">
+                      Industrial Needs
+                    </h4>
+                    <p className="text-xs text-orange-100/80 leading-relaxed">
+                      Regional industrial water supply
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* BIODIVERSITY  */}
-        <section className="relative bg-white text-gray-900 py-16 px-8 md:px-20">
+        <section className="relative bg-white text-gray-900 py-16 px-8 md:px-30">
           <h1 className="text-3xl font-bold mb-10">
             Biodiversity (Flora / Fauna)
           </h1>
@@ -446,7 +553,7 @@ const App = () => {
                 <img
                   src="src/assets/Biodiversity-images/cassamata.png"
                   alt="Cassamata Hill"
-                  className="w-full h-40 object-cover rounded-lg shadow-md"
+                  className="w-full h-40 object-cover rounded-lg shadow-xl transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
                 />
                 <p className="mt-2 text-sm text-gray-700">
                   Cassamata Hill National Park
@@ -456,7 +563,7 @@ const App = () => {
                 <img
                   src="src/assets/Biodiversity-images/mt-pulag.png"
                   alt="Mt. Pulag"
-                  className="w-full h-40 object-cover rounded-lg shadow-md"
+                  className="w-full h-40 object-cover rounded-lg shadow-xl transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
                 />
                 <p className="mt-2 text-sm text-gray-700">
                   Mt. Pulag National Park
@@ -466,7 +573,7 @@ const App = () => {
                 <img
                   src="src/assets/Biodiversity-images/balbalasang.png"
                   alt="Balbalasang"
-                  className="w-full h-40 object-cover rounded-lg shadow-md"
+                  className="w-full h-40 object-cover rounded-lg shadow-xl transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
                 />
                 <p className="mt-2 text-sm text-gray-700">
                   Balbalasang-Balbalan National Park
@@ -476,7 +583,7 @@ const App = () => {
                 <img
                   src="src/assets/Biodiversity-images/mt-data.png"
                   alt="Mt. Data"
-                  className="w-full h-40 object-cover rounded-lg shadow-md"
+                  className="w-full h-40 object-cover rounded-lg shadow-xl transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
                 />
                 <p className="mt-2 text-sm text-gray-700">
                   Mt. Data National Park
@@ -485,7 +592,7 @@ const App = () => {
             </div>
           </div>
 
-          <div className="mt-12 border-2 border-blue-800 bg-blue-50/30 p-6 rounded-lg">
+          <div className="mt-12 mr-7 ml-7 border-2 border-blue-800 bg-blue-50/30 p-6 rounded-lg">
             <p className="text-lg leading-relaxed text-justify text-gray-800">
               CAR’s Biodiversity is{" "}
               <span className="text-blue-700 font-semibold">
@@ -495,12 +602,18 @@ const App = () => {
               <span className="text-blue-700 font-semibold">
                 human activities{" "}
               </span>
-              such as timber poaching and forest landuse conversion to
-              agricultural use, among others, that are inimical to the pristine
+              such as {" "}
+              <span className="text-blue-700 font-semibold">
+              timber poaching and forest landuse conversion to agricultural use{" "}
+              </span>
+              among others, that are inimical to the pristine
               requirement for rich biodiversity and its sustainable existence.
               The abundance, distribution and degree of threat to which these
-              resources are exposed calls for a rapid and effective response to
-              accelerate the coverage of conservation efforts in the region.
+              resources are 
+              <span className="text-blue-700 font-semibold">
+              exposed calls for a rapid and effective response{" "}
+              </span>
+              to accelerate the coverage of conservation efforts in the region.
             </p>
           </div>
         </section>
