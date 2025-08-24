@@ -1,4 +1,5 @@
 // Touch me
+import { Phone, Mail, Facebook } from "lucide-react";
 
 const App = () => {
   return (
@@ -408,12 +409,7 @@ const App = () => {
           <div className="relative z-10 ml-40">
             <div className="group relative">
               <div className="relative bg-blue-500/20 backdrop-blur-xl border border-white/10 w-full max-w-2xl p-10 rounded-2xl shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-cyan-500/20">
-                <div
-                  className="absolute inset-0 rounded-2xl bg-gradient-to-r 
-                      from-cyan-400/20 via-blue-500/20 to-indigo-600/20 
-                      opacity-0 group-hover:opacity-100 transition-opacity 
-                      duration-500 -z-10 blur-xl"
-                />
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-cyan-400/20 via-blue-500/20 to-indigo-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 blur-xl"/>
 
                 <div className="relative mb-6">
                   <h1 className="text-4xl font-bold text-white mb-3">
@@ -458,12 +454,7 @@ const App = () => {
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">
-                  <div
-                    className="bg-blue-800/20 backdrop-blur-sm rounded-lg p-4 
-                        border border-blue-500/20 hover:border-blue-400/40 
-                        transition-all duration-300 hover:scale-105 
-                        flex flex-col justify-center text-center"
-                  >
+                  <div className="bg-blue-800/20 backdrop-blur-sm rounded-lg p-4 border border-blue-500/20 hover:border-blue-400/40 transition-all duration-300 hover:scale-105 flex flex-col justify-center text-center">
                     <div className="w-3 h-3 bg-yellow-400 rounded-full mx-auto mb-2 animate-pulse" />
                     <h4 className="font-bold text-yellow-300 mb-2 text-sm">
                       Power Generation
@@ -473,13 +464,8 @@ const App = () => {
                     </p>
                   </div>
 
-                  <div
-                    className="bg-emerald-800/20 backdrop-blur-sm rounded-lg p-4 
-                        border border-emerald-500/20 hover:border-emerald-400/40 
-                        transition-all duration-300 hover:scale-105 
-                        flex flex-col justify-center text-center"
-                  >
-                    <div className="w-3 h-3 bg-green-400 rounded-full mx-auto mb-2 animate-pulse delay-300" />
+                  <div className="bg-emerald-800/20 backdrop-blur-sm rounded-lg p-4 border border-emerald-500/20 hover:border-emerald-400/40 transition-all duration-300 hover:scale-105 flex flex-col justify-center text-center">
+                    <div className="w-3 h-3 bg-green-400 rounded-full mx-auto mb-2 animate-pulse delay-300"/>
                     <h4 className="font-bold text-green-300 mb-2 text-sm">
                       Agricultural Support
                     </h4>
@@ -488,12 +474,7 @@ const App = () => {
                     </p>
                   </div>
 
-                  <div
-                    className="bg-purple-800/20 backdrop-blur-sm rounded-lg p-4 
-                        border border-purple-500/20 hover:border-purple-400/40 
-                        transition-all duration-300 hover:scale-105 
-                        flex flex-col justify-center text-center"
-                  >
+                  <div className="bg-purple-800/20 backdrop-blur-sm rounded-lg p-4 border border-purple-500/20 hover:border-purple-400/40 transition-all duration-300 hover:scale-105 flex flex-col justify-center text-center">
                     <div className="w-3 h-3 bg-purple-400 rounded-full mx-auto mb-2 animate-pulse delay-600" />
                     <h4 className="font-bold text-purple-300 mb-2 text-sm">
                       Domestic Use
@@ -503,12 +484,7 @@ const App = () => {
                     </p>
                   </div>
 
-                  <div
-                    className="bg-orange-800/20 backdrop-blur-sm rounded-lg p-4 
-                        border border-orange-500/20 hover:border-orange-400/40 
-                        transition-all duration-300 hover:scale-105 
-                        flex flex-col justify-center text-center"
-                  >
+                  <div className="bg-orange-800/20 backdrop-blur-sm rounded-lg p-4 border border-orange-500/20 hover:border-orange-400/40 transition-all duration-300 hover:scale-105 flex flex-col justify-center text-center">
                     <div className="w-3 h-3 bg-orange-400 rounded-full mx-auto mb-2 animate-pulse delay-900" />
                     <h4 className="font-bold text-orange-300 mb-2 text-sm">
                       Industrial Needs
@@ -602,16 +578,16 @@ const App = () => {
               <span className="text-blue-700 font-semibold">
                 human activities{" "}
               </span>
-              such as {" "}
+              such as{" "}
               <span className="text-blue-700 font-semibold">
-              timber poaching and forest landuse conversion to agricultural use{" "}
+                timber poaching and forest landuse conversion to agricultural
+                use{" "}
               </span>
-              among others, that are inimical to the pristine
-              requirement for rich biodiversity and its sustainable existence.
-              The abundance, distribution and degree of threat to which these
-              resources are 
+              among others, that are inimical to the pristine requirement for
+              rich biodiversity and its sustainable existence. The abundance,
+              distribution and degree of threat to which these resources are
               <span className="text-blue-700 font-semibold">
-              exposed calls for a rapid and effective response{" "}
+                exposed calls for a rapid and effective response{" "}
               </span>
               to accelerate the coverage of conservation efforts in the region.
             </p>
@@ -732,7 +708,7 @@ const App = () => {
         <div className="bg-green-700 text-white py-12 px-6">
           <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center">
             <div className="flex items-center space-x-4 mb-6 md:mb-0">
-              <div className="w-20 h-20 rounded-full flex items-center justify-center flex-shrink-0 p-2">
+              <div className="w-50 h-50 rounded-full flex items-center justify-center flex-shrink-0 p-3">
                 <img
                   src="src/assets/Logos/DENR.png"
                   alt="DENR Logo"
@@ -741,7 +717,7 @@ const App = () => {
               </div>
 
               <div>
-                <h3 className="text-lg font-semibold leading-tight">
+                <h3 className="text-xl font-semibold leading-tight">
                   DENR Compound, Gibraltar
                   <br />
                   Rd, Baguio, Benguet
@@ -749,13 +725,29 @@ const App = () => {
               </div>
             </div>
 
-            {/* Right: Directory */}
-            <div className="text-center md:text-right space-y-2 mt-6 md:mt-0">
-              <h3 className="font-semibold">Directory</h3>
-              <ul className="space-y-1">
-                <li>About</li>
-                <li>Blog</li>
-                <li>Contact Us</li>
+            {/* Directory */}
+            <div className="text-left mt-6 md:mt-0">
+              <h3 className="font-semibold text-xl mb-5">Directory</h3>
+              <ul className="space-y-3">
+                <li className="flex items-center justify-start space-x-2">
+                  <Phone className="w-5 h-5" />
+                  <span>(074) 442 4531</span>
+                </li>
+                <li className="flex items-center justify-start space-x-2">
+                  <Mail className="w-5 h-5" />
+                  <span>car@denr.gov.ph</span>
+                </li>
+                <li className="flex items-center justify-start space-x-2">
+                  <Facebook className="w-5 h-5" />
+                  <a
+                    href="https://www.facebook.com/DENRCAROfficial"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline hover:text-gray-200"
+                  >
+                    <span>DENR-CAR</span>{" "}
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
