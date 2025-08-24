@@ -1,14 +1,16 @@
 // Touch me
 import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
 import BiophysicalProfile from "./BiophysicalProfile";
+import ScrollToTop from "./ScrollToTop";
 
 const App = () => {
     return (
         <BrowserRouter>
-        <Routes>
-            <Route path="/"
-            element={
+            <Routes>
+                <Route path="/"
+                element={
         <>
+        <ScrollToTop/>
         {/* LANDING PAGE */}
         <section className="relative flex flex-col items-center justify-center w-full h-screen text-center text-gray-900 overflow-hidden">
             <img src="src/assets/Landing-page/bgleft.png" alt="background" className="absolute left-0 top-0 h-full object-contain -z-10"/>
@@ -367,12 +369,11 @@ const App = () => {
                 © 2025 Kotl. All rights reserved
             </div>
         </div>
-        
         </>
-            }
-        />
-        <Route path="/biophysical" element={<BiophysicalProfile/>} />
-        </Routes>
+                }
+                />
+            <Route path="/biophysical" element={<BiophysicalProfile/>} />
+            </Routes>
         </BrowserRouter>
     );
 };
