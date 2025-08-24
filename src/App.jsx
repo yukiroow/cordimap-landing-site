@@ -251,26 +251,82 @@ const App = () => {
             backgroundImage: "url('src/assets/Map-images/Land.png')",
           }}
         >
-          <div className="bg-green-800 bg-opacity-50 text-white w-[35rem] h-[25rem] p-8 rounded-lg shadow-xl mr-12 ml-50">
-            <h2 className="text-2xl font-semibold">Land Resources</h2>
+          <div className="absolute inset-0 overflow-hidden pointer-events-none ml-12 mr-12">
+            <div className="absolute top-20 left-20 w-2 h-2 bg-green-400/30 rounded-full animate-pulse" />
+          </div>
 
-            <article>
-              <h3 className="text-xl font-semibold mt-5 mb-3">
-                Land Classification
-              </h3>
-              <p className="text-base leading-relaxed">
-                Cordillera Administrative Region is classified as eighty five percent (85%) forestland and fifteen
-                percent (15%) alienable and disposable (A & D) lands.
-              </p>
-            </article>
+          {/* Content */}
+          <div className="relative z-10 ml-35">
+            <div className="group relative">
+              <div className="relative bg-green-900/20 backdrop-blur-xl border border-white/10 w-full max-w-2xl p-10 rounded-2xl shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-green-500/20">
+                <div className="relative mb-8">
+                  <h2 className="text-4xl font-bold text-white mb-2">
+                    Land Resources
+                  </h2>
+                  <div className="w-20 h-1 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full" />
+                </div>
 
-            <article>
-              <h3 className="text-xl font-semibold mt-5 mb-2">Land Use</h3>
-              <p className="text-base leading-relaxed">
-                Land in the region into follows a land classification system based on land use suitability
-                analysis.
-              </p>
-            </article>
+                <div className="grid grid-cols-2 gap-6 mb-8">
+                  <div className="bg-green-800/30 backdrop-blur-sm rounded-xl p-4 border border-green-500/20 hover:border-green-400/40 transition-all duration-300 hover:transform hover:scale-105">
+                    <div className="text-3xl font-bold text-green-300 mb-1">
+                      85%
+                    </div>
+                    <div className="text-sm text-green-100/80">Forestland</div>
+                  </div>
+                  <div className="bg-emerald-800/30 backdrop-blur-sm rounded-xl p-4 border border-emerald-500/20 hover:border-emerald-400/40 transition-all duration-300 hover:transform hover:scale-105">
+                    <div className="text-3xl font-bold text-emerald-300 mb-1">
+                      15%
+                    </div>
+                    <div className="text-sm text-emerald-100/80">
+                      A & D Lands
+                    </div>
+                  </div>
+                </div>
+
+                {/* Text Section */}
+                <div className="space-y-8">
+                  <article className="relative">
+                    <div className="flex items-start space-x-4">
+                      <div className="flex-shrink-0 w-2 h-2 bg-green-400 rounded-full mt-3 animate-pulse" />
+                      <div>
+                        <h3 className="text-2xl font-bold text-white mb-4 hover:text-green-300 transition-colors duration-300">
+                          Land Classification
+                        </h3>
+                        <p className="text-gray-200 leading-relaxed text-lg font-light">
+                          Cordillera Administrative Region is classified as{""}
+                          <span className="font-semibold text-green-300 bg-green-900/30 px-2 py-1 rounded">
+                            eighty-five percent (85%) forestland
+                          </span>{" "}
+                          and{" "}
+                          <span className="font-semibold text-emerald-300 bg-emerald-900/30 px-2 py-1 rounded">
+                            fifteen percent (15%) alienable and disposable (A &
+                            D) lands.
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article className="relative">
+                    <div className="flex items-start space-x-4">
+                      <div className="flex-shrink-0 w-2 h-2 bg-emerald-400 rounded-full mt-3 animate-pulse delay-500" />
+                      <div>
+                        <h3 className="text-2xl font-bold text-white mb-4 hover:text-emerald-300 transition-colors duration-300">
+                          Land Use
+                        </h3>
+                        <p className="text-gray-200 leading-relaxed text-lg font-light">
+                          Land classification in the region follows a systematic
+                          approach based on comprehensive{" "}
+                          <span className="font-semibold text-emerald-300 underline decoration-emerald-500/50">
+                            land use suitability analysis
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -462,7 +518,8 @@ const App = () => {
               <div className="space-y-4 mb-6">
                 <p className="text-gray-600 leading-relaxed text-justify">
                   Based on the 2015 Census of Population (POPCEN 2015), showing
-                  significant growth compared to the 2010 population of 1,612,820.
+                  significant growth compared to the 2010 population of
+                  1,612,820.
                 </p>
                 <div className="flex justify-between items-center p-4 bg-blue-50 rounded-lg">
                   <span className="text-gray-600 font-medium">
