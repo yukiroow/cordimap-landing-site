@@ -726,7 +726,7 @@ const App = () => {
             </div>
 
             {/* Directory */}
-            <div className="text-left mt-6 md:mt-0">
+            <div className="text-left mt-6 md:mt-0 md:mr-30">
               <h3 className="font-semibold text-xl mb-5">Directory</h3>
               <ul className="space-y-3">
                 <li className="flex items-center justify-start space-x-2">
