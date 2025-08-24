@@ -333,41 +333,58 @@ const App = () => {
         {/* Water Resources Section */}
         <div className="relative min-h-screen flex items-center justify-center">
           <div className="absolute inset-0 grid grid-cols-4">
-            <img
-              src="src/assets/Water-resources/cagayan-river-basin.png"
-              className="object-cover w-full h-full"
-            />
-            <img
-              src="src/assets/Water-resources/abulog-river-basin.png"
-              className="object-cover w-full h-full"
-            />
-            <img
-              src="src/assets/Water-resources/abra-river-basin.png"
-              className="object-cover w-full h-full"
-            />
-            <img
-              src="src/assets/Water-resources/agno-river-basin.png"
-              className="object-cover w-full h-full"
-            />
+            <div className="relative">
+              <img
+                src="src/assets/Water-resources/cagayan-river-basin.png"
+                className="object-cover w-full h-full"
+              />
+              <div className="absolute top-5 left-0 w-full text-white text-center py-2 text-lg font-bold text-shadow-lg/20">
+                Cagayan River Basin
+              </div>
+            </div>
+            <div className="relative">
+              <img
+                src="src/assets/Water-resources/abulog-river-basin.png"
+                className="object-cover w-full h-full"
+              />
+              <div className="absolute top-5 left-0 w-full text-white text-center py-2 text-lg font-bold text-shadow-lg/20">
+                Apayao-Abulog River Basin
+              </div>
+            </div>
+            <div className="relative">
+              <img
+                src="src/assets/Water-resources/abra-river-basin.png"
+                className="object-cover w-full h-full"
+              />
+              <div className="absolute top-5 left-0 w-full text-white text-center py-2 text-lg font-bold text-shadow-lg/20">
+                Abra River Basin
+              </div>
+            </div>
+            <div className="relative">
+              <img
+                src="src/assets/Water-resources/agno-river-basin.png"
+                className="object-cover w-full h-full"
+              />
+              <div className="absolute top-5 left-0 w-full text-white text-center py-2 text-lg font-bold text-shadow-lg/20">
+                Agno River Basin
+              </div>
+            </div>
           </div>
 
           <div className="absolute inset-0 bg-black/40"></div>
 
-          {/* Content */}
           <div className="absolute inset-0 z-10 flex items-center justify-center">
-            <div className="max-w-3xl text-white px-12 py-8">
+            <div className="max-w-4xl text-white px-12 py-8">
               <h2 className="text-4xl font-bold mb-4">Water Resources</h2>
-              <h3 className="text-2xl font-semibold mb-2">
-                Major River Basins
-              </h3>
+              <h3 className="text-2xl font-semibold mb-2">Major River Basins</h3>
               <p className="text-lg leading-relaxed text-justify">
-                There are four (4) major river basins covering the region
-                namely: Cagayan River Basin, Apayao-Abulug River Basin, Abra
-                Riverbasin and Agno River basin. It is home to 13 major
-                watersheds, playing a key role in maintaining ecological balance
-                in Northern Philippines. Most of the major river basins drain to
-                Regions 1 and 2 that serves as the major sources of water for
-                domestic, agricultural, power generation and industrial needs.
+                There are four (4) major river basins covering the region namely:
+                Cagayan River Basin, Apayao-Abulug River Basin, Abra River Basin and
+                Agno River Basin. It is home to 13 major watersheds, playing a key role
+                in maintaining ecological balance in Northern Philippines. Most of the
+                major river basins drain to Regions 1 and 2 that serves as the major
+                sources of water for domestic, agricultural, power generation and
+                industrial needs.
               </p>
             </div>
           </div>
