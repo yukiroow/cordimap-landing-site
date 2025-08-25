@@ -7,10 +7,10 @@ export default {
   theme: {
     extend: {},
     screens: {
-      sm: "480px",   // small devices
-      md: "768px",   // tablets
-      lg: "1279px",  // small desktops
-      xl: "1280px",  // desktops and up
+      sm: "480px",   // Small devices
+      md: "768px",   // Tablets
+      lg: "1279px",  // Small desktops
+      xl: "1280px",  // Desktops and up
     },
   },
   plugins: [

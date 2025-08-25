@@ -128,7 +128,6 @@ const MainPage = () => {
           entered ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3",
         ].join(" ")}
       >
-        {/* local keyframes */}
         <style>{`
     @keyframes floatY { 
       0% { transform: translateY(0) }
@@ -140,7 +139,7 @@ const MainPage = () => {
       to { opacity: 1; transform: translateY(0) } 
     }
   `}</style>
-        {/* Backgrounds – flush against edges, no borders */}
+        {/* Backgrounds */}
         <img
           src="src/assets/Landing-page/Bgleft.png"
           alt="background"
@@ -161,7 +160,7 @@ const MainPage = () => {
             "opacity-0 animate-[softIn_700ms_ease-out_300ms_forwards]",
           ].join(" ")}
         />
-        
+
         <img
           src="src/assets/Landing-page/igorot.png"
           alt="igorot"
@@ -178,34 +177,41 @@ const MainPage = () => {
           }}
         />
 
-      {/* Text and Buttons */}
-<div className="relative z-30 max-w-3xl mx-auto">
-  <h1
-    className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold pb-4 leading-tight opacity-0"
-    style={{
-      animation: entered ? "softIn 600ms ease-out 180ms forwards" : undefined,
-    }}
-  >
-    One Cordillera
-  </h1>
+        {/* Text and Buttons */}
+        <div className="relative z-30 max-w-3xl mx-auto">
+          <h1
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold pb-4 leading-tight opacity-0"
+            style={{
+              animation: entered
+                ? "softIn 600ms ease-out 180ms forwards"
+                : undefined,
+            }}
+          >
+            One Cordillera
+          </h1>
 
-  <h2
-    className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl pb-3 mt-2 leading-snug opacity-0"
-    style={{
-      animation: entered ? "softIn 600ms ease-out 320ms forwards" : undefined,
-    }}
-  >
-    A Glimpse of the <br className="hidden sm:block" /> Mountainous Region
-  </h2>
+          <h2
+            className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl pb-3 mt-2 leading-snug opacity-0"
+            style={{
+              animation: entered
+                ? "softIn 600ms ease-out 320ms forwards"
+                : undefined,
+            }}
+          >
+            A Glimpse of the <br className="hidden sm:block" /> Mountainous
+            Region
+          </h2>
 
-  <p
-    className="text-base sm:text-lg md:text-xl lg:text-2xl mt-2 opacity-0"
-    style={{
-      animation: entered ? "softIn 600ms ease-out 460ms forwards" : undefined,
-    }}
-  >
-    DENR - CAR <br /> 2025
-  </p>
+          <p
+            className="text-base sm:text-lg md:text-xl lg:text-2xl mt-2 opacity-0"
+            style={{
+              animation: entered
+                ? "softIn 600ms ease-out 460ms forwards"
+                : undefined,
+            }}
+          >
+            DENR - CAR <br /> 2025
+          </p>
           <div
             className="flex flex-col sm:flex-row justify-center gap-4 mt-6 opacity-0"
             style={{
@@ -237,7 +243,6 @@ const MainPage = () => {
         />
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/40 z-20 transition-opacity duration-700" />
-
         {/* Content */}
         <div className="relative z-30 flex flex-col items-center space-y-12 sm:space-y-16 md:space-y-20 max-w-6xl w-full">
           {/* Title */}
@@ -246,7 +251,6 @@ const MainPage = () => {
               ABOUT
             </h1>
           </Reveal>
-
           {/* About Icons */}
           <Reveal delay={120}>
             <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-10 md:gap-12 text-center w-full">
@@ -371,7 +375,7 @@ const MainPage = () => {
         id="biophysical"
         className="section-title flex flex-col items-center justify-center w-full"
       >
-        {/* Title with full-bleed background */}
+        {/* Title with background */}
         <Reveal className="w-full">
           <div className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
             <div
@@ -437,7 +441,7 @@ const MainPage = () => {
                   onClose={() => {
                     setShowMore(false);
                     document
-                      .getElementById("biophysical") // was "bio"
+                      .getElementById("biophysical") 
                       ?.scrollIntoView({ behavior: "smooth" });
                   }}
                 />
@@ -485,7 +489,6 @@ const MainPage = () => {
             backgroundImage: "url('src/assets/Map-images/Land.png')",
           }}
         >
-          {/* Marker pulse */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none ml-4 sm:ml-8 mr-4 sm:mr-8">
             <div className="absolute top-10 sm:top-20 left-6 sm:left-20 w-2 h-2 bg-green-400/30 rounded-full animate-pulse" />
           </div>
@@ -696,15 +699,12 @@ const MainPage = () => {
                     "url('src/assets/Map-images/Watershed 1.png')",
                 }}
               >
-                {/* decorative dot */}
                 <div className="absolute inset-0 overflow-hidden pointer-events-none px-4 sm:px-8">
                   <div className="absolute top-10 left-10 w-2 h-2 bg-blue-400/50 rounded-full animate-pulse" />
                 </div>
-
                 {/* Content */}
                 <div className="relative z-10 w-full px-4 sm:px-8 md:px-12 lg:px-20">
                   <div className="group relative max-w-full md:max-w-2xl lg:max-w-3xl md:ml-6 lg:ml-12">
-                    {/* Card container with enter animation */}
                     <div
                       className={[
                         "relative bg-blue-500/20 backdrop-blur-xl border border-white/10 w-full rounded-2xl shadow-2xl",
@@ -716,7 +716,6 @@ const MainPage = () => {
                         "hover:scale-105 hover:shadow-cyan-500/20",
                       ].join(" ")}
                     >
-                      {/* subtle gradient glow on hover */}
                       <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-cyan-400/20 via-blue-500/20 to-indigo-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 blur-xl" />
 
                       <div className="relative mb-6">
@@ -739,8 +738,6 @@ const MainPage = () => {
                           </span>
                         </p>
                       </div>
-
-                      {/* Stat pill */}
                       <div
                         className={[
                           "bg-cyan-800/30 backdrop-blur-sm rounded-lg p-3 border border-cyan-500/20",
@@ -771,8 +768,6 @@ const MainPage = () => {
                           </div>
                         </div>
                       </div>
-
-                      {/* Feature tiles with staggered enter + hover scale */}
                       <div className="grid grid-cols-2 gap-4">
                         {[
                           {
@@ -1030,7 +1025,7 @@ const MainPage = () => {
           </h1>
         </div>
 
-        {/* Preview content (always visible) */}
+        {/* Preview content */}
         <div className="relative z-10 max-w-6xl w-full px-6 sm:px-8 md:px-12 lg:px-16 py-10 text-black text-justify bg-white">
           <div className="text-center mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800">

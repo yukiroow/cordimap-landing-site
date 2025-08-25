@@ -31,7 +31,7 @@ export const Reveal = ({ delay = 0, className = "", children }) => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setInView(true);
-          io.unobserve(el); // one-time animation
+          io.unobserve(el); 
         }
       },
       { threshold: 0.2 }
