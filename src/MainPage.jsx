@@ -23,80 +23,185 @@ const MainPage = () => {
   const entered = useEntered();
 
   return (
-    <div className="relative">
+    <div className="relative pb-16 md:pb-0">
       {/* STICKY QUICK NAV */}
-      {showButtons && !hideNavOnTitle && (
-        <nav className="fixed top-0 left-0 right-0 z-50 bg-blue-600/85 backdrop-blur-sm shadow-md">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6">
-            <div className="flex items-center justify-center h-12 sm:h-14">
-              <div className="flex items-center gap-3 sm:gap-6">
-                <button
-                  onClick={() =>
-                    document
-                      .getElementById("car")
-                      ?.scrollIntoView({ behavior: "smooth" })
-                  }
-                  className={`px-3 sm:px-4 py-1 rounded-md text-white text-sm sm:text-base font-bold tracking-wide transition
-              ${
-                activeSection === "car"
-                  ? "bg-white/20 ring-1 ring-white/40"
-                  : "hover:bg-blue-700"
-              }`}
-                >
-                  CAR
-                </button>
+      {showButtons && (
+        <>
+          {/* Desktop Navigation Bar */}
+          {!hideNavOnTitle && (
+            <div className="hidden md:block">
+              <nav className="fixed top-0 left-0 right-0 z-50 bg-blue-600/85 backdrop-blur-sm shadow-md">
+                <div className="max-w-6xl mx-auto px-4 sm:px-6">
+                  <div className="flex items-center justify-center h-12 sm:h-14">
+                    <div className="flex items-center gap-3 sm:gap-6">
+                      <button
+                        onClick={() =>
+                          document
+                            .getElementById("car")
+                            ?.scrollIntoView({ behavior: "smooth" })
+                        }
+                        className={`px-3 sm:px-4 py-1 rounded-md text-white text-sm sm:text-base font-bold tracking-wide transition
+                    ${
+                      activeSection === "car"
+                        ? "bg-white/20 ring-1 ring-white/40"
+                        : "hover:bg-blue-700"
+                    }`}
+                      >
+                        CAR
+                      </button>
 
-                <button
-                  onClick={() =>
-                    document
-                      .getElementById("biophysical")
-                      ?.scrollIntoView({ behavior: "smooth" })
-                  }
-                  className={`px-3 sm:px-4 py-1 rounded-md text-white text-sm sm:text-base font-bold tracking-wide transition
-              ${
-                activeSection === "biophysical"
-                  ? "bg-white/20 ring-1 ring-white/40"
-                  : "hover:bg-blue-700"
-              }`}
-                >
-                  Biophysical
-                </button>
+                      <button
+                        onClick={() =>
+                          document
+                            .getElementById("biophysical")
+                            ?.scrollIntoView({ behavior: "smooth" })
+                        }
+                        className={`px-3 sm:px-4 py-1 rounded-md text-white text-sm sm:text-base font-bold tracking-wide transition
+                    ${
+                      activeSection === "biophysical"
+                        ? "bg-white/20 ring-1 ring-white/40"
+                        : "hover:bg-blue-700"
+                    }`}
+                      >
+                        Biophysical Profile
+                      </button>
 
-                <button
-                  onClick={() =>
-                    document
-                      .getElementById("enr")
-                      ?.scrollIntoView({ behavior: "smooth" })
-                  }
-                  className={`px-3 sm:px-4 py-1 rounded-md text-white text-sm sm:text-base font-bold tracking-wide transition
-              ${
-                activeSection === "enr"
-                  ? "bg-white/20 ring-1 ring-white/40"
-                  : "hover:bg-blue-700"
-              }`}
-                >
-                  ENR
-                </button>
+                      <button
+                        onClick={() =>
+                          document
+                            .getElementById("enr")
+                            ?.scrollIntoView({ behavior: "smooth" })
+                        }
+                        className={`px-3 sm:px-4 py-1 rounded-md text-white text-sm sm:text-base font-bold tracking-wide transition
+                    ${
+                      activeSection === "enr"
+                        ? "bg-white/20 ring-1 ring-white/40"
+                        : "hover:bg-blue-700"
+                    }`}
+                      >
+                        ENR
+                      </button>
 
-                <button
-                  onClick={() =>
-                    document
-                      .getElementById("socio")
-                      ?.scrollIntoView({ behavior: "smooth" })
-                  }
-                  className={`px-3 sm:px-4 py-1 rounded-md text-white text-sm sm:text-base font-bold tracking-wide transition
-              ${
-                activeSection === "socio"
-                  ? "bg-white/20 ring-1 ring-white/40"
-                  : "hover:bg-blue-700"
-              }`}
-                >
-                  Socioculture
-                </button>
-              </div>
+                      <button
+                        onClick={() =>
+                          document
+                            .getElementById("socio")
+                            ?.scrollIntoView({ behavior: "smooth" })
+                        }
+                        className={`px-3 sm:px-4 py-1 rounded-md text-white text-sm sm:text-base font-bold tracking-wide transition
+                    ${
+                      activeSection === "socio"
+                        ? "bg-white/20 ring-1 ring-white/40"
+                        : "hover:bg-blue-700"
+                    }`}
+                      >
+                        Socio-cultural and Economic Profile
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </nav>
             </div>
-          </div>
-        </nav>
+          )}
+
+          {/* Mobile Navigation Bar */}
+          <nav
+            className="md:hidden fixed left-1/2 -translate-x-1/2
+             bottom-[calc(env(safe-area-inset-bottom,0px)+0.75rem)]
+             w-[92%] max-w-lg z-50
+             rounded-2xl bg-blue-600/85 backdrop-blur-sm shadow-lg px-2 py-2"
+          >
+            <div className="flex items-center justify-between">
+              {/* CAR */}
+              <button
+                aria-label="CAR"
+                onClick={() =>
+                  document
+                    .getElementById("car")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
+                className={`flex flex-col items-center gap-0.5 px-3 py-1 rounded-xl text-white transition
+        ${
+          activeSection === "car"
+            ? "bg-white/20 ring-1 ring-white/40"
+            : "hover:bg-blue-700/90"
+        }`}
+              >
+                <img
+                  src="src/assets/About-images/CAR.svg"
+                  alt="CAR"
+                  className="w-6 h-6"
+                />
+              </button>
+
+              {/* Biophysical */}
+              <button
+                aria-label="Biophysical"
+                onClick={() =>
+                  document
+                    .getElementById("biophysical")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
+                className={`flex flex-col items-center gap-0.5 px-3 py-1 rounded-xl text-white transition
+        ${
+          activeSection === "biophysical"
+            ? "bg-white/20 ring-1 ring-white/40"
+            : "hover:bg-blue-700/90"
+        }`}
+              >
+                <img
+                  src="src/assets/About-images/Biophysical.svg"
+                  alt="Biophysical"
+                  className="w-6 h-6"
+                />
+              </button>
+
+              {/* ENR */}
+              <button
+                aria-label="ENR"
+                onClick={() =>
+                  document
+                    .getElementById("enr")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
+                className={`flex flex-col items-center gap-0.5 px-3 py-1 rounded-xl text-white transition
+        ${
+          activeSection === "enr"
+            ? "bg-white/20 ring-1 ring-white/40"
+            : "hover:bg-blue-700/90"
+        }`}
+              >
+                <img
+                  src="src/assets/About-images/Earth.svg"
+                  alt="ENR"
+                  className="w-6 h-6"
+                />
+              </button>
+
+              {/* Socio-Cultural */}
+              <button
+                aria-label="Socio-Cultural"
+                onClick={() =>
+                  document
+                    .getElementById("socio")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
+                className={`flex flex-col items-center gap-0.5 px-3 py-1 rounded-xl text-white transition
+        ${
+          activeSection === "socio"
+            ? "bg-white/20 ring-1 ring-white/40"
+            : "hover:bg-blue-700/90"
+        }`}
+              >
+                <img
+                  src="src/assets/About-images/SCE.svg"
+                  alt="Socio-Cultural"
+                  className="w-6 h-6"
+                />
+              </button>
+            </div>
+          </nav>
+        </>
       )}
 
       {/* BACK TO TOP ARROW */}
@@ -104,7 +209,12 @@ const MainPage = () => {
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           aria-label="Back to top"
-          className="fixed bottom-5 right-5 z-50 rounded-full p-3 sm:p-3.5 bg-blue-600 text-white shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-white/70 transition"
+          className="md:hidden fixed bottom-20 right-5 z-50 
+               rounded-full p-3 sm:p-3.5 
+               bg-blue-600/80 backdrop-blur-sm 
+               text-white shadow-lg 
+               hover:bg-blue-700 focus:outline-none 
+               focus:ring-2 focus:ring-white/70 transition"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -441,7 +551,7 @@ const MainPage = () => {
                   onClose={() => {
                     setShowMore(false);
                     document
-                      .getElementById("biophysical") 
+                      .getElementById("biophysical")
                       ?.scrollIntoView({ behavior: "smooth" });
                   }}
                 />
@@ -1144,54 +1254,58 @@ const MainPage = () => {
       <Reveal>
         <footer className="w-full bg-green-700 text-white">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
-            <div className="grid gap-8 md:grid-cols-[auto,1fr] items-start md:items-center">
+            {/* Use flex on md+ so items align horizontally */}
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
               {/* Address + Logo */}
-              <Reveal delay={60} className="flex items-center gap-4 sm:gap-5">
-                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full p-2 sm:p-3 shrink-0 ring-1 ring-white/15 bg-white/5">
-                  <img
-                    src="src/assets/Logos/DENR.png"
-                    alt="DENR Logo"
-                    className="w-full h-full object-contain"
-                  />
+              <Reveal delay={60}>
+                <div className="flex items-center gap-4 sm:gap-5">
+                  <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full p-2 sm:p-3 shrink-0 ring-1 ring-white/15 bg-white/5">
+                    <img
+                      src="src/assets/Logos/DENR.png"
+                      alt="DENR Logo"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <h3 className="text-lg sm:text-xl font-semibold leading-tight">
+                    DENR Compound, Gibraltar
+                    <br className="hidden sm:block" />
+                    Rd, Baguio, Benguet
+                  </h3>
                 </div>
-                <h3 className="text-lg sm:text-xl font-semibold leading-tight">
-                  DENR Compound, Gibraltar
-                  <br className="hidden sm:block" />
-                  Rd, Baguio, Benguet
-                </h3>
               </Reveal>
 
               {/* Directory */}
-              <Reveal
-                delay={120}
-                className="justify-self-start md:justify-self-end"
-              >
-                <h3 className="font-semibold text-lg sm:text-xl mb-4 sm:mb-5">
-                  Directory
-                </h3>
-                <ul className="space-y-3 sm:space-y-3.5">
-                  <li className="flex items-center gap-3 group">
-                    <Phone className="w-5 h-5 sm:w-6 sm:h-6 transition-transform group-hover:-translate-y-0.5" />
-                    <span className="text-sm sm:text-base">(074) 442 4531</span>
-                  </li>
-                  <li className="flex items-center gap-3 group">
-                    <Mail className="w-5 h-5 sm:w-6 sm:h-6 transition-transform group-hover:-translate-y-0.5" />
-                    <span className="text-sm sm:text-base">
-                      car@denr.gov.ph
-                    </span>
-                  </li>
-                  <li className="flex items-center gap-3 group">
-                    <Facebook className="w-5 h-5 sm:w-6 sm:h-6 transition-transform group-hover:-translate-y-0.5" />
-                    <a
-                      href="https://www.facebook.com/DENRCAROfficial"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm sm:text-base hover:underline hover:text-gray-200"
-                    >
-                      DENR-CAR
-                    </a>
-                  </li>
-                </ul>
+              <Reveal delay={120}>
+                <div className="text-left md:text-right">
+                  <h3 className="font-semibold text-lg sm:text-xl mb-4 sm:mb-5">
+                    Directory
+                  </h3>
+                  <ul className="space-y-3 sm:space-y-3.5">
+                    <li className="flex items-center gap-3 group md:justify-end">
+                      <Phone className="w-5 h-5 sm:w-6 sm:h-6 transition-transform group-hover:-translate-y-0.5" />
+                      <span className="text-sm sm:text-base">
+                        (074) 442 4531
+                      </span>
+                    </li>
+                    <li className="flex items-center gap-3 group md:justify-end">
+                      <Mail className="w-5 h-5 sm:w-6 sm:h-6 transition-transform group-hover:-translate-y-0.5" />
+                      <span className="text-sm sm:text-base">
+                        car@denr.gov.ph
+                      </span>
+                    </li>
+                    <li className="flex items-center gap-3 group md:justify-end">
+                      <Facebook className="w-5 h-5 sm:w-6 sm:h-6 transition-transform group-hover:-translate-y-0.5" />
+                      <a
+                        href="https://www.facebook.com/DENRCAROfficial"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm sm:text-base hover:underline hover:text-gray-200"
+                      >
+                        DENR-CAR
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </Reveal>
             </div>
           </div>
