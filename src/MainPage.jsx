@@ -23,7 +23,7 @@ const MainPage = () => {
     const entered = useEntered();
 
   return (
-    <div className="relative pb-16 md:pb-0">
+    <div className="relative">
       {/* STICKY QUICK NAV */}
       {showButtons && (
         <>
