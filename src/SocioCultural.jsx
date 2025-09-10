@@ -373,23 +373,15 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\tugot-ni-angalo.JPG"
-                                                alt="tugot-ni-angalo"
+                                                src="src\assets\SCEP-Gallery\abra-kaparkan-falls.JPG"
+                                                alt="kaparkan-falls"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
                                             <h2 className="text-base sm:text-lg font-semibold mt-2">
-                                                Tugot ni Angalo
+                                                Kaparkan Falls
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Translated as "Footprints of
-                                                Angalo", the Adam in Abra
-                                                mythology- it is found in
-                                                Kabaruyan, San Quintin. The
-                                                "footprint" is a perpetual
-                                                monument of Angalo. People claim
-                                                this is a real giant footprint
-                                                around fifteen meters long, five
-                                                meters wide and ten feet deep.
+                                                add desc
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -505,7 +497,7 @@ const SocioCultural = ({ onClose }) => {
                                         >
                                             <img
                                                 src="src\assets\SCEP-Gallery\lussok-caves.jpg"
-                                                alt="lusok-caves"
+                                                alt="lussok-caves"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
                                             <h2 className="text-base sm:text-lg font-semibold mt-2">
@@ -548,22 +540,15 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\placeholder.jpg"
-                                                alt="lusok-caves"
+                                                src="src\assets\SCEP-Gallery\apayao-bayugao-falls.jpg"
+                                                alt="bayugao-falls"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
                                             <h2 className="text-base sm:text-lg font-semibold mt-2">
-                                                Bacut Lake
+                                                Bayugao Falls
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                This body of water supplies 80 –
-                                                100 hectares of rice lands. Its
-                                                exceptional islet at the lake’s
-                                                core keeps it unique from the
-                                                other Lakes in the Philippines.
-                                                It is a potential place for
-                                                camping, boating, off-road
-                                                biking, resting and outing.{" "}
+                                                add desc{" "}
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -586,25 +571,15 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\placeholder.jpg"
-                                                alt="lusok-caves"
+                                                src="src\assets\SCEP-Gallery\apayao-mt-sicapoo.png"
+                                                alt="mt-sicapoo"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
                                             <h2 className="text-base sm:text-lg font-semibold mt-2">
-                                                Manacota Cave and Underground
-                                                River
+                                                Mt. Sicapoo
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                A 20-minute hike upstream the
-                                                Manacota River, this through and
-                                                through underground river hides
-                                                numerous chambers of
-                                                crystallized and untouched
-                                                stalactites and stalagmites and
-                                                a hidden pool about 12 meters
-                                                wide where one can dive and swim
-                                                to experience its cool and
-                                                refreshing water.{" "}
+                                                add desc{" "}
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -628,7 +603,7 @@ const SocioCultural = ({ onClose }) => {
                                         >
                                             <img
                                                 src="src\assets\SCEP-Gallery\galolan-falls.jpg"
-                                                alt="lusok-caves"
+                                                alt="galolan-falls"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
                                             <h2 className="text-base sm:text-lg font-semibold mt-2">
@@ -665,8 +640,8 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\placeholder.jpg"
-                                                alt="lusok-caves"
+                                                src="src\assets\SCEP-Gallery\apayao-nagan-river.jpg"
+                                                alt="nagan-river"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
                                             <h2 className="text-base sm:text-lg font-semibold mt-2">
@@ -751,18 +726,15 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\mt-ugo.jpg"
-                                                alt="mt-ugo"
+                                                src="src\assets\SCEP-Gallery\benguet-farm.png"
+                                                alt="northern-blossoms"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
                                             <h2 className="text-base sm:text-lg font-semibold mt-2">
-                                                Mt. Ugo
+                                                Northern Blossom
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Located at Tinongdan, Itogon,
-                                                Benguet, a thriving tourist
-                                                attraction for mountain
-                                                climbing.
+                                                add desc
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -824,7 +796,7 @@ const SocioCultural = ({ onClose }) => {
                                         >
                                             <img
                                                 src="src\assets\SCEP-Gallery\ambongdolan.jpg"
-                                                alt="mt-purgatory"
+                                                alt="ambongdolan-caves"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
                                             <h2 className="text-base sm:text-lg font-semibold mt-2">
@@ -860,13 +832,12 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\placeholder.jpg"
-                                                alt="mt-purgatory"
+                                                src="src\assets\SCEP-Gallery\benguet-straberry-farm.png"
+                                                alt="strawberry-farm"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
                                             <h2 className="text-base sm:text-lg font-semibold mt-2">
-                                                Burial Caves in Kabayan and
-                                                Buguias
+                                                Strawberry Farm
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
                                                 These are considered sacred
@@ -944,25 +915,23 @@ const SocioCultural = ({ onClose }) => {
                                         >
                                             <img
                                                 src="src/assets/SCEP-Gallery/bangaan-rice-terraces.jpg"
-                                                alt="bangaan-rice-terraces"
+                                                alt="bangaan-terraces"
                                                 className="object-cover object-center w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
                                             <h2 className="text-base sm:text-lg font-semibold mt-2">
                                                 Bangaan Rice Terraces
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Surrounded by scenic terraced
-                                                rice fields is a picturesque
-                                                village whose inhabitants
-                                                continue to preserve their
-                                                traditional way of life.
-                                                Unfortunately, the indigenous
-                                                architectural assembly of
-                                                traditional Ifugao huts is
-                                                undergoing a transformation with
-                                                the construction of new houses
-                                                using modern materials and
-                                                designs
+                                                Surrounded by scenic terraced rice 
+                                                fields is a picturesque village 
+                                                whose inhabitants continue to 
+                                                preserve their traditional way of 
+                                                life. Unfortunately, the indigenous 
+                                                architectural assembly of traditional 
+                                                Ifugao huts is undergoing a 
+                                                transformation with the construction 
+                                                of new houses using modern 
+                                                materials and designs.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1024,25 +993,15 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src/assets/SCEP-Gallery/placeholder.jpg"
-                                                alt="batad-rice-terraces"
+                                                src="src/assets/SCEP-Gallery/ifugao-hawang-village.jpg"
+                                                alt="hawang-village"
                                                 className="object-cover object-center w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
                                             <h2 className="text-base sm:text-lg font-semibold mt-2">
-                                                Bakung “Spider Web” Rice
-                                                Terraces
+                                                Hawang Village
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                This rice terrace cluster is
-                                                located in Poblacion, Hungduan.
-                                                From an aerial view, the Bakung
-                                                rice terraces appear like a
-                                                spider web. However, many parts
-                                                were damaged from bombing during
-                                                World War II while other
-                                                portions were abandoned due to
-                                                erosion caused by natural
-                                                calamities.
+                                                add desc
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1066,28 +1025,15 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src/assets/SCEP-Gallery/napulawan.jpg"
-                                                alt="batad-rice-terraces"
+                                                src="src/assets/SCEP-Gallery/ifugao-kiangan-shrine.jpg"
+                                                alt="kiangan-shrine"
                                                 className="object-cover object-center w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
                                             <h2 className="text-base sm:text-lg font-semibold mt-2">
-                                                Mount Napulawan
+                                                Kiangan Shrine
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                This historic mountain is
-                                                believed to be the last refuge
-                                                of General Tomoyuki Yamashita,
-                                                the commander of the Japanese
-                                                imperial army during World War
-                                                II. Towering at 2,642 meters
-                                                above sea level, Mount Napulawan
-                                                is the highest mountain peak in
-                                                the municipality and the
-                                                second-highest in the province.
-                                                It is the habitat of indigenous
-                                                flora and fauna. The mountain
-                                                has become a popular destination
-                                                for trekkers and campers.
+                                                add desc
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1111,24 +1057,15 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src/assets/SCEP-Gallery/placeholder.jpg"
-                                                alt="batad-rice-terraces"
+                                                src="src/assets/SCEP-Gallery/ifugao-tenogtog-falls.jpg"
+                                                alt="tenogtog-falls"
                                                 className="object-cover object-center w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
                                             <h2 className="text-base sm:text-lg font-semibold mt-2">
-                                                Dakkitan Rice Terraces and
-                                                Natural Pool
+                                                Tenogtog Falls
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Situated beside the road at
-                                                Poblacion, Hungduan is the
-                                                Dakkitan rice terraces where
-                                                tourists can participate in
-                                                agricultural activities such as
-                                                planting or harvesting rice.
-                                                Near the terraces is a natural
-                                                pool with water flowing from the
-                                                foot of Mount Napulawan.
+                                                add desc
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1153,7 +1090,7 @@ const SocioCultural = ({ onClose }) => {
                                         >
                                             <img
                                                 src="src/assets/SCEP-Gallery/tappiyah-waterfalls.jpg"
-                                                alt="batad-rice-terraces"
+                                                alt="tappiyah-waterfalls"
                                                 className="object-cover object-center w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
                                             <h2 className="text-base sm:text-lg font-semibold mt-2">
@@ -1191,7 +1128,7 @@ const SocioCultural = ({ onClose }) => {
                                         >
                                             <img
                                                 src="src/assets/SCEP-Gallery/bangaan-village.jpg"
-                                                alt="batad-rice-terraces"
+                                                alt="bangaan-village"
                                                 className="object-cover object-center w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
                                             <h2 className="text-base sm:text-lg font-semibold mt-2">
@@ -1264,30 +1201,15 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src/assets/SCEP-Gallery/placeholder.jpg"
-                                                alt="batad-rice-terraces"
+                                                src="src/assets/SCEP-Gallery/ifugao-ambuwaya-lake.jpg"
+                                                alt="ambuwaya-lake"
                                                 className="object-cover object-center w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
                                             <h2 className="text-base sm:text-lg font-semibold mt-2">
-                                                Nahtoban Caves
+                                                Ambuwaya Lake
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                The caves have three different
-                                                descending entrances, which
-                                                makes it exciting for cave
-                                                spelunking. Huge quantities of
-                                                guano are found in the caves.
-                                                Atop the hill where these caves
-                                                are located is Sitio Callubung.
-                                                When inside the caves you may
-                                                the reverberations of the
-                                                pounding of rice (the
-                                                traditional mortar and pestle)
-                                                by the villagers. It is located
-                                                at Boliwong, Lagawe and could be
-                                                reached by a 10-minute ride and
-                                                a kilometer hike from the
-                                                barangay center.
+                                                add desc
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1377,29 +1299,15 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\placeholder.jpg"
-                                                alt="banga banga falls"
+                                                src="src\assets\SCEP-Gallery\kalinga-patiking-tunnel.jpg"
+                                                alt="patiking-tunnel"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
                                             <h2 className="text-base sm:text-lg font-semibold mt-2">
-                                                Banga-Banga, Matambong &
-                                                Panpanay Falls
+                                                Patiking Tunnel
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                These are series of three
-                                                waterfalls located at the
-                                                mountains of Barangay Amlao
-                                                passing through Balawag. If
-                                                you’re looking for a nature trip
-                                                and adventure then this is the
-                                                place to go, you can do rock
-                                                climbing and swim at the end of
-                                                a rainbow. The cool waters of
-                                                the falls will surely refresh
-                                                and soothe one’s body. The
-                                                waterfalls are also known for
-                                                its healing wonders according to
-                                                locals.
+                                                add desc
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1472,8 +1380,8 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\placeholder.jpg"
-                                                alt="guilum-canyon-falls"
+                                                src="src\assets\SCEP-Gallery\kalinga-malalao-hills.png"
+                                                alt="malalao-hills"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
                                             <h2 className="text-base sm:text-lg font-semibold mt-2">
@@ -1527,40 +1435,15 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src/assets/SCEP-Gallery/mabarotbot-oil-seepage.jpg"
-                                                alt="mabarotbot-oil-seepage"
+                                                src="src/assets/SCEP-Gallery/mtprovince-sumaguing-cave.png"
+                                                alt="sumaguing-cave"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
                                             <h2 className="text-base sm:text-lg font-semibold mt-2">
-                                                Mabarotbot Oil Seepage
+                                                Sumaguing Cave
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                This tourist site is located at
-                                                Sitio Mabullog which is being
-                                                frequented by local people as a
-                                                picnic site. It is also the
-                                                place where local tourists can
-                                                see bubbling pools of mud caused
-                                                by deposits of suspected methane
-                                                gas. <br />
-                                                <br />
-                                                <span className="hidden sm:inline">
-                                                    Falls and Rivers There are
-                                                    three (3) falls popular
-                                                    among the elder generations
-                                                    of the place. These are the
-                                                    Canabo and Balinsawang Falls
-                                                    both located in Upper
-                                                    Poblacion, and Butang Falls
-                                                    in Makilo, Buringal. The
-                                                    features of these falls
-                                                    include tall and abundant
-                                                    trees, clear cool waters
-                                                    with naturally built swim
-                                                    pools. These sites are ideal
-                                                    for family and group
-                                                    outings.
-                                                </span>
+                                                add desc
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1584,21 +1467,15 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src/assets/SCEP-Gallery/natonin-and-apatan-rice-terraces.jpg"
-                                                alt="natonin-and-apatan-rice-terraces"
+                                                src="src/assets/SCEP-Gallery/mtprovince-hanging-coffins.jpg"
+                                                alt="hanging-conffins"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
                                             <h2 className="text-base sm:text-lg font-semibold mt-2">
-                                                Natonin and Apatan Rice Terraces
+                                                Hanging Coffins
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Centuries old Rice Terraces were
-                                                carved in the mountains of
-                                                Natonin that has provided rice
-                                                supply not only for local
-                                                residents but also to the
-                                                neighboring towns of Barlig and
-                                                Paracelis.
+                                                add desc
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -2035,44 +1912,6 @@ const SocioCultural = ({ onClose }) => {
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
                                                     href="#manmade10"
-                                                    className="btn btn-circle"
-                                                >
-                                                    ❮
-                                                </a>
-                                                <a
-                                                    href="#manmade12"
-                                                    className="btn btn-circle"
-                                                >
-                                                    ❯
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        {/* Slide 12 */}
-                                        <div
-                                            id="manmade12"
-                                            className="carousel-item relative w-full flex flex-col items-center"
-                                        >
-                                            <img
-                                                src="src\assets\SCEP-Gallery\placeholder.jpg"
-                                                alt="chico-river-diversion-dam"
-                                                className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
-                                            />
-                                            <h2 className="text-base sm:text-lg font-semibold mt-2 text-center">
-                                                Chico River Diversion Dam
-                                            </h2>
-                                            <p className="text-xs sm:text-sm md:text-base text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                The diversion dam regulates
-                                                water from the Chico River into
-                                                the irrigation area. Part of
-                                                NIA’s irrigation scheme designed
-                                                to harness the massive volume of
-                                                water that flows down the Chico
-                                                River for use in farming.
-                                            </p>
-                                            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                                                <a
-                                                    href="#manmade11"
                                                     className="btn btn-circle"
                                                 >
                                                     ❮
