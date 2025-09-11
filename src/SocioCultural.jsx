@@ -381,7 +381,13 @@ const SocioCultural = ({ onClose }) => {
                                                 Kaparkan Falls
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                add desc
+                                                Kaparkan Falls, also known as Mulawin 
+                                                Falls, is a stunning multi-tiered 
+                                                waterfall located in Tineg, Abra, 
+                                                Philippines. Known for its natural 
+                                                terraces resembling rice paddies, the 
+                                                falls become beautiful during 
+                                                the rainy season
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -428,13 +434,9 @@ const SocioCultural = ({ onClose }) => {
                                                 thrill of climbing the rock
                                                 formations and the relaxing view
                                                 of Luna’s nature from the top of
-                                                the rocks. This unique limestone
-                                                rock formation is a historical
-                                                site as it served as a fortress
-                                                for the locals of Marag during
-                                                the years of insurgency. The
-                                                crevices and mazes offered the
-                                                people shelter and safety.
+                                                the rocks. This rock formation 
+                                                is a historical site as it served 
+                                                as a fortress for the locals.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -504,7 +506,7 @@ const SocioCultural = ({ onClose }) => {
                                                 Lussok Caves
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Apayao’s hidden treasure! This
+                                                This
                                                 cave hides 7 spacious chambers
                                                 each having a different tale to
                                                 tell. The crystal clear
@@ -513,11 +515,7 @@ const SocioCultural = ({ onClose }) => {
                                                 through its opposite end and
                                                 exiting through its gigantic
                                                 entrance adds grandeur to its
-                                                majestic gift of nature. The
-                                                caves’ countless stalactites and
-                                                stalagmites curved perfectly by
-                                                nature continues to amaze
-                                                visitors.
+                                                majestic gift of nature.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -548,7 +546,11 @@ const SocioCultural = ({ onClose }) => {
                                                 Bayugao Falls
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                add desc{" "}
+                                                Bayugao Falls revealed itself as a 
+                                                beautiful three-tiered cascade, 
+                                                with natural pools at each level. 
+                                                The sound of the rushing water 
+                                                echoed through the area.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -579,7 +581,12 @@ const SocioCultural = ({ onClose }) => {
                                                 Mt. Sicapoo
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                add desc{" "}
+                                                Mount Sicapoo is a prominent peak 
+                                                in the Cordillera mountain range 
+                                                of the Philippines, standing at 
+                                                approximately 2,354 meters above 
+                                                sea level. It is located in the 
+                                                rovince of Apayao.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -734,7 +741,11 @@ const SocioCultural = ({ onClose }) => {
                                                 Northern Blossom
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                add desc
+                                                Northern Blossom has a two-hectares 
+                                                wide plantation. Northern Blossom is 
+                                                located in Sayangan, Atok, Benguet. It 
+                                                is approximately 1.5 hours away from 
+                                                Baguio City.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -840,9 +851,13 @@ const SocioCultural = ({ onClose }) => {
                                                 Strawberry Farm
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                These are considered sacred
-                                                grounds and home to naturally
-                                                preserved mummies and skulls.
+                                                Strawberries are famous in Baguio 
+                                                and the surrounding La Trinidad 
+                                                area of Benguet province because 
+                                                the cool climate and high altitude 
+                                                are ideal for growing strawberries, 
+                                                which isn't possible in most other 
+                                                parts of the Philippines.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -994,14 +1009,19 @@ const SocioCultural = ({ onClose }) => {
                                         >
                                             <img
                                                 src="src/assets/SCEP-Gallery/ifugao-hawang-village.jpg"
-                                                alt="hawang-village"
+                                                alt="hiwang-village"
                                                 className="object-cover object-center w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
                                             <h2 className="text-base sm:text-lg font-semibold mt-2">
-                                                Hawang Village
+                                                Hiwang Village
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                add desc
+                                                Hiwang Village, located in Banaue, 
+                                                Ifugao, Philippines, is an indigenous 
+                                                community with a history spanning 
+                                                approximately 250 years. The purpose of 
+                                                the proprietors in building this village is to 
+                                                preserve these Ifugao Native Houses 
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1033,7 +1053,11 @@ const SocioCultural = ({ onClose }) => {
                                                 Kiangan Shrine
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                add desc
+                                                The Kiangan National Shrine also known as the 
+                                                Yamashita Shrine is a war memorial in Kiangan, 
+                                                Ifugao, Philippines. This shrine commemorates 
+                                                the bravery and sacrifices made during World War II.
+
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1065,7 +1089,11 @@ const SocioCultural = ({ onClose }) => {
                                                 Tenogtog Falls
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                add desc
+                                                Tenogtog Falls is a natural waterfall 
+                                                with three-tiered natural pools, each 
+                                                about 12 meters apart, cascading 
+                                                beautifully into one another amidst 
+                                                lush greenery.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1209,7 +1237,11 @@ const SocioCultural = ({ onClose }) => {
                                                 Ambuwaya Lake
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                add desc
+                                                Ambuwaya Lake is a serene 
+                                                destination located in a quiet village 
+                                                within the Kiangan municipality. The people of 
+                                                Kiangan call the lake Ambuwayya because it is believed the small 
+                                                body of water was once the habitation of a fierce crocodile
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1252,31 +1284,14 @@ const SocioCultural = ({ onClose }) => {
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
                                                 It is referred to as a "river of
-                                                life" for the Kalinga people who
-                                                live along the riverbank, and is
+                                                life" for the Kalinga people and is
                                                 well known among development
                                                 workers because of the Chico
                                                 River Dam Project, an electric
                                                 power generation project which
                                                 local residents resisted for
                                                 three decades before it was
-                                                finally shelved in the 1980s - a
-                                                landmark case study concerning
-                                                ancestral domain issues in the
-                                                Philippines. It has a length of
-                                                174.67 kilometers and a major
-                                                tributary of the Cagayan River.
-                                                Its highest headwaters begin at
-                                                Tinoc, Ifugao; Buguias, Benguet;
-                                                and Mountain Province, and its
-                                                tributaries are the Bonnong
-                                                River to the south, It is also
-                                                where the renowned Chico River
-                                                White Water rafting is
-                                                experienced with its world class
-                                                rapids, complete with
-                                                breathtaking scenery along the
-                                                way.
+                                                finally shelved in the 1980s.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1307,7 +1322,11 @@ const SocioCultural = ({ onClose }) => {
                                                 Patiking Tunnel
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                add desc
+                                                Patiking Tunnel is one of the century-old 
+                                                artificial tunnels found in Barangay Dupag, 
+                                                Tabuk City. It has boosted tourism activities 
+                                                because of its importance to the community 
+                                                and majestic view.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1345,19 +1364,7 @@ const SocioCultural = ({ onClose }) => {
                                                 rocks and stones that created
                                                 natural pools, and descends down
                                                 to meet the Chico River, it is
-                                                located at Bagumbayan, it is
-                                                ideal for swimming, rock
-                                                climbing, picnics, trekking and
-                                                a side trip for white water
-                                                rafters. This is not a major
-                                                waterfall, but it is an
-                                                interesting combination of water
-                                                and rock. The falls has carved
-                                                out a lot of large and
-                                                interesting curves into the
-                                                rock. You have to see it to
-                                                fully appreciate these wonderful
-                                                creations of nature.
+                                                located at Bagumbayan.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1396,11 +1403,7 @@ const SocioCultural = ({ onClose }) => {
                                                 in sizes, these unique
                                                 mound-shaped hills are scattered
                                                 throughout the barangay of
-                                                Malalao. Excellent for
-                                                sightseeing, biking, day hiking
-                                                and picnics. This place is also
-                                                frequented by migratorybirds
-                                                during the summer season.
+                                                Malalao.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1443,7 +1446,12 @@ const SocioCultural = ({ onClose }) => {
                                                 Sumaguing Cave
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                add desc
+                                                Located in the mountain town of 
+                                                Sagada in the Cordillera region, 
+                                                Often referred to as the "Big Cave," 
+                                                it is the largest of several caves in the area 
+                                                and is a must-visit for adventure seekers 
+                                                who want to explore the dramatic underground world 
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1475,7 +1483,12 @@ const SocioCultural = ({ onClose }) => {
                                                 Hanging Coffins
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                add desc
+                                                Hanging coffins of Sagada are small 
+                                                as the corpse is buried in the 
+                                                foetal position. Members of the Igorot tribe bury 
+                                                their dead in a coffin, nailed to 
+                                                the sides of cliff faces high above 
+                                                the ground. 
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1573,9 +1586,7 @@ const SocioCultural = ({ onClose }) => {
                                                 Peñarrubia. A shrine of the
                                                 blessed mother cradling Infant
                                                 Jesus was built near a reservoir
-                                                of Bangued waterworks. A
-                                                swimming pool is also available
-                                                for swimmers.
+                                                of Bangued waterworks.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1644,7 +1655,11 @@ const SocioCultural = ({ onClose }) => {
                                                 WINACA Eco Cultural Village
                                             </h2>
                                             <p className="text-xs sm:text-sm md:text-base text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                At Ambassador, Tublay, Benguet
+                                                Located in Tublay, Benguet province, 
+                                                this 42-hectare private property is the 
+                                                perfect venue for travelers looking for 
+                                                an authentic cultural experience in the 
+                                                Philippine highlands.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1673,10 +1688,14 @@ const SocioCultural = ({ onClose }) => {
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
                                             <h2 className="text-base sm:text-lg font-semibold mt-2 text-center">
-                                                Half Tunnel and Highest Point
+                                                Halsema's Half Tunnel
                                             </h2>
                                             <p className="text-xs sm:text-sm md:text-base text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                At Atok, Benguet
+                                                The Natumpukan Half Tunnel stands as a 
+                                                testament to resilience and creativity 
+                                                in the face of natural calamities. It is 
+                                                also known as Halsema’s Half Tunnel 
+                                                Portion as it is located in Halsema Highway.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1755,10 +1774,7 @@ const SocioCultural = ({ onClose }) => {
                                                 ranging from farming and hunting
                                                 equipment, household utensils,
                                                 weaving and war implements of
-                                                the olden days. The museum also
-                                                displays an illustrated
-                                                genealogy of the Ifugao
-                                                ancestry.
+                                                the olden days.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1790,11 +1806,10 @@ const SocioCultural = ({ onClose }) => {
                                                 Magat Dam
                                             </h2>
                                             <p className="text-xs sm:text-sm md:text-base text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Built in 1970’s, it is reputedly
-                                                the biggest dam in Asia. It is
-                                                located about 25 kilometers from
-                                                Sta. Maria, Alfonso Lista. It is
-                                                conducive for boating.
+                                                Magat Dam is a large rock-fill dam on 
+                                                the island of Luzon in the Philippines. 
+                                                Construction of  the dam started in 1975 and completed in 1982. 
+                                                Magat Dam is one of the largest dams in the Philippines 
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
