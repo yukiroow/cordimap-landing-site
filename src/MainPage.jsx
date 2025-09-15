@@ -290,7 +290,7 @@ const MainPage = () => {
                 />
 
                 {/* Text and Buttons */}
-                <div className="relative z-30 max-w-3xl mx-auto">
+                <div className="relative z-30 max-w-3xl mx-auto justify-left">
                     <h1
                         className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold pb-4 leading-tight opacity-0"
                         style={{

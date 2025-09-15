@@ -283,15 +283,14 @@ const SocioCultural = ({ onClose }) => {
                     </Reveal>
 
                     <Reveal delay={80}>
-                        <div className="flex w-full justify-center mb-6 sm:mb-8 px-4 sm:px-6">
-                            <div className="tabs tabs-boxed w-full sm:w-5/6 lg:w-4/5 max-w-6xl flex justify-center">
+                        <div className="flex w-full justify-center mb-6 sm:mb-8">
+                            <div className="tabs tabs-boxed w-full flex justify-center">
                                 {/* Abra */}
                                 <input
                                     type="radio"
                                     name="my_tabs_6"
                                     className="tab"
                                     aria-label="Abra"
-                                    defaultChecked
                                 />
                                 <div className="tab-content bg-base-100 border-base-300 p-4 sm:p-6">
                                     <div className="carousel w-full mx-auto rounded-lg shadow-md">
@@ -381,12 +380,12 @@ const SocioCultural = ({ onClose }) => {
                                                 Kaparkan Falls
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Kaparkan Falls, also known as Mulawin 
-                                                Falls, is a stunning multi-tiered 
-                                                waterfall located in Tineg, Abra, 
-                                                Philippines. Known for its natural 
-                                                terraces resembling rice paddies, the 
-                                                falls become beautiful during 
+                                                Kaparkan Falls, also known as Mulawin
+                                                Falls, is a stunning multi-tiered
+                                                waterfall located in Tineg, Abra,
+                                                Philippines. Known for its natural
+                                                terraces resembling rice paddies, the
+                                                falls become beautiful during
                                                 the rainy season
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -434,8 +433,8 @@ const SocioCultural = ({ onClose }) => {
                                                 thrill of climbing the rock
                                                 formations and the relaxing view
                                                 of Luna’s nature from the top of
-                                                the rocks. This rock formation 
-                                                is a historical site as it served 
+                                                the rocks. This rock formation
+                                                is a historical site as it served
                                                 as a fortress for the locals.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -546,10 +545,10 @@ const SocioCultural = ({ onClose }) => {
                                                 Bayugao Falls
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Bayugao Falls revealed itself as a 
-                                                beautiful three-tiered cascade, 
-                                                with natural pools at each level. 
-                                                The sound of the rushing water 
+                                                Bayugao Falls revealed itself as a
+                                                beautiful three-tiered cascade,
+                                                with natural pools at each level.
+                                                The sound of the rushing water
                                                 echoed through the area.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -581,11 +580,11 @@ const SocioCultural = ({ onClose }) => {
                                                 Mt. Sicapoo
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Mount Sicapoo is a prominent peak 
-                                                in the Cordillera mountain range 
-                                                of the Philippines, standing at 
-                                                approximately 2,354 meters above 
-                                                sea level. It is located in the 
+                                                Mount Sicapoo is a prominent peak
+                                                in the Cordillera mountain range
+                                                of the Philippines, standing at
+                                                approximately 2,354 meters above
+                                                sea level. It is located in the
                                                 rovince of Apayao.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -741,10 +740,10 @@ const SocioCultural = ({ onClose }) => {
                                                 Northern Blossom
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Northern Blossom has a two-hectares 
-                                                wide plantation. Northern Blossom is 
-                                                located in Sayangan, Atok, Benguet. It 
-                                                is approximately 1.5 hours away from 
+                                                Northern Blossom has a two-hectares
+                                                wide plantation. Northern Blossom is
+                                                located in Sayangan, Atok, Benguet. It
+                                                is approximately 1.5 hours away from
                                                 Baguio City.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -851,12 +850,12 @@ const SocioCultural = ({ onClose }) => {
                                                 Strawberry Farm
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Strawberries are famous in Baguio 
-                                                and the surrounding La Trinidad 
-                                                area of Benguet province because 
-                                                the cool climate and high altitude 
-                                                are ideal for growing strawberries, 
-                                                which isn't possible in most other 
+                                                Strawberries are famous in Baguio
+                                                and the surrounding La Trinidad
+                                                area of Benguet province because
+                                                the cool climate and high altitude
+                                                are ideal for growing strawberries,
+                                                which isn't possible in most other
                                                 parts of the Philippines.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -882,6 +881,7 @@ const SocioCultural = ({ onClose }) => {
                                     name="my_tabs_6"
                                     className="tab mb-1"
                                     aria-label="Ifugao"
+                                    defaultChecked
                                 />
                                 <div className="tab-content bg-base-100 border-base-300 p-4 sm:p-6">
                                     <div className="carousel w-full mx-auto rounded-lg shadow-md">
@@ -937,15 +937,15 @@ const SocioCultural = ({ onClose }) => {
                                                 Bangaan Rice Terraces
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Surrounded by scenic terraced rice 
-                                                fields is a picturesque village 
-                                                whose inhabitants continue to 
-                                                preserve their traditional way of 
-                                                life. Unfortunately, the indigenous 
-                                                architectural assembly of traditional 
-                                                Ifugao huts is undergoing a 
-                                                transformation with the construction 
-                                                of new houses using modern 
+                                                Surrounded by scenic terraced rice
+                                                fields is a picturesque village
+                                                whose inhabitants continue to
+                                                preserve their traditional way of
+                                                life. Unfortunately, the indigenous
+                                                architectural assembly of traditional
+                                                Ifugao huts is undergoing a
+                                                transformation with the construction
+                                                of new houses using modern
                                                 materials and designs.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -1016,12 +1016,12 @@ const SocioCultural = ({ onClose }) => {
                                                 Hiwang Village
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Hiwang Village, located in Banaue, 
-                                                Ifugao, Philippines, is an indigenous 
-                                                community with a history spanning 
-                                                approximately 250 years. The purpose of 
-                                                the proprietors in building this village is to 
-                                                preserve these Ifugao Native Houses 
+                                                Hiwang Village, located in Banaue,
+                                                Ifugao, Philippines, is an indigenous
+                                                community with a history spanning
+                                                approximately 250 years. The purpose of
+                                                the proprietors in building this village is to
+                                                preserve these Ifugao Native Houses
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1053,9 +1053,9 @@ const SocioCultural = ({ onClose }) => {
                                                 Kiangan Shrine
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                The Kiangan National Shrine also known as the 
-                                                Yamashita Shrine is a war memorial in Kiangan, 
-                                                Ifugao, Philippines. This shrine commemorates 
+                                                The Kiangan National Shrine also known as the
+                                                Yamashita Shrine is a war memorial in Kiangan,
+                                                Ifugao, Philippines. This shrine commemorates
                                                 the bravery and sacrifices made during World War II.
 
                                             </p>
@@ -1089,10 +1089,10 @@ const SocioCultural = ({ onClose }) => {
                                                 Tenogtog Falls
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Tenogtog Falls is a natural waterfall 
-                                                with three-tiered natural pools, each 
-                                                about 12 meters apart, cascading 
-                                                beautifully into one another amidst 
+                                                Tenogtog Falls is a natural waterfall
+                                                with three-tiered natural pools, each
+                                                about 12 meters apart, cascading
+                                                beautifully into one another amidst
                                                 lush greenery.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -1237,10 +1237,10 @@ const SocioCultural = ({ onClose }) => {
                                                 Ambuwaya Lake
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Ambuwaya Lake is a serene 
-                                                destination located in a quiet village 
-                                                within the Kiangan municipality. The people of 
-                                                Kiangan call the lake Ambuwayya because it is believed the small 
+                                                Ambuwaya Lake is a serene
+                                                destination located in a quiet village
+                                                within the Kiangan municipality. The people of
+                                                Kiangan call the lake Ambuwayya because it is believed the small
                                                 body of water was once the habitation of a fierce crocodile
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -1322,10 +1322,10 @@ const SocioCultural = ({ onClose }) => {
                                                 Patiking Tunnel
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Patiking Tunnel is one of the century-old 
-                                                artificial tunnels found in Barangay Dupag, 
-                                                Tabuk City. It has boosted tourism activities 
-                                                because of its importance to the community 
+                                                Patiking Tunnel is one of the century-old
+                                                artificial tunnels found in Barangay Dupag,
+                                                Tabuk City. It has boosted tourism activities
+                                                because of its importance to the community
                                                 and majestic view.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -1446,12 +1446,12 @@ const SocioCultural = ({ onClose }) => {
                                                 Sumaguing Cave
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Located in the mountain town of 
-                                                Sagada in the Cordillera region, 
-                                                Often referred to as the "Big Cave," 
-                                                it is the largest of several caves in the area 
-                                                and is a must-visit for adventure seekers 
-                                                who want to explore the dramatic underground world 
+                                                Located in the mountain town of
+                                                Sagada in the Cordillera region,
+                                                Often referred to as the "Big Cave,"
+                                                it is the largest of several caves in the area
+                                                and is a must-visit for adventure seekers
+                                                who want to explore the dramatic underground world
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1483,12 +1483,12 @@ const SocioCultural = ({ onClose }) => {
                                                 Hanging Coffins
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Hanging coffins of Sagada are small 
-                                                as the corpse is buried in the 
-                                                foetal position. Members of the Igorot tribe bury 
-                                                their dead in a coffin, nailed to 
-                                                the sides of cliff faces high above 
-                                                the ground. 
+                                                Hanging coffins of Sagada are small
+                                                as the corpse is buried in the
+                                                foetal position. Members of the Igorot tribe bury
+                                                their dead in a coffin, nailed to
+                                                the sides of cliff faces high above
+                                                the ground.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1516,14 +1516,7 @@ const SocioCultural = ({ onClose }) => {
                                     aria-label="Man-Made"
                                 />
                                 <div className="tab-content bg-base-100 border-base-300 p-4 sm:p-6">
-                                    <p className="text-xs sm:text-sm md:text-base text-center mb-4 sm:mb-6 px-4 sm:px-[10%] leading-relaxed">
-                                        These tourist sites supplement the
-                                        natural sites and serves as potential
-                                        tourist destinations. Remnants of
-                                        Spanish settlements are preserved in the
-                                        old church ruins of Barangays Mataguisi
-                                        and Poblacion, Pudtol respectively.
-                                    </p>
+                                    
 
                                     <div className="carousel w-full mx-auto rounded-lg shadow-md">
                                         {/* Slide 1 */}
@@ -1655,10 +1648,10 @@ const SocioCultural = ({ onClose }) => {
                                                 WINACA Eco Cultural Village
                                             </h2>
                                             <p className="text-xs sm:text-sm md:text-base text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Located in Tublay, Benguet province, 
-                                                this 42-hectare private property is the 
-                                                perfect venue for travelers looking for 
-                                                an authentic cultural experience in the 
+                                                Located in Tublay, Benguet province,
+                                                this 42-hectare private property is the
+                                                perfect venue for travelers looking for
+                                                an authentic cultural experience in the
                                                 Philippine highlands.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -1691,10 +1684,10 @@ const SocioCultural = ({ onClose }) => {
                                                 Halsema's Half Tunnel
                                             </h2>
                                             <p className="text-xs sm:text-sm md:text-base text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                The Natumpukan Half Tunnel stands as a 
-                                                testament to resilience and creativity 
-                                                in the face of natural calamities. It is 
-                                                also known as Halsema’s Half Tunnel 
+                                                The Natumpukan Half Tunnel stands as a
+                                                testament to resilience and creativity
+                                                in the face of natural calamities. It is
+                                                also known as Halsema’s Half Tunnel
                                                 Portion as it is located in Halsema Highway.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -1806,10 +1799,10 @@ const SocioCultural = ({ onClose }) => {
                                                 Magat Dam
                                             </h2>
                                             <p className="text-xs sm:text-sm md:text-base text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Magat Dam is a large rock-fill dam on 
-                                                the island of Luzon in the Philippines. 
-                                                Construction of  the dam started in 1975 and completed in 1982. 
-                                                Magat Dam is one of the largest dams in the Philippines 
+                                                Magat Dam is a large rock-fill dam on
+                                                the island of Luzon in the Philippines.
+                                                Construction of  the dam started in 1975 and completed in 1982.
+                                                Magat Dam is one of the largest dams in the Philippines
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
