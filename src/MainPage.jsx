@@ -27,6 +27,10 @@ import mtData from "./assets/Biodiversity-images/mt-data.png";
 import economic from "./assets/Biodiversity-images/economic.png";
 import denrLogo from "./assets/Logos/DENR.png";
 import fallsVideo from "./assets/About-images/Falls.mp4";
+import landImg from "./assets/Map-images/Land.png";
+import waterImg from "./assets/Map-images/Watershed 1.png";
+import bioBg from "./assets/Biophysical-images/bg.png";
+import enrBg from "./assets/Biophysical-images/ENR.png";
 
 import {
     Reveal,
@@ -546,8 +550,7 @@ const MainPage = () => {
                         <div
                             className="flex items-center justify-center py-6 sm:py-10 bg-cover bg-center px-4"
                             style={{
-                                backgroundImage:
-                                    "url('src/assets/Biophysical-images/bg.png')",
+                                backgroundImage: `url(${bioBg})`,
                             }}
                         >
                             <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white text-center">
@@ -634,8 +637,7 @@ const MainPage = () => {
                         <div
                             className="relative w-full rounded-xl overflow-hidden bg-cover bg-center flex items-center justify-center py-8 sm:py-10 md:py-12"
                             style={{
-                                backgroundImage:
-                                    "url('src/assets/Biophysical-images/ENR.png')",
+                                backgroundImage: `url(${enrBg})`,
                             }}
                         >
                             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white text-center">
@@ -662,8 +664,7 @@ const MainPage = () => {
                 <div
                     className="relative bg-cover bg-center min-h-[60vh] sm:min-h-[70vh] md:min-h-screen flex items-center"
                     style={{
-                        backgroundImage:
-                            "url('src/assets/Map-images/Land.png')",
+                        backgroundImage: `url(${landImg})`,
                     }}
                 >
                     <div className="absolute inset-0 overflow-hidden pointer-events-none ml-4 sm:ml-8 mr-4 sm:mr-8">
@@ -676,10 +677,10 @@ const MainPage = () => {
                             <div className="group relative max-w-full md:max-w-2xl lg:max-w-3xl md:ml-8 lg:ml-12 xl:ml-16">
                                 <div
                                     className="relative bg-green-900/20 backdrop-blur-xl border border-white/10 
-                  w-full p-6 sm:p-8 md:p-10 rounded-2xl shadow-2xl
-                  my-8 sm:my-12 md:my-16 
-                  transform transition-all duration-500 
-                  hover:scale-[1.01] hover:shadow-green-500/20"
+                                            w-full p-6 sm:p-8 md:p-10 rounded-2xl shadow-2xl
+                                            my-8 sm:my-12 md:my-16 
+                                            transform transition-all duration-500 
+                                            hover:scale-[1.01] hover:shadow-green-500/20"
                                 >
                                     <div className="relative mb-6 sm:mb-8">
                                         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2">
@@ -769,10 +770,10 @@ const MainPage = () => {
                     {/* Background grid of river basins */}
                     <div
                         className="
-              absolute inset-0 grid
-              grid-cols-1 grid-rows-4           /* base: 1 column, 4 rows (all 4 visible) */
-              sm:grid-cols-2 sm:grid-rows-2     /* sm+: 2 columns, 2 rows (2×2) */
-              lg:grid-cols-4 lg:grid-rows-1     /* lg+: 4 columns, 1 row (1×4) */"
+                        absolute inset-0 grid
+                        grid-cols-1 grid-rows-4           /* base: 1 column, 4 rows (all 4 visible) */
+                        sm:grid-cols-2 sm:grid-rows-2     /* sm+: 2 columns, 2 rows (2×2) */
+                        lg:grid-cols-4 lg:grid-rows-1     /* lg+: 4 columns, 1 row (1×4) */"
                     >
                         {/* Tile 1 */}
                         <div className="relative overflow-hidden group">
@@ -883,8 +884,7 @@ const MainPage = () => {
                                 ref={sectionRef}
                                 className="relative bg-cover bg-center min-h-[60vh] sm:min-h-[70vh] md:min-h-screen flex items-center justify-start"
                                 style={{
-                                    backgroundImage:
-                                        "url('src/assets/Map-images/Watershed 1.png')",
+                                    backgroundImage: `url(${waterImg})`,
                                 }}
                             >
                                 <div className="absolute inset-0 overflow-hidden pointer-events-none px-4 sm:px-8">
