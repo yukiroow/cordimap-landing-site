@@ -9,6 +9,48 @@ import {
     Binoculars,
 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import abraRiver from "./assets/SCEP-Gallery/abra-river.jpg";
+import bolineyHotSpring from "./assets/SCEP-Gallery/boliney-hot-spring.jpg";
+import abraKaparkanFalls from "./assets/SCEP-Gallery/abra-kaparkan-falls.jpg";
+import maragRockFormation from "./assets/SCEP-Gallery/marag-rock-formation.jpg";
+import apayaoRiver from "./assets/SCEP-Gallery/apayao-river.jpg";
+import lussokCaves from "./assets/SCEP-Gallery/lussok-caves.jpg";
+import apayaoBayugaoFalls from "./assets/SCEP-Gallery/apayao-bayugao-falls.jpg";
+import apayaoMtSicapoo from "./assets/SCEP-Gallery/apayao-mt-sicapoo.png";
+import galolanFalls from "./assets/SCEP-Gallery/galolan-falls.jpg";
+import apayaoNaganRiver from "./assets/SCEP-Gallery/apayao-nagan-river.jpg";
+import mtPulag from "./assets/SCEP-Gallery/mt-pulag.jpg";
+import benguetFarm from "./assets/SCEP-Gallery/benguet-farm.png";
+import mtPurgatory from "./assets/SCEP-Gallery/mt-purgatory.jpg";
+import ambongdolan from "./assets/SCEP-Gallery/ambongdolan.jpg";
+import benguetStrawberryFarm from "./assets/SCEP-Gallery/benguet-straberry-farm.png";
+import banaueRiceTerraces from "./assets/SCEP-Gallery/banaue-rice-terraces.jpg";
+import bangaanRiceTerraces from "./assets/SCEP-Gallery/bangaan-rice-terraces.jpg";
+import batadRiceTerraces from "./assets/SCEP-Gallery/batad-rice-terraces.jpg";
+import ifugaoHawangVillage from "./assets/SCEP-Gallery/ifugao-hawang-village.jpg";
+import ifugaoKianganShrine from "./assets/SCEP-Gallery/ifugao-kiangan-shrine.jpg";
+import ifugaoTenogtogFalls from "./assets/SCEP-Gallery/ifugao-tenogtog-falls.jpg";
+import tappiyahWaterfalls from "./assets/SCEP-Gallery/tappiyah-waterfalls.jpg";
+import bangaanVillage from "./assets/SCEP-Gallery/bangaan-village.JPG";
+import batadVillage from "./assets/SCEP-Gallery/batad-village.jpg";
+import ifugaoAmbuwayaLake from "./assets/SCEP-Gallery/ifugao-ambuwaya-lake.jpg";
+import chicoRiver from "./assets/SCEP-Gallery/chico-river.jpg";
+import kalingaPatikingTunnel from "./assets/SCEP-Gallery/kalinga-patiking-tunnel.jpg";
+import guilum from "./assets/SCEP-Gallery/guilum.jpg";
+import kalingaMalalaoHills from "./assets/SCEP-Gallery/kalinga-malalao-hills.png";
+import myProvinceSumaguingCave from "./assets/SCEP-Gallery/mtprovince-sumaguing-cave.png";
+import myProvinceHangingCoffins from "./assets/SCEP-Gallery/mtprovince-hanging-coffins.jpg";
+import tangadanTunnel from "./assets/SCEP-Gallery/tangadan-tunnel.jpg";
+import victoriaNationalPark from "./assets/SCEP-Gallery/victoria-national-park.jpg";
+import mataguisiChurchRuins from "./assets/SCEP-Gallery/mataguisi-church-ruins.jpg";
+import winaca from "./assets/SCEP-Gallery/winaca.jpg";
+import halfTunnel from "./assets/SCEP-Gallery/half-tunnel.jpg";
+import phWar from "./assets/SCEP-Gallery/ph-war.jpg";
+import ifugaoMus from "./assets/SCEP-Gallery/ifugao-mus.jpg";
+import magatDam from "./assets/SCEP-Gallery/magat-dam.jpg";
+import kalingaTourism from "./assets/SCEP-Gallery/kalinga-tourism.JPG";
+import nenengHeritage from "./assets/SCEP-Gallery/neneng-heritage.JPG";
+import grandZion from "./assets/SCEP-Gallery/grand-zion.jpg";
 
 const Reveal = ({ delay = 0, children, className = "" }) => {
     const ref = useRef(null);
@@ -299,7 +341,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\abra-river.JPG"
+                                                src={abraRiver}
                                                 alt="abra-river"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -336,7 +378,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\boliney-hot-spring.JPG"
+                                                src={bolineyHotSpring}
                                                 alt="boliney-hot-spring"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -372,7 +414,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\abra-kaparkan-falls.JPG"
+                                                src={abraKaparkanFalls}
                                                 alt="kaparkan-falls"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -380,11 +422,12 @@ const SocioCultural = ({ onClose }) => {
                                                 Kaparkan Falls
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Kaparkan Falls, also known as Mulawin
-                                                Falls, is a stunning multi-tiered
-                                                waterfall located in Tineg, Abra,
-                                                Philippines. Known for its natural
-                                                terraces resembling rice paddies, the
+                                                Kaparkan Falls, also known as
+                                                Mulawin Falls, is a stunning
+                                                multi-tiered waterfall located
+                                                in Tineg, Abra, Philippines.
+                                                Known for its natural terraces
+                                                resembling rice paddies, the
                                                 falls become beautiful during
                                                 the rainy season
                                             </p>
@@ -420,7 +463,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\marag-rock-formation.jpg"
+                                                src={maragRockFormation}
                                                 alt="marag-rock-formation"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -434,8 +477,9 @@ const SocioCultural = ({ onClose }) => {
                                                 formations and the relaxing view
                                                 of Luna’s nature from the top of
                                                 the rocks. This rock formation
-                                                is a historical site as it served
-                                                as a fortress for the locals.
+                                                is a historical site as it
+                                                served as a fortress for the
+                                                locals.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -458,7 +502,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\apayao-river.jpg"
+                                                src={apayaoRiver}
                                                 alt="apayao-river"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -497,7 +541,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\lussok-caves.jpg"
+                                                src={lussokCaves}
                                                 alt="lussok-caves"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -505,10 +549,9 @@ const SocioCultural = ({ onClose }) => {
                                                 Lussok Caves
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                This
-                                                cave hides 7 spacious chambers
-                                                each having a different tale to
-                                                tell. The crystal clear
+                                                This cave hides 7 spacious
+                                                chambers each having a different
+                                                tale to tell. The crystal clear
                                                 underground river that runs
                                                 through its chambers, passing
                                                 through its opposite end and
@@ -537,7 +580,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\apayao-bayugao-falls.jpg"
+                                                src={apayaoBayugaoFalls}
                                                 alt="bayugao-falls"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -545,11 +588,12 @@ const SocioCultural = ({ onClose }) => {
                                                 Bayugao Falls
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Bayugao Falls revealed itself as a
-                                                beautiful three-tiered cascade,
-                                                with natural pools at each level.
-                                                The sound of the rushing water
-                                                echoed through the area.
+                                                Bayugao Falls revealed itself as
+                                                a beautiful three-tiered
+                                                cascade, with natural pools at
+                                                each level. The sound of the
+                                                rushing water echoed through the
+                                                area.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -572,7 +616,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\apayao-mt-sicapoo.png"
+                                                src={apayaoMtSicapoo}
                                                 alt="mt-sicapoo"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -580,12 +624,13 @@ const SocioCultural = ({ onClose }) => {
                                                 Mt. Sicapoo
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Mount Sicapoo is a prominent peak
-                                                in the Cordillera mountain range
-                                                of the Philippines, standing at
-                                                approximately 2,354 meters above
-                                                sea level. It is located in the
-                                                rovince of Apayao.
+                                                Mount Sicapoo is a prominent
+                                                peak in the Cordillera mountain
+                                                range of the Philippines,
+                                                standing at approximately 2,354
+                                                meters above sea level. It is
+                                                located in the rovince of
+                                                Apayao.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -608,7 +653,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\galolan-falls.jpg"
+                                                src={galolanFalls}
                                                 alt="galolan-falls"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -646,7 +691,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\apayao-nagan-river.jpg"
+                                                src={apayaoNaganRiver}
                                                 alt="nagan-river"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -693,7 +738,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\mt-pulag.jpg"
+                                                src={mtPulag}
                                                 alt="mt-pulag"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -732,7 +777,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\benguet-farm.png"
+                                                src={benguetFarm}
                                                 alt="northern-blossoms"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -740,11 +785,12 @@ const SocioCultural = ({ onClose }) => {
                                                 Northern Blossom
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Northern Blossom has a two-hectares
-                                                wide plantation. Northern Blossom is
-                                                located in Sayangan, Atok, Benguet. It
-                                                is approximately 1.5 hours away from
-                                                Baguio City.
+                                                Northern Blossom has a
+                                                two-hectares wide plantation.
+                                                Northern Blossom is located in
+                                                Sayangan, Atok, Benguet. It is
+                                                approximately 1.5 hours away
+                                                from Baguio City.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -768,7 +814,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\mt-purgatory.jpg"
+                                                src={mtPurgatory}
                                                 alt="mt-purgatory"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -805,7 +851,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\ambongdolan.jpg"
+                                                src={ambongdolan}
                                                 alt="ambongdolan-caves"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -842,7 +888,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\benguet-straberry-farm.png"
+                                                src={benguetStrawberryFarm}
                                                 alt="strawberry-farm"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -850,13 +896,14 @@ const SocioCultural = ({ onClose }) => {
                                                 Strawberry Farm
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Strawberries are famous in Baguio
-                                                and the surrounding La Trinidad
-                                                area of Benguet province because
-                                                the cool climate and high altitude
-                                                are ideal for growing strawberries,
-                                                which isn't possible in most other
-                                                parts of the Philippines.
+                                                Strawberries are famous in
+                                                Baguio and the surrounding La
+                                                Trinidad area of Benguet
+                                                province because the cool
+                                                climate and high altitude are
+                                                ideal for growing strawberries,
+                                                which isn't possible in most
+                                                other parts of the Philippines.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -891,7 +938,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src/assets/SCEP-Gallery/banaue-rice-terraces.jpg"
+                                                src={banaueRiceTerraces}
                                                 alt="banaue-rice-terraces"
                                                 className="object-cover object-center w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -929,7 +976,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src/assets/SCEP-Gallery/bangaan-rice-terraces.jpg"
+                                                src={bangaanRiceTerraces}
                                                 alt="bangaan-terraces"
                                                 className="object-cover object-center w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -937,16 +984,18 @@ const SocioCultural = ({ onClose }) => {
                                                 Bangaan Rice Terraces
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Surrounded by scenic terraced rice
-                                                fields is a picturesque village
-                                                whose inhabitants continue to
-                                                preserve their traditional way of
-                                                life. Unfortunately, the indigenous
-                                                architectural assembly of traditional
-                                                Ifugao huts is undergoing a
-                                                transformation with the construction
-                                                of new houses using modern
-                                                materials and designs.
+                                                Surrounded by scenic terraced
+                                                rice fields is a picturesque
+                                                village whose inhabitants
+                                                continue to preserve their
+                                                traditional way of life.
+                                                Unfortunately, the indigenous
+                                                architectural assembly of
+                                                traditional Ifugao huts is
+                                                undergoing a transformation with
+                                                the construction of new houses
+                                                using modern materials and
+                                                designs.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -970,7 +1019,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src/assets/SCEP-Gallery/batad-rice-terraces.jpg"
+                                                src={batadRiceTerraces}
                                                 alt="batad-rice-terraces"
                                                 className="object-cover object-center w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -1008,7 +1057,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src/assets/SCEP-Gallery/ifugao-hawang-village.jpg"
+                                                src={ifugaoHawangVillage}
                                                 alt="hiwang-village"
                                                 className="object-cover object-center w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -1016,12 +1065,14 @@ const SocioCultural = ({ onClose }) => {
                                                 Hiwang Village
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Hiwang Village, located in Banaue,
-                                                Ifugao, Philippines, is an indigenous
-                                                community with a history spanning
-                                                approximately 250 years. The purpose of
-                                                the proprietors in building this village is to
-                                                preserve these Ifugao Native Houses
+                                                Hiwang Village, located in
+                                                Banaue, Ifugao, Philippines, is
+                                                an indigenous community with a
+                                                history spanning approximately
+                                                250 years. The purpose of the
+                                                proprietors in building this
+                                                village is to preserve these
+                                                Ifugao Native Houses
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1045,7 +1096,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src/assets/SCEP-Gallery/ifugao-kiangan-shrine.jpg"
+                                                src={ifugaoKianganShrine}
                                                 alt="kiangan-shrine"
                                                 className="object-cover object-center w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -1053,11 +1104,13 @@ const SocioCultural = ({ onClose }) => {
                                                 Kiangan Shrine
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                The Kiangan National Shrine also known as the
-                                                Yamashita Shrine is a war memorial in Kiangan,
-                                                Ifugao, Philippines. This shrine commemorates
-                                                the bravery and sacrifices made during World War II.
-
+                                                The Kiangan National Shrine also
+                                                known as the Yamashita Shrine is
+                                                a war memorial in Kiangan,
+                                                Ifugao, Philippines. This shrine
+                                                commemorates the bravery and
+                                                sacrifices made during World War
+                                                II.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1081,7 +1134,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src/assets/SCEP-Gallery/ifugao-tenogtog-falls.jpg"
+                                                src={ifugaoTenogtogFalls}
                                                 alt="tenogtog-falls"
                                                 className="object-cover object-center w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -1089,11 +1142,12 @@ const SocioCultural = ({ onClose }) => {
                                                 Tenogtog Falls
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Tenogtog Falls is a natural waterfall
-                                                with three-tiered natural pools, each
-                                                about 12 meters apart, cascading
-                                                beautifully into one another amidst
-                                                lush greenery.
+                                                Tenogtog Falls is a natural
+                                                waterfall with three-tiered
+                                                natural pools, each about 12
+                                                meters apart, cascading
+                                                beautifully into one another
+                                                amidst lush greenery.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1117,7 +1171,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src/assets/SCEP-Gallery/tappiyah-waterfalls.jpg"
+                                                src={tappiyahWaterfalls}
                                                 alt="tappiyah-waterfalls"
                                                 className="object-cover object-center w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -1155,7 +1209,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src/assets/SCEP-Gallery/bangaan-village.jpg"
+                                                src={bangaanVillage}
                                                 alt="bangaan-village"
                                                 className="object-cover object-center w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -1192,7 +1246,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src/assets/SCEP-Gallery/batad-village.jpg"
+                                                src={batadVillage}
                                                 alt="batad-rice-terraces"
                                                 className="object-cover object-center w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -1229,7 +1283,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src/assets/SCEP-Gallery/ifugao-ambuwaya-lake.jpg"
+                                                src={ifugaoAmbuwayaLake}
                                                 alt="ambuwaya-lake"
                                                 className="object-cover object-center w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -1238,10 +1292,13 @@ const SocioCultural = ({ onClose }) => {
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
                                                 Ambuwaya Lake is a serene
-                                                destination located in a quiet village
-                                                within the Kiangan municipality. The people of
-                                                Kiangan call the lake Ambuwayya because it is believed the small
-                                                body of water was once the habitation of a fierce crocodile
+                                                destination located in a quiet
+                                                village within the Kiangan
+                                                municipality. The people of
+                                                Kiangan call the lake Ambuwayya
+                                                because it is believed the small
+                                                body of water was once the
+                                                habitation of a fierce crocodile
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1275,7 +1332,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\chico-river.jpg"
+                                                src={chicoRiver}
                                                 alt="chico-river"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -1284,8 +1341,8 @@ const SocioCultural = ({ onClose }) => {
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
                                                 It is referred to as a "river of
-                                                life" for the Kalinga people and is
-                                                well known among development
+                                                life" for the Kalinga people and
+                                                is well known among development
                                                 workers because of the Chico
                                                 River Dam Project, an electric
                                                 power generation project which
@@ -1314,7 +1371,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\kalinga-patiking-tunnel.jpg"
+                                                src={kalingaPatikingTunnel}
                                                 alt="patiking-tunnel"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -1322,11 +1379,13 @@ const SocioCultural = ({ onClose }) => {
                                                 Patiking Tunnel
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Patiking Tunnel is one of the century-old
-                                                artificial tunnels found in Barangay Dupag,
-                                                Tabuk City. It has boosted tourism activities
-                                                because of its importance to the community
-                                                and majestic view.
+                                                Patiking Tunnel is one of the
+                                                century-old artificial tunnels
+                                                found in Barangay Dupag, Tabuk
+                                                City. It has boosted tourism
+                                                activities because of its
+                                                importance to the community and
+                                                majestic view.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1349,7 +1408,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\guilum.jpg"
+                                                src={guilum}
                                                 alt="guilum-canyon-falls"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -1387,7 +1446,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\kalinga-malalao-hills.png"
+                                                src={kalingaMalalaoHills}
                                                 alt="malalao-hills"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -1438,7 +1497,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src/assets/SCEP-Gallery/mtprovince-sumaguing-cave.png"
+                                                src={myProvinceSumaguingCave}
                                                 alt="sumaguing-cave"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -1448,10 +1507,12 @@ const SocioCultural = ({ onClose }) => {
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
                                                 Located in the mountain town of
                                                 Sagada in the Cordillera region,
-                                                Often referred to as the "Big Cave,"
-                                                it is the largest of several caves in the area
-                                                and is a must-visit for adventure seekers
-                                                who want to explore the dramatic underground world
+                                                Often referred to as the "Big
+                                                Cave," it is the largest of
+                                                several caves in the area and is
+                                                a must-visit for adventure
+                                                seekers who want to explore the
+                                                dramatic underground world
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1475,7 +1536,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src/assets/SCEP-Gallery/mtprovince-hanging-coffins.jpg"
+                                                src={myProvinceHangingCoffins}
                                                 alt="hanging-conffins"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -1483,12 +1544,13 @@ const SocioCultural = ({ onClose }) => {
                                                 Hanging Coffins
                                             </h2>
                                             <p className="text-xs sm:text-sm text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Hanging coffins of Sagada are small
-                                                as the corpse is buried in the
-                                                foetal position. Members of the Igorot tribe bury
-                                                their dead in a coffin, nailed to
-                                                the sides of cliff faces high above
-                                                the ground.
+                                                Hanging coffins of Sagada are
+                                                small as the corpse is buried in
+                                                the foetal position. Members of
+                                                the Igorot tribe bury their dead
+                                                in a coffin, nailed to the sides
+                                                of cliff faces high above the
+                                                ground.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1516,8 +1578,6 @@ const SocioCultural = ({ onClose }) => {
                                     aria-label="Man-Made"
                                 />
                                 <div className="tab-content bg-base-100 border-base-300 p-4 sm:p-6">
-                                    
-
                                     <div className="carousel w-full mx-auto rounded-lg shadow-md">
                                         {/* Slide 1 */}
                                         <div
@@ -1525,7 +1585,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\tangadan-tunnel.jpg"
+                                                src={tangadanTunnel}
                                                 alt="tangadan-tunnel"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -1564,7 +1624,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\victoria-national-park.jpg"
+                                                src={victoriaNationalPark}
                                                 alt="victoria-national-park"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -1603,7 +1663,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\mataguisi-church-ruins.jpg"
+                                                src={mataguisiChurchRuins}
                                                 alt="mataguisi-church-ruins"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -1640,7 +1700,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\winaca.jpg"
+                                                src={winaca}
                                                 alt="winaca-eco-cultural-village"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -1648,11 +1708,12 @@ const SocioCultural = ({ onClose }) => {
                                                 WINACA Eco Cultural Village
                                             </h2>
                                             <p className="text-xs sm:text-sm md:text-base text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Located in Tublay, Benguet province,
-                                                this 42-hectare private property is the
-                                                perfect venue for travelers looking for
-                                                an authentic cultural experience in the
-                                                Philippine highlands.
+                                                Located in Tublay, Benguet
+                                                province, this 42-hectare
+                                                private property is the perfect
+                                                venue for travelers looking for
+                                                an authentic cultural experience
+                                                in the Philippine highlands.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1676,7 +1737,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\half-tunnel.jpg"
+                                                src={halfTunnel}
                                                 alt="half-tunnel-and-highest-point"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -1684,11 +1745,13 @@ const SocioCultural = ({ onClose }) => {
                                                 Halsema's Half Tunnel
                                             </h2>
                                             <p className="text-xs sm:text-sm md:text-base text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                The Natumpukan Half Tunnel stands as a
-                                                testament to resilience and creativity
-                                                in the face of natural calamities. It is
-                                                also known as Halsema’s Half Tunnel
-                                                Portion as it is located in Halsema Highway.
+                                                The Natumpukan Half Tunnel
+                                                stands as a testament to
+                                                resilience and creativity in the
+                                                face of natural calamities. It
+                                                is also known as Halsema’s Half
+                                                Tunnel Portion as it is located
+                                                in Halsema Highway.
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1712,7 +1775,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\ph-war.jpg"
+                                                src={phWar}
                                                 alt="philippine-war-memorial-shrine"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -1752,7 +1815,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\ifugao-mus.jpg"
+                                                src={ifugaoMus}
                                                 alt="ifugao-museum"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -1791,7 +1854,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\magat-dam.jpg"
+                                                src={magatDam}
                                                 alt="magat-dam"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -1799,10 +1862,13 @@ const SocioCultural = ({ onClose }) => {
                                                 Magat Dam
                                             </h2>
                                             <p className="text-xs sm:text-sm md:text-base text-center mb-4 px-4 sm:px-[10%] leading-relaxed">
-                                                Magat Dam is a large rock-fill dam on
-                                                the island of Luzon in the Philippines.
-                                                Construction of  the dam started in 1975 and completed in 1982.
-                                                Magat Dam is one of the largest dams in the Philippines
+                                                Magat Dam is a large rock-fill
+                                                dam on the island of Luzon in
+                                                the Philippines. Construction of
+                                                the dam started in 1975 and
+                                                completed in 1982. Magat Dam is
+                                                one of the largest dams in the
+                                                Philippines
                                             </p>
                                             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                                 <a
@@ -1826,7 +1892,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\kalinga-tourism.jpg"
+                                                src={kalingaTourism}
                                                 alt="kalinga-capitol-tourism-plaza"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -1862,7 +1928,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\neneng-heritage.jpg"
+                                                src={nenengHeritage}
                                                 alt="naneng-heritage-village"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
@@ -1901,7 +1967,7 @@ const SocioCultural = ({ onClose }) => {
                                             className="carousel-item relative w-full flex flex-col items-center"
                                         >
                                             <img
-                                                src="src\assets\SCEP-Gallery\grand-zion.jpg"
+                                                src={grandZion}
                                                 alt="grand-zion-garden-resort-hotel"
                                                 className="object-cover w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] transition-transform duration-500 ease-out hover:scale-[1.01]"
                                             />
