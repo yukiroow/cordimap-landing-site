@@ -409,7 +409,7 @@ const MainPage = () => {
                 className="flex flex-col items-center justify-center min-h-screen w-full overflow-hidden m-0 px-4 sm:px-8 md:px-12 lg:px-20 bg-gradient-to-b from-[#3b82f640] to-white"
             >
                 <Reveal>
-                    <h1 className="section-title text-3xl sm:text-5xl mt-5 md:text-6xl lg:text-7xl xl:text-8xl pb-10 sm:pb-16 font-bold text-center">
+                    <h1 className="section-title text-3xl sm:text-5xl mt-5 md:text-6xl lg:text-7xl xl:text-7xl pb-10 sm:pb-16 font-bold text-center">
                         CORDILLERA ADMINISTRATIVE REGION
                     </h1>
                 </Reveal>
@@ -452,7 +452,7 @@ const MainPage = () => {
                             <img
                                 src={logo.src}
                                 alt={logo.alt}
-                                className={`w-20 h-20 sm:w-28 sm:h-28 md:w-36 md:h-36 lg:w-44 lg:h-44 ${logo.cls} transition-transform duration-500 hover:scale-105`}
+                                className={`w-20 h-20 sm:w-28 sm:h-28 md:w-36 md:h-36 lg:w-40 lg:h-40 ${logo.cls} transition-transform duration-500 hover:scale-105`}
                             />
                         </Reveal>
                     ))}
@@ -460,7 +460,7 @@ const MainPage = () => {
 
                 {/* Text Content */}
                 <Reveal delay={120}>
-                    <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-justify pb-4 sm:pb-6 md:pb-8">
+                    <p className="text-base sm:text-lg md:text-xl xl:text-2xl text-justify pb-4 sm:pb-6 md:pb-8">
                         The Cordillera Administrative Region (CAR) was
                         established on July 15, 1987 through Executive Order No.
                         220, signed by then President Corazon Aquino.
@@ -468,7 +468,7 @@ const MainPage = () => {
                 </Reveal>
 
                 <Reveal delay={160}>
-                    <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-justify pb-4 sm:pb-6 md:pb-8">
+                    <p className="text-base sm:text-lg md:text-xl xl:text-2xl text-justify pb-4 sm:pb-6 md:pb-8">
                         The region consists of the provinces of Abra, Apayao,
                         Benguet, Ifugao, Kalinga, and Mountain Province. Its
                         regional center is the Chartered City of Baguio,
@@ -478,7 +478,7 @@ const MainPage = () => {
                 </Reveal>
 
                 <Reveal delay={200}>
-                    <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-justify pb-4 sm:pb-6">
+                    <p className="text-base sm:text-lg md:text-xl xl:text-2xl text-justify pb-4 sm:pb-6">
                         Cordillera is one of the prime tourist destinations in
                         the Philippines. It has many spectacular scenic views
                         and enchantingly cool places. The world-famous Banaue
