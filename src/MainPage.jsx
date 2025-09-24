@@ -1086,30 +1086,30 @@ const MainPage = () => {
                                     </div>
 
                                     {/* Right image grid */}
-                                    <div className="grid grid-cols-2 gap-4 sm:gap-6">
+                                    <div className="grid grid-cols-2 gap-4 sm:gap-6 rounded-md">
                                         {[
                                             {
-                                                src: "src/assets/Biodiversity-images/cassamata.png",
-                                                alt: "Cassamata Hill",
-                                                label: "Cassamata Hill National Park",
+                                                src: "src/assets/Biodiversity-images/northernblossomflower.jpg",
+                                                alt: "Benguet Northnern Blossom",
+                                                label: "Benguet Northnern Blossom",
                                                 delay: 100,
                                             },
                                             {
-                                                src: "src/assets/Biodiversity-images/mt-pulag.png",
-                                                alt: "Mt. Pulag",
-                                                label: "Mt. Pulag National Park",
+                                                src: "src/assets/Biodiversity-images/bahongsunflowerpark.jpg",
+                                                alt: "Bahong Sunflower Park",
+                                                label: "Bahong Sunflower Park",
                                                 delay: 150,
                                             },
                                             {
-                                                src: "src/assets/Biodiversity-images/balbalasang.png",
-                                                alt: "Balbalasang",
-                                                label: "Balbalasang-Balbalan National Park",
+                                                src: "src/assets/Biodiversity-images/pheagle.jpg",
+                                                alt: "Philippine Eagle",
+                                                label: "Philippine Eagle",
                                                 delay: 200,
                                             },
                                             {
-                                                src: "src/assets/Biodiversity-images/mt-data.png",
-                                                alt: "Mt. Data",
-                                                label: "Mt. Data National Park",
+                                                src: "src/assets/Biodiversity-images/baboyramo.jpg",
+                                                alt: "Baboy Ramo",
+                                                label: "Baboy Ramo",
                                                 delay: 250,
                                             },
                                         ].map((card, idx) => (
