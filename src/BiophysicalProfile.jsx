@@ -1,3 +1,13 @@
+import anguib from "./assets/Biophysical-images/anguib.png";
+import enchanted from "./assets/Biophysical-images/enchanted.png";
+import bangui from "./assets/Biophysical-images/bangui.png";
+import malusong from "./assets/Biophysical-images/malusong.png";
+import calle from "./assets/Biophysical-images/calle.png";
+import mtPulag from "./assets/Biophysical-images/mt-pulag.jpg";
+import baguio from "./assets/Biophysical-images/baguio-city.jpg";
+import banaue from "./assets/Biophysical-images/banaue.jpg";
+import sungang from "./assets/Biophysical-images/sungang.jpg";
+
 const BiophysicalProfile = ({ onClose }) => {
     return (
         <div className="px-4 sm:px-6 md:px-12 lg:mx-16">
@@ -40,7 +50,7 @@ const BiophysicalProfile = ({ onClose }) => {
                         {/* Image */}
                         <div className="flex flex-col items-center w-full lg:w-1/3">
                             <img
-                                src="src/assets/Biophysical-images/anguib.png"
+                                src={anguib}
                                 alt="Anguib Beach Cagayan"
                                 className="w-full max-w-sm object-cover rounded-lg"
                             />
@@ -54,19 +64,19 @@ const BiophysicalProfile = ({ onClose }) => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
                         {[
                             {
-                                src: "src/assets/Biophysical-images/enchanted.png",
+                                src: enchanted,
                                 label: "Enchanted Cave Pangasinan",
                             },
                             {
-                                src: "src/assets/Biophysical-images/bangui.png",
+                                src: bangui,
                                 label: "Bangui Windmills Ilocos Norte",
                             },
                             {
-                                src: "src/assets/Biophysical-images/malusong.png",
+                                src: malusong,
                                 label: "Mt. Malusong Summit Nueva Viscaya",
                             },
                             {
-                                src: "src/assets/Biophysical-images/calle.png",
+                                src: calle,
                                 label: "Calle Crisologo Ilocos Sur",
                             },
                         ].map((item, idx) => (
@@ -141,19 +151,19 @@ const BiophysicalProfile = ({ onClose }) => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
                         {[
                             {
-                                src: "src/assets/Biophysical-images/mt-pulag.jpg",
+                                src: mtPulag,
                                 label: "Mt. Pulag",
                             },
                             {
-                                src: "src/assets/Biophysical-images/baguio-city.jpg",
+                                src: baguio,
                                 label: "Baguio City",
                             },
                             {
-                                src: "src/assets/Biophysical-images/banaue.jpg",
+                                src: banaue,
                                 label: "Banaue Rice Terraces",
                             },
                             {
-                                src: "src/assets/Biophysical-images/sungang.jpg",
+                                src: sungang,
                                 label: "Sungang View Point",
                             },
                         ].map((item, idx) => (

@@ -1,8 +1,36 @@
 import { Phone, Mail, Facebook } from "lucide-react";
-import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import BiophysicalProfile from "./BiophysicalProfile";
 import SocioCultural from "./SocioCultural";
+import carSvg from "./assets/About-images/CAR.svg";
+import bioSvg from "./assets/About-images/Biophysical.svg";
+import earthSvg from "./assets/About-images/Earth.svg";
+import sceSvg from "./assets/About-images/SCE.svg";
+import bgLeft from "./assets/Landing-page/Bgleft.png";
+import bgRight from "./assets/Landing-page/Bgright.png";
+import igorot from "./assets/Landing-page/igorot.png";
+import benguetLogo from "./assets/Logos/Province-of-Benguet-Logo.png";
+import kalingaLogo from "./assets/Logos/Province-of-Kalinga-Logo.png";
+import mtProvinceLogo from "./assets/Logos/Mountain-Province-Logo.png";
+import abraLogo from "./assets/Logos/Province-of-Abra-Logo.png";
+import apayaoLogo from "./assets/Logos/Province-of-Apayao-Logo.png";
+import ifugaoLogo from "./assets/Logos/Province-of-Ifugao-Logo.png";
+import anguib from "./assets/Biophysical-images/anguib.png";
+import cagayanBasin from "./assets/Water-resources/cagayan-river-basin.png";
+import abulogBasin from "./assets/Water-resources/abulog-river-basin.png";
+import abraBasin from "./assets/Water-resources/abra-river-basin.png";
+import agnoBasin from "./assets/Water-resources/agno-river-basin.png";
+import cassamata from "./assets/Biodiversity-images/cassamata.png";
+import mtPulag from "./assets/Biodiversity-images/mt-pulag.png";
+import balbalasang from "./assets/Biodiversity-images/balbalasang.png";
+import mtData from "./assets/Biodiversity-images/mt-data.png";
+import economic from "./assets/Biodiversity-images/economic.png";
+import denrLogo from "./assets/Logos/DENR.png";
+import fallsVideo from "./assets/About-images/Falls.mp4";
+import landImg from "./assets/Map-images/Land.png";
+import waterImg from "./assets/Map-images/Watershed 1.png";
+import bioBg from "./assets/Biophysical-images/bg.png";
+import enrBg from "./assets/Biophysical-images/ENR.png";
 
 import {
     Reveal,
@@ -22,212 +50,227 @@ const MainPage = () => {
     const hideNavOnTitle = useHideNavOnTitle(".section-title", 120);
     const entered = useEntered();
 
-  return (
-    <div className="relative">
-      {/* STICKY QUICK NAV */}
-      {showButtons && (
-        <>
-          {/* Desktop Navigation Bar */}
-          {!hideNavOnTitle && (
-            <div className="hidden md:block">
-              <nav className="fixed top-0 left-0 right-0 z-50 bg-blue-600/85 backdrop-blur-sm shadow-md">
-                <div className="max-w-6xl mx-auto px-4 sm:px-6">
-                  <div className="flex items-center justify-center h-12 sm:h-14">
-                    <div className="flex items-center gap-3 sm:gap-6">
-                      <button
-                        onClick={() =>
-                          document
-                            .getElementById("car")
-                            ?.scrollIntoView({ behavior: "smooth" })
-                        }
-                        className={`px-3 sm:px-4 py-1 rounded-md text-white text-sm sm:text-base font-bold tracking-wide transition
-                    ${
-                      activeSection === "car"
-                        ? "bg-white/20 ring-1 ring-white/40"
-                        : "hover:bg-blue-700"
-                    }`}
-                      >
-                        CAR
-                      </button>
+    return (
+        <div className="relative">
+            {/* STICKY QUICK NAV */}
+            {showButtons && (
+                <>
+                    {/* Desktop Navigation Bar */}
+                    {!hideNavOnTitle && (
+                        <div className="hidden md:block">
+                            <nav className="fixed top-0 left-0 right-0 z-50 bg-blue-600/85 backdrop-blur-sm shadow-md">
+                                <div className="max-w-6xl mx-auto px-4 sm:px-6">
+                                    <div className="flex items-center justify-center h-12 sm:h-14">
+                                        <div className="flex items-center gap-3 sm:gap-6">
+                                            <button
+                                                onClick={() =>
+                                                    document
+                                                        .getElementById("car")
+                                                        ?.scrollIntoView({
+                                                            behavior: "smooth",
+                                                        })
+                                                }
+                                                className={`px-3 sm:px-4 py-1 rounded-md text-white text-sm sm:text-base font-bold tracking-wide transition
+                                                    ${
+                                                        activeSection === "car"
+                                                            ? "bg-white/20 ring-1 ring-white/40"
+                                                            : "hover:bg-blue-700"
+                                                    }`}
+                                            >
+                                                CAR
+                                            </button>
 
-                      <button
-                        onClick={() =>
-                          document
-                            .getElementById("biophysical")
-                            ?.scrollIntoView({ behavior: "smooth" })
-                        }
-                        className={`px-3 sm:px-4 py-1 rounded-md text-white text-sm sm:text-base font-bold tracking-wide transition
-                    ${
-                      activeSection === "biophysical"
-                        ? "bg-white/20 ring-1 ring-white/40"
-                        : "hover:bg-blue-700"
-                    }`}
-                      >
-                        Biophysical Profile
-                      </button>
+                                            <button
+                                                onClick={() =>
+                                                    document
+                                                        .getElementById(
+                                                            "biophysical"
+                                                        )
+                                                        ?.scrollIntoView({
+                                                            behavior: "smooth",
+                                                        })
+                                                }
+                                                className={`px-3 sm:px-4 py-1 rounded-md text-white text-sm sm:text-base font-bold tracking-wide transition
+                                                    ${
+                                                        activeSection ===
+                                                        "biophysical"
+                                                            ? "bg-white/20 ring-1 ring-white/40"
+                                                            : "hover:bg-blue-700"
+                                                    }`}
+                                            >
+                                                Biophysical Profile
+                                            </button>
 
-                      <button
-                        onClick={() =>
-                          document
-                            .getElementById("enr")
-                            ?.scrollIntoView({ behavior: "smooth" })
-                        }
-                        className={`px-3 sm:px-4 py-1 rounded-md text-white text-sm sm:text-base font-bold tracking-wide transition
-                    ${
-                      activeSection === "enr"
-                        ? "bg-white/20 ring-1 ring-white/40"
-                        : "hover:bg-blue-700"
-                    }`}
-                      >
-                        ENR
-                      </button>
+                                            <button
+                                                onClick={() =>
+                                                    document
+                                                        .getElementById("enr")
+                                                        ?.scrollIntoView({
+                                                            behavior: "smooth",
+                                                        })
+                                                }
+                                                className={`px-3 sm:px-4 py-1 rounded-md text-white text-sm sm:text-base font-bold tracking-wide transition
+                                                    ${
+                                                        activeSection === "enr"
+                                                            ? "bg-white/20 ring-1 ring-white/40"
+                                                            : "hover:bg-blue-700"
+                                                    }`}
+                                            >
+                                                ENR
+                                            </button>
 
-                      <button
-                        onClick={() =>
-                          document
-                            .getElementById("socio")
-                            ?.scrollIntoView({ behavior: "smooth" })
-                        }
-                        className={`px-3 sm:px-4 py-1 rounded-md text-white text-sm sm:text-base font-bold tracking-wide transition
-                    ${
-                      activeSection === "socio"
-                        ? "bg-white/20 ring-1 ring-white/40"
-                        : "hover:bg-blue-700"
-                    }`}
-                      >
-                        Socio-cultural and Economic Profile
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </nav>
-            </div>
-          )}
+                                            <button
+                                                onClick={() =>
+                                                    document
+                                                        .getElementById("socio")
+                                                        ?.scrollIntoView({
+                                                            behavior: "smooth",
+                                                        })
+                                                }
+                                                className={`px-3 sm:px-4 py-1 rounded-md text-white text-sm sm:text-base font-bold tracking-wide transition
+                                                    ${
+                                                        activeSection ===
+                                                        "socio"
+                                                            ? "bg-white/20 ring-1 ring-white/40"
+                                                            : "hover:bg-blue-700"
+                                                    }`}
+                                            >
+                                                Socio-cultural and Economic
+                                                Profile
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    )}
 
-          {/* Mobile Navigation Bar */}
-          <nav
-            className="md:hidden fixed left-1/2 -translate-x-1/2
-             bottom-[calc(env(safe-area-inset-bottom,0px)+0.75rem)]
-             w-[92%] max-w-lg z-50
-             rounded-2xl bg-blue-600/85 backdrop-blur-sm shadow-lg px-2 py-2"
-          >
-            <div className="flex items-center justify-between">
-              {/* CAR */}
-              <button
-                aria-label="CAR"
-                onClick={() =>
-                  document
-                    .getElementById("car")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
-                className={`flex flex-col items-center gap-0.5 px-3 py-1 rounded-xl text-white transition
-        ${
-          activeSection === "car"
-            ? "bg-white/20 ring-1 ring-white/40"
-            : "hover:bg-blue-700/90"
-        }`}
-              >
-                <img
-                  src="src/assets/About-images/CAR.svg"
-                  alt="CAR"
-                  className="w-6 h-6"
-                />
-              </button>
+                    {/* Mobile Navigation Bar */}
+                    <nav
+                        className="md:hidden fixed left-1/2 -translate-x-1/2
+                                bottom-[calc(env(safe-area-inset-bottom,0px)+0.75rem)]
+                                w-[92%] max-w-lg z-50
+                                rounded-2xl bg-blue-600/85 backdrop-blur-sm shadow-lg px-2 py-2"
+                    >
+                        <div className="flex items-center justify-between">
+                            {/* CAR */}
+                            <button
+                                aria-label="CAR"
+                                onClick={() =>
+                                    document
+                                        .getElementById("car")
+                                        ?.scrollIntoView({ behavior: "smooth" })
+                                }
+                                className={`flex flex-col items-center gap-0.5 px-3 py-1 rounded-xl text-white transition
+                                        ${
+                                            activeSection === "car"
+                                                ? "bg-white/20 ring-1 ring-white/40"
+                                                : "hover:bg-blue-700/90"
+                                        }`}
+                            >
+                                <img
+                                    src={carSvg}
+                                    alt="CAR"
+                                    className="w-6 h-6"
+                                />
+                            </button>
 
-              {/* Biophysical */}
-              <button
-                aria-label="Biophysical"
-                onClick={() =>
-                  document
-                    .getElementById("biophysical")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
-                className={`flex flex-col items-center gap-0.5 px-3 py-1 rounded-xl text-white transition
-        ${
-          activeSection === "biophysical"
-            ? "bg-white/20 ring-1 ring-white/40"
-            : "hover:bg-blue-700/90"
-        }`}
-              >
-                <img
-                  src="src/assets/About-images/Biophysical.svg"
-                  alt="Biophysical"
-                  className="w-6 h-6"
-                />
-              </button>
+                            {/* Biophysical */}
+                            <button
+                                aria-label="Biophysical"
+                                onClick={() =>
+                                    document
+                                        .getElementById("biophysical")
+                                        ?.scrollIntoView({ behavior: "smooth" })
+                                }
+                                className={`flex flex-col items-center gap-0.5 px-3 py-1 rounded-xl text-white transition
+                                        ${
+                                            activeSection === "biophysical"
+                                                ? "bg-white/20 ring-1 ring-white/40"
+                                                : "hover:bg-blue-700/90"
+                                        }`}
+                            >
+                                <img
+                                    src={bioSvg}
+                                    alt="Biophysical"
+                                    className="w-6 h-6"
+                                />
+                            </button>
 
-              {/* ENR */}
-              <button
-                aria-label="ENR"
-                onClick={() =>
-                  document
-                    .getElementById("enr")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
-                className={`flex flex-col items-center gap-0.5 px-3 py-1 rounded-xl text-white transition
-        ${
-          activeSection === "enr"
-            ? "bg-white/20 ring-1 ring-white/40"
-            : "hover:bg-blue-700/90"
-        }`}
-              >
-                <img
-                  src="src/assets/About-images/Earth.svg"
-                  alt="ENR"
-                  className="w-6 h-6"
-                />
-              </button>
+                            {/* ENR */}
+                            <button
+                                aria-label="ENR"
+                                onClick={() =>
+                                    document
+                                        .getElementById("enr")
+                                        ?.scrollIntoView({ behavior: "smooth" })
+                                }
+                                className={`flex flex-col items-center gap-0.5 px-3 py-1 rounded-xl text-white transition
+                                    ${
+                                        activeSection === "enr"
+                                            ? "bg-white/20 ring-1 ring-white/40"
+                                            : "hover:bg-blue-700/90"
+                                    }`}
+                            >
+                                <img
+                                    src={earthSvg}
+                                    alt="ENR"
+                                    className="w-6 h-6"
+                                />
+                            </button>
 
-              {/* Socio-Cultural */}
-              <button
-                aria-label="Socio-Cultural"
-                onClick={() =>
-                  document
-                    .getElementById("socio")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
-                className={`flex flex-col items-center gap-0.5 px-3 py-1 rounded-xl text-white transition
-        ${
-          activeSection === "socio"
-            ? "bg-white/20 ring-1 ring-white/40"
-            : "hover:bg-blue-700/90"
-        }`}
-              >
-                <img
-                  src="src/assets/About-images/SCE.svg"
-                  alt="Socio-Cultural"
-                  className="w-6 h-6"
-                />
-              </button>
-            </div>
-          </nav>
-        </>
-      )}
+                            {/* Socio-Cultural */}
+                            <button
+                                aria-label="Socio-Cultural"
+                                onClick={() =>
+                                    document
+                                        .getElementById("socio")
+                                        ?.scrollIntoView({ behavior: "smooth" })
+                                }
+                                className={`flex flex-col items-center gap-0.5 px-3 py-1 rounded-xl text-white transition
+                                    ${
+                                        activeSection === "socio"
+                                            ? "bg-white/20 ring-1 ring-white/40"
+                                            : "hover:bg-blue-700/90"
+                                    }`}
+                            >
+                                <img
+                                    src={sceSvg}
+                                    alt="Socio-Cultural"
+                                    className="w-6 h-6"
+                                />
+                            </button>
+                        </div>
+                    </nav>
+                </>
+            )}
 
-      {/* BACK TO TOP ARROW */}
-      {showButtons && (
-        <button
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          aria-label="Back to top"
-          className="md:hidden fixed bottom-20 right-5 z-50 
+            {/* BACK TO TOP ARROW */}
+            {showButtons && (
+                <button
+                    onClick={() =>
+                        window.scrollTo({ top: 0, behavior: "smooth" })
+                    }
+                    aria-label="Back to top"
+                    className="md:hidden fixed bottom-20 right-5 z-50 
                rounded-full p-3 sm:p-3.5 
                bg-blue-600/80 backdrop-blur-sm 
                text-white shadow-lg 
                hover:bg-blue-700 focus:outline-none 
                focus:ring-2 focus:ring-white/70 transition"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 sm:h-6 sm:w-6"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-          >
-            <path d="M5 15l7-7 7 7" />
-          </svg>
-        </button>
-      )}
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-5 w-5 sm:h-6 sm:w-6"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                    >
+                        <path d="M5 15l7-7 7 7" />
+                    </svg>
+                </button>
+            )}
 
             {/* LANDING SECTION */}
             <section
@@ -240,20 +283,22 @@ const MainPage = () => {
                         : "opacity-0 translate-y-3",
                 ].join(" ")}
             >
-                <style>{`
-    @keyframes floatY { 
-      0% { transform: translateY(0) }
-      50% { transform: translateY(-8px) }
-      100% { transform: translateY(0) }
-    }
-    @keyframes softIn { 
-      from { opacity: 0; transform: translateY(12px) } 
-      to { opacity: 1; transform: translateY(0) } 
-    }
-  `}</style>
+                <style>
+                    {`
+                        @keyframes floatY { 
+                            0% { transform: translateY(0) }
+                            50% { transform: translateY(-8px) }
+                            100% { transform: translateY(0) }
+                        }
+                        @keyframes softIn { 
+                            from { opacity: 0; transform: translateY(12px) } 
+                            to { opacity: 1; transform: translateY(0) } 
+                        }
+                    `}
+                </style>
                 {/* Backgrounds */}
                 <img
-                    src="src/assets/Landing-page/Bgleft.png"
+                    src={bgLeft}
                     alt="background"
                     className={[
                         "absolute left-0 bottom-0 max-h-[60%] sm:max-h-[70%] object-contain z-2",
@@ -262,7 +307,7 @@ const MainPage = () => {
                 />
 
                 <img
-                    src="src/assets/Landing-page/Bgright.png"
+                    src={bgRight}
                     alt="background right"
                     className={[
                         "absolute z-10 object-contain pointer-events-none select-none",
@@ -274,7 +319,7 @@ const MainPage = () => {
                 />
 
                 <img
-                    src="src/assets/Landing-page/igorot.png"
+                    src={igorot}
                     alt="igorot"
                     className={[
                         "absolute right-0 bottom-0 object-contain z-10 opacity-80",
@@ -290,7 +335,7 @@ const MainPage = () => {
                 />
 
                 {/* Text and Buttons */}
-                <div className="relative z-30 max-w-3xl mx-auto">
+                <div className="relative z-30 max-w-3xl mx-auto justify-left">
                     <h1
                         className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold pb-4 leading-tight opacity-0"
                         style={{
@@ -347,7 +392,7 @@ const MainPage = () => {
                 {/* Background Video */}
                 <video
                     className="absolute inset-0 w-full h-full object-cover z-10"
-                    src="src/assets/About-images/Falls.mp4"
+                    src={fallsVideo}
                     autoPlay
                     loop
                     muted
@@ -367,14 +412,14 @@ const MainPage = () => {
                     <Reveal delay={120}>
                         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-10 md:gap-12 text-center w-full">
                             {[
-                                { src: "CAR.svg", label: "CAR" },
+                                { src: carSvg, label: "CAR" },
                                 {
-                                    src: "Biophysical.svg",
+                                    src: bioSvg,
                                     label: "Biophysical Profile",
                                 },
-                                { src: "Earth.svg", label: "ENR Resources" },
+                                { src: earthSvg, label: "ENR Resources" },
                                 {
-                                    src: "SCE.svg",
+                                    src: sceSvg,
                                     label: "Socio-Cultural & Economic Profile",
                                 },
                             ].map((item, idx) => (
@@ -388,7 +433,7 @@ const MainPage = () => {
                                         className="flex flex-col items-center space-y-3 text-white transition-transform duration-500 hover:scale-105"
                                     >
                                         <img
-                                            src={`src/assets/About-images/${item.src}`}
+                                            src={item.src}
                                             alt={item.label}
                                             className="w-20 sm:w-24 md:w-28 lg:w-32 h-auto will-change-transform"
                                         />
@@ -418,32 +463,32 @@ const MainPage = () => {
                 <div className="flex flex-wrap gap-6 sm:gap-10 md:gap-16 lg:gap-20 pb-10 sm:pb-16 justify-center">
                     {[
                         {
-                            src: "src/assets/Logos/Province-of-Benguet-Logo.png",
+                            src: benguetLogo,
                             alt: "Province of Benguet Logo",
                             cls: "",
                         },
                         {
-                            src: "src/assets/Logos/Province-of-Kalinga-Logo.png",
+                            src: kalingaLogo,
                             alt: "Province of Kalinga Logo",
                             cls: "rounded-lg",
                         },
                         {
-                            src: "src/assets/Logos/Mountain-Province-Logo.png",
+                            src: mtProvinceLogo,
                             alt: "Mountain Province Logo",
                             cls: "rounded-lg",
                         },
                         {
-                            src: "src/assets/Logos/Province-of-Abra-Logo.png",
+                            src: abraLogo,
                             alt: "Province of Abra Logo",
                             cls: "rounded-lg",
                         },
                         {
-                            src: "src/assets/Logos/Province-of-Apayao-Logo.png",
+                            src: apayaoLogo,
                             alt: "Province of Apayao Logo",
                             cls: "rounded-lg",
                         },
                         {
-                            src: "src/assets/Logos/Province-of-Ifugao-Logo.png",
+                            src: ifugaoLogo,
                             alt: "Province of Ifugao Logo",
                             cls: "rounded-lg",
                         },
@@ -505,8 +550,7 @@ const MainPage = () => {
                         <div
                             className="flex items-center justify-center py-6 sm:py-10 bg-cover bg-center px-4"
                             style={{
-                                backgroundImage:
-                                    "url('src/assets/Biophysical-images/bg.png')",
+                                backgroundImage: `url(${bioBg})`,
                             }}
                         >
                             <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white text-center">
@@ -540,7 +584,7 @@ const MainPage = () => {
                         <Reveal delay={140}>
                             <div className="flex flex-col items-center">
                                 <img
-                                    src="src/assets/Biophysical-images/anguib.png"
+                                    src={anguib}
                                     alt="Anguib Beach Cagayan"
                                     className="w-72 sm:w-80 h-48 sm:h-56 object-cover rounded-lg shadow transition-transform duration-500 ease-out hover:scale-[1.02]"
                                 />
@@ -564,22 +608,24 @@ const MainPage = () => {
                             </button>
                         )}
 
-            {/* Show BiophysicalProfile.jsx when expanded */}
-            {showMore && (
-              <div className="mt-8 w-full">
-                <BiophysicalProfile
-                  onClose={() => {
-                    setShowMore(false);
-                    document
-                      .getElementById("biophysical")
-                      ?.scrollIntoView({ behavior: "smooth" });
-                  }}
-                />
-              </div>
-            )}
-          </div>
-        </Reveal>
-      </section>
+                        {/* Show BiophysicalProfile.jsx when expanded */}
+                        {showMore && (
+                            <div className="mt-8 w-full">
+                                <BiophysicalProfile
+                                    onClose={() => {
+                                        setShowMore(false);
+                                        document
+                                            .getElementById("biophysical")
+                                            ?.scrollIntoView({
+                                                behavior: "smooth",
+                                            });
+                                    }}
+                                />
+                            </div>
+                        )}
+                    </div>
+                </Reveal>
+            </section>
 
             {/* ENR RESOURCES */}
             <div>
@@ -591,8 +637,7 @@ const MainPage = () => {
                         <div
                             className="relative w-full rounded-xl overflow-hidden bg-cover bg-center flex items-center justify-center py-8 sm:py-10 md:py-12"
                             style={{
-                                backgroundImage:
-                                    "url('src/assets/Biophysical-images/ENR.png')",
+                                backgroundImage: `url(${enrBg})`,
                             }}
                         >
                             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white text-center">
@@ -619,8 +664,7 @@ const MainPage = () => {
                 <div
                     className="relative bg-cover bg-center min-h-[60vh] sm:min-h-[70vh] md:min-h-screen flex items-center"
                     style={{
-                        backgroundImage:
-                            "url('src/assets/Map-images/Land.png')",
+                        backgroundImage: `url(${landImg})`,
                     }}
                 >
                     <div className="absolute inset-0 overflow-hidden pointer-events-none ml-4 sm:ml-8 mr-4 sm:mr-8">
@@ -633,10 +677,10 @@ const MainPage = () => {
                             <div className="group relative max-w-full md:max-w-2xl lg:max-w-3xl md:ml-8 lg:ml-12 xl:ml-16">
                                 <div
                                     className="relative bg-green-900/20 backdrop-blur-xl border border-white/10 
-                  w-full p-6 sm:p-8 md:p-10 rounded-2xl shadow-2xl
-                  my-8 sm:my-12 md:my-16 
-                  transform transition-all duration-500 
-                  hover:scale-[1.01] hover:shadow-green-500/20"
+                                            w-full p-6 sm:p-8 md:p-10 rounded-2xl shadow-2xl
+                                            my-8 sm:my-12 md:my-16 
+                                            transform transition-all duration-500 
+                                            hover:scale-[1.01] hover:shadow-green-500/20"
                                 >
                                     <div className="relative mb-6 sm:mb-8">
                                         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2">
@@ -726,15 +770,15 @@ const MainPage = () => {
                     {/* Background grid of river basins */}
                     <div
                         className="
-              absolute inset-0 grid
-              grid-cols-1 grid-rows-4           /* base: 1 column, 4 rows (all 4 visible) */
-              sm:grid-cols-2 sm:grid-rows-2     /* sm+: 2 columns, 2 rows (2×2) */
-              lg:grid-cols-4 lg:grid-rows-1     /* lg+: 4 columns, 1 row (1×4) */"
+                        absolute inset-0 grid
+                        grid-cols-1 grid-rows-4           /* base: 1 column, 4 rows (all 4 visible) */
+                        sm:grid-cols-2 sm:grid-rows-2     /* sm+: 2 columns, 2 rows (2×2) */
+                        lg:grid-cols-4 lg:grid-rows-1     /* lg+: 4 columns, 1 row (1×4) */"
                     >
                         {/* Tile 1 */}
                         <div className="relative overflow-hidden group">
                             <img
-                                src="src/assets/Water-resources/cagayan-river-basin.png"
+                                src={cagayanBasin}
                                 alt="Cagayan River Basin"
                                 className="object-cover w-full h-full transform transition-transform duration-700 group-hover:scale-110"
                             />
@@ -747,7 +791,7 @@ const MainPage = () => {
                         {/* Tile 2 */}
                         <div className="relative overflow-hidden group">
                             <img
-                                src="src/assets/Water-resources/abulog-river-basin.png"
+                                src={abulogBasin}
                                 alt="Apayao-Abulog River Basin"
                                 className="object-cover w-full h-full transform transition-transform duration-700 group-hover:scale-110"
                             />
@@ -760,7 +804,7 @@ const MainPage = () => {
                         {/* Tile 3 */}
                         <div className="relative overflow-hidden group">
                             <img
-                                src="src/assets/Water-resources/abra-river-basin.png"
+                                src={abraBasin}
                                 alt="Abra River Basin"
                                 className="object-cover w-full h-full transform transition-transform duration-700 group-hover:scale-110"
                             />
@@ -773,7 +817,7 @@ const MainPage = () => {
                         {/* Tile 4 */}
                         <div className="relative overflow-hidden group">
                             <img
-                                src="src/assets/Water-resources/agno-river-basin.png"
+                                src={agnoBasin}
                                 alt="Agno River Basin"
                                 className="object-cover w-full h-full transform transition-transform duration-700 group-hover:scale-110"
                             />
@@ -840,8 +884,7 @@ const MainPage = () => {
                                 ref={sectionRef}
                                 className="relative bg-cover bg-center min-h-[60vh] sm:min-h-[70vh] md:min-h-screen flex items-center justify-start"
                                 style={{
-                                    backgroundImage:
-                                        "url('src/assets/Map-images/Watershed 1.png')",
+                                    backgroundImage: `url(${waterImg})`,
                                 }}
                             >
                                 <div className="absolute inset-0 overflow-hidden pointer-events-none px-4 sm:px-8">
@@ -1089,27 +1132,27 @@ const MainPage = () => {
                                     <div className="grid grid-cols-2 gap-4 sm:gap-6 rounded-md">
                                         {[
                                             {
-                                                src: "src/assets/Biodiversity-images/northernblossomflower.jpg",
-                                                alt: "Benguet Northnern Blossom",
-                                                label: "Benguet Northnern Blossom",
+                                                src: cassamata,
+                                                alt: "Cassamata Hill",
+                                                label: "Cassamata Hill National Park",
                                                 delay: 100,
                                             },
                                             {
-                                                src: "src/assets/Biodiversity-images/bahongsunflowerpark.jpg",
-                                                alt: "Bahong Sunflower Park",
-                                                label: "Bahong Sunflower Park",
+                                                src: mtPulag,
+                                                alt: "Mt. Pulag",
+                                                label: "Mt. Pulag National Park",
                                                 delay: 150,
                                             },
                                             {
-                                                src: "src/assets/Biodiversity-images/pheagle.jpg",
-                                                alt: "Philippine Eagle",
-                                                label: "Philippine Eagle",
+                                                src: balbalasang,
+                                                alt: "Balbalasang",
+                                                label: "Balbalasang-Balbalan National Park",
                                                 delay: 200,
                                             },
                                             {
-                                                src: "src/assets/Biodiversity-images/baboyramo.jpg",
-                                                alt: "Baboy Ramo",
-                                                label: "Baboy Ramo",
+                                                src: mtData,
+                                                alt: "Mt. Data",
+                                                label: "Mt. Data National Park",
                                                 delay: 250,
                                             },
                                         ].map((card, idx) => (
@@ -1197,7 +1240,7 @@ const MainPage = () => {
                 {/* Banner */}
                 <div className="relative w-full h-[150px] sm:h-[180px] md:h-[220px] flex items-center justify-center">
                     <img
-                        src="src/assets/Biodiversity-images/economic.png"
+                        src={economic}
                         className="absolute inset-0 w-full h-full object-cover"
                         alt="Economic Profile"
                     />
@@ -1331,65 +1374,65 @@ const MainPage = () => {
                 </div>
             </section>
 
-      {/* FOOTER */}
-      <Reveal>
-        <footer className="w-full bg-green-700 text-white">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
-            {/* Use flex on md+ so items align horizontally */}
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
-              {/* Address + Logo */}
-              <Reveal delay={60}>
-                <div className="flex items-center gap-4 sm:gap-5">
-                  <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full p-2 sm:p-3 shrink-0 ring-1 ring-white/15 bg-white/5">
-                    <img
-                      src="src/assets/Logos/DENR.png"
-                      alt="DENR Logo"
-                      className="w-full h-full object-contain"
-                    />
-                  </div>
-                  <h3 className="text-lg sm:text-xl font-semibold leading-tight">
-                    DENR Compound, Gibraltar
-                    <br className="hidden sm:block" />
-                    Rd, Baguio, Benguet
-                  </h3>
-                </div>
-              </Reveal>
+            {/* FOOTER */}
+            <Reveal>
+                <footer className="w-full bg-green-700 text-white">
+                    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
+                        {/* Use flex on md+ so items align horizontally */}
+                        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+                            {/* Address + Logo */}
+                            <Reveal delay={60}>
+                                <div className="flex items-center gap-4 sm:gap-5">
+                                    <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full p-2 sm:p-3 shrink-0 ring-1 ring-white/15 bg-white/5">
+                                        <img
+                                            src={denrLogo}
+                                            alt="DENR Logo"
+                                            className="w-full h-full object-contain"
+                                        />
+                                    </div>
+                                    <h3 className="text-lg sm:text-xl font-semibold leading-tight">
+                                        DENR Compound, Gibraltar
+                                        <br className="hidden sm:block" />
+                                        Rd, Baguio, Benguet
+                                    </h3>
+                                </div>
+                            </Reveal>
 
-              {/* Directory */}
-              <Reveal delay={120}>
-                <div className="text-left md:text-right">
-                  <h3 className="font-semibold text-lg sm:text-xl mb-4 sm:mb-5">
-                    Directory
-                  </h3>
-                  <ul className="space-y-3 sm:space-y-3.5">
-                    <li className="flex items-center gap-3 group md:justify-end">
-                      <Phone className="w-5 h-5 sm:w-6 sm:h-6 transition-transform group-hover:-translate-y-0.5" />
-                      <span className="text-sm sm:text-base">
-                        (074) 442 4531
-                      </span>
-                    </li>
-                    <li className="flex items-center gap-3 group md:justify-end">
-                      <Mail className="w-5 h-5 sm:w-6 sm:h-6 transition-transform group-hover:-translate-y-0.5" />
-                      <span className="text-sm sm:text-base">
-                        car@denr.gov.ph
-                      </span>
-                    </li>
-                    <li className="flex items-center gap-3 group md:justify-end">
-                      <Facebook className="w-5 h-5 sm:w-6 sm:h-6 transition-transform group-hover:-translate-y-0.5" />
-                      <a
-                        href="https://www.facebook.com/DENRCAROfficial"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-sm sm:text-base hover:underline hover:text-gray-200"
-                      >
-                        DENR-CAR
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </Reveal>
-            </div>
-          </div>
+                            {/* Directory */}
+                            <Reveal delay={120}>
+                                <div className="text-left md:text-right">
+                                    <h3 className="font-semibold text-lg sm:text-xl mb-4 sm:mb-5">
+                                        Directory
+                                    </h3>
+                                    <ul className="space-y-3 sm:space-y-3.5">
+                                        <li className="flex items-center gap-3 group md:justify-end">
+                                            <Phone className="w-5 h-5 sm:w-6 sm:h-6 transition-transform group-hover:-translate-y-0.5" />
+                                            <span className="text-sm sm:text-base">
+                                                (074) 442 4531
+                                            </span>
+                                        </li>
+                                        <li className="flex items-center gap-3 group md:justify-end">
+                                            <Mail className="w-5 h-5 sm:w-6 sm:h-6 transition-transform group-hover:-translate-y-0.5" />
+                                            <span className="text-sm sm:text-base">
+                                                car@denr.gov.ph
+                                            </span>
+                                        </li>
+                                        <li className="flex items-center gap-3 group md:justify-end">
+                                            <Facebook className="w-5 h-5 sm:w-6 sm:h-6 transition-transform group-hover:-translate-y-0.5" />
+                                            <a
+                                                href="https://www.facebook.com/DENRCAROfficial"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="text-sm sm:text-base hover:underline hover:text-gray-200"
+                                            >
+                                                DENR-CAR
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </Reveal>
+                        </div>
+                    </div>
 
                     {/* Bottom Copyright Bar */}
                     <Reveal delay={180}>
