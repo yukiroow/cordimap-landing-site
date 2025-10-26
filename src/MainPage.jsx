@@ -377,10 +377,10 @@ const MainPage = () => {
                                 : undefined,
                         }}
                     >
-                        <button className="text-sm sm:text-base md:text-lg px-6 md:px-8 py-2 rounded-lg bg-green-600 text-white hover:scale-105 transition">
+                        <button onClick={() => window.location.href='https://terramap.cordimap.site'} className="text-sm sm:text-base md:text-lg px-6 md:px-8 py-2 rounded-lg bg-green-600 text-white hover:scale-105 transition">
                             Land Cover
                         </button>
-                        <button className="text-sm sm:text-base md:text-lg px-6 md:px-8 py-2 rounded-lg bg-blue-600 text-white hover:scale-105 transition">
+                        <button onClick={() => window.location.href='https://www.youtube.com/watch?v=fWRF6BJ1OQk'} className="text-sm sm:text-base md:text-lg px-6 md:px-8 py-2 rounded-lg bg-blue-600 text-white hover:scale-105 transition">
                             Water Cover
                         </button>
                     </div>
