@@ -31,6 +31,7 @@ import landImg from "./assets/Map-images/Land.png";
 import waterImg from "./assets/Map-images/Watershed 1.png";
 import bioBg from "./assets/Biophysical-images/bg.png";
 import enrBg from "./assets/Biophysical-images/ENR.png";
+import cordimapLanding from "./assets/Landing-page/cordimap-landing-image.svg"
 
 import {
     Reveal,
@@ -70,11 +71,10 @@ const MainPage = () => {
                                                             behavior: "smooth",
                                                         })
                                                 }
-                                                className={`px-3 sm:px-4 py-1 rounded-md text-white text-sm sm:text-base font-bold tracking-wide transition
-                                                    ${
-                                                        activeSection === "car"
-                                                            ? "bg-white/20 ring-1 ring-white/40"
-                                                            : "hover:bg-blue-700"
+                                                className={`cursor-pointer px-3 sm:px-4 py-1 rounded-md text-white text-sm sm:text-base font-bold tracking-wide transition
+                                                    ${activeSection === "car"
+                                                        ? "bg-white/20 ring-1 ring-white/40"
+                                                        : "hover:bg-blue-700"
                                                     }`}
                                             >
                                                 CAR
@@ -90,12 +90,11 @@ const MainPage = () => {
                                                             behavior: "smooth",
                                                         })
                                                 }
-                                                className={`px-3 sm:px-4 py-1 rounded-md text-white text-sm sm:text-base font-bold tracking-wide transition
-                                                    ${
-                                                        activeSection ===
+                                                className={`cursor-pointer px-3 sm:px-4 py-1 rounded-md text-white text-sm sm:text-base font-bold tracking-wide transition
+                                                    ${activeSection ===
                                                         "biophysical"
-                                                            ? "bg-white/20 ring-1 ring-white/40"
-                                                            : "hover:bg-blue-700"
+                                                        ? "bg-white/20 ring-1 ring-white/40"
+                                                        : "hover:bg-blue-700"
                                                     }`}
                                             >
                                                 Biophysical Profile
@@ -109,11 +108,10 @@ const MainPage = () => {
                                                             behavior: "smooth",
                                                         })
                                                 }
-                                                className={`px-3 sm:px-4 py-1 rounded-md text-white text-sm sm:text-base font-bold tracking-wide transition
-                                                    ${
-                                                        activeSection === "enr"
-                                                            ? "bg-white/20 ring-1 ring-white/40"
-                                                            : "hover:bg-blue-700"
+                                                className={`cursor-pointer px-3 sm:px-4 py-1 rounded-md text-white text-sm sm:text-base font-bold tracking-wide transition
+                                                    ${activeSection === "enr"
+                                                        ? "bg-white/20 ring-1 ring-white/40"
+                                                        : "hover:bg-blue-700"
                                                     }`}
                                             >
                                                 ENR
@@ -127,12 +125,11 @@ const MainPage = () => {
                                                             behavior: "smooth",
                                                         })
                                                 }
-                                                className={`px-3 sm:px-4 py-1 rounded-md text-white text-sm sm:text-base font-bold tracking-wide transition
-                                                    ${
-                                                        activeSection ===
+                                                className={`cursor-pointer px-3 sm:px-4 py-1 rounded-md text-white text-sm sm:text-base font-bold tracking-wide transition
+                                                    ${activeSection ===
                                                         "socio"
-                                                            ? "bg-white/20 ring-1 ring-white/40"
-                                                            : "hover:bg-blue-700"
+                                                        ? "bg-white/20 ring-1 ring-white/40"
+                                                        : "hover:bg-blue-700"
                                                     }`}
                                             >
                                                 Socio-cultural and Economic
@@ -162,11 +159,10 @@ const MainPage = () => {
                                         ?.scrollIntoView({ behavior: "smooth" })
                                 }
                                 className={`flex flex-col items-center gap-0.5 px-3 py-1 rounded-xl text-white transition
-                                        ${
-                                            activeSection === "car"
-                                                ? "bg-white/20 ring-1 ring-white/40"
-                                                : "hover:bg-blue-700/90"
-                                        }`}
+                                        ${activeSection === "car"
+                                        ? "bg-white/20 ring-1 ring-white/40"
+                                        : "hover:bg-blue-700/90"
+                                    }`}
                             >
                                 <img
                                     src={carSvg}
@@ -184,11 +180,10 @@ const MainPage = () => {
                                         ?.scrollIntoView({ behavior: "smooth" })
                                 }
                                 className={`flex flex-col items-center gap-0.5 px-3 py-1 rounded-xl text-white transition
-                                        ${
-                                            activeSection === "biophysical"
-                                                ? "bg-white/20 ring-1 ring-white/40"
-                                                : "hover:bg-blue-700/90"
-                                        }`}
+                                        ${activeSection === "biophysical"
+                                        ? "bg-white/20 ring-1 ring-white/40"
+                                        : "hover:bg-blue-700/90"
+                                    }`}
                             >
                                 <img
                                     src={bioSvg}
@@ -206,10 +201,9 @@ const MainPage = () => {
                                         ?.scrollIntoView({ behavior: "smooth" })
                                 }
                                 className={`flex flex-col items-center gap-0.5 px-3 py-1 rounded-xl text-white transition
-                                    ${
-                                        activeSection === "enr"
-                                            ? "bg-white/20 ring-1 ring-white/40"
-                                            : "hover:bg-blue-700/90"
+                                    ${activeSection === "enr"
+                                        ? "bg-white/20 ring-1 ring-white/40"
+                                        : "hover:bg-blue-700/90"
                                     }`}
                             >
                                 <img
@@ -228,10 +222,9 @@ const MainPage = () => {
                                         ?.scrollIntoView({ behavior: "smooth" })
                                 }
                                 className={`flex flex-col items-center gap-0.5 px-3 py-1 rounded-xl text-white transition
-                                    ${
-                                        activeSection === "socio"
-                                            ? "bg-white/20 ring-1 ring-white/40"
-                                            : "hover:bg-blue-700/90"
+                                    ${activeSection === "socio"
+                                        ? "bg-white/20 ring-1 ring-white/40"
+                                        : "hover:bg-blue-700/90"
                                     }`}
                             >
                                 <img
@@ -278,109 +271,46 @@ const MainPage = () => {
                 className={[
                     "relative flex flex-col items-center justify-center w-full min-h-screen text-center text-gray-900 overflow-hidden px-4 sm:px-8",
                     "transition-all duration-700 ease-out",
-                    entered
-                        ? "opacity-100 translate-y-0"
-                        : "opacity-0 translate-y-3",
+                    entered ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3",
                 ].join(" ")}
             >
-                <style>
-                    {`
-                        @keyframes floatY { 
-                            0% { transform: translateY(0) }
-                            50% { transform: translateY(-8px) }
-                            100% { transform: translateY(0) }
-                        }
-                        @keyframes softIn { 
-                            from { opacity: 0; transform: translateY(12px) } 
-                            to { opacity: 1; transform: translateY(0) } 
-                        }
-                    `}
-                </style>
-                {/* Backgrounds */}
+                {/* Background */}
                 <img
-                    src={bgLeft}
-                    alt="background"
-                    className={[
-                        "absolute left-0 bottom-0 max-h-[60%] sm:max-h-[70%] object-contain z-2",
-                        "opacity-0 animate-[softIn_700ms_ease-out_200ms_forwards]",
-                    ].join(" ")}
-                />
-
-                <img
-                    src={bgRight}
-                    alt="background right"
-                    className={[
-                        "absolute z-10 object-contain pointer-events-none select-none",
-                        "right-0 top-0 h-1/2",
-                        "sm:right-2 sm:top-2",
-                        "md:top-0 md:right-0 md:h-full",
-                        "opacity-0 animate-[softIn_700ms_ease-out_300ms_forwards]",
-                    ].join(" ")}
-                />
-
-                <img
-                    src={igorot}
-                    alt="igorot"
-                    className={[
-                        "absolute right-0 bottom-0 object-contain z-10 opacity-80",
-                        "w-4/5 sm:w-3/3",
-                        "md:w-1/2 lg:w-2/4",
-                        "opacity-0 animate-[softIn_700ms_ease-out_400ms_forwards]",
-                    ].join(" ")}
-                    style={{
-                        animation: entered
-                            ? "softIn 700ms ease-out 400ms forwards, floatY 6s ease-in-out 1s infinite"
-                            : undefined,
-                    }}
+                    src={cordimapLanding}
+                    alt="CordiMap Landing"
+                    className="absolute inset-0 w-full h-full object-cover z-0"
                 />
 
                 {/* Text and Buttons */}
                 <div className="relative z-30 max-w-3xl mx-auto justify-left">
-                    <h1
-                        className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold pb-4 leading-tight opacity-0"
-                        style={{
-                            animation: entered
-                                ? "softIn 600ms ease-out 180ms forwards"
-                                : undefined,
-                        }}
-                    >
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold pb-4 leading-tight">
                         One Cordillera
                     </h1>
 
-                    <h2
-                        className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl pb-3 mt-2 leading-snug opacity-0"
-                        style={{
-                            animation: entered
-                                ? "softIn 600ms ease-out 320ms forwards"
-                                : undefined,
-                        }}
-                    >
-                        A Glimpse of the <br className="hidden sm:block" />{" "}
-                        Mountainous Region
+                    <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl pb-3 mt-2 leading-snug">
+                        A Glimpse of the <br className="hidden sm:block" /> Mountainous Region
                     </h2>
 
-                    <p
-                        className="text-base sm:text-lg md:text-xl lg:text-2xl mt-2 opacity-0"
-                        style={{
-                            animation: entered
-                                ? "softIn 600ms ease-out 460ms forwards"
-                                : undefined,
-                        }}
-                    >
+                    <p className="text-base sm:text-lg md:text-xl lg:text-2xl mt-2">
                         DENR - CAR <br /> 2025
                     </p>
-                    <div
-                        className="flex flex-col sm:flex-row justify-center gap-4 mt-6 opacity-0"
-                        style={{
-                            animation: entered
-                                ? "softIn 600ms ease-out 600ms forwards"
-                                : undefined,
-                        }}
-                    >
-                        <button onClick={() => window.location.href='https://terramap.cordimap.site'} className="text-sm sm:text-base md:text-lg px-6 md:px-8 py-2 rounded-lg bg-green-600 text-white hover:scale-105 transition">
+
+                    <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
+                        <button
+                            onClick={() =>
+                                (window.location.href = "https://terramap.cordimap.site")
+                            }
+                            className="cursor-pointer text-sm sm:text-base md:text-lg px-6 md:px-8 py-2 rounded-lg bg-green-600 text-white hover:scale-105 transition"
+                        >
                             Land Cover
                         </button>
-                        <button onClick={() => window.location.href='https://www.youtube.com/watch?v=fWRF6BJ1OQk'} className="text-sm sm:text-base md:text-lg px-6 md:px-8 py-2 rounded-lg bg-blue-600 text-white hover:scale-105 transition">
+                        <button
+                            onClick={() =>
+                            (window.location.href =
+                                "https://www.youtube.com/watch?v=fWRF6BJ1OQk")
+                            }
+                            className="cursor-pointer text-sm sm:text-base md:text-lg px-6 md:px-8 py-2 rounded-lg bg-blue-600 text-white hover:scale-105 transition"
+                        >
                             Water Cover
                         </button>
                     </div>
@@ -413,23 +343,17 @@ const MainPage = () => {
                         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-10 md:gap-12 text-center w-full">
                             {[
                                 { src: carSvg, label: "CAR" },
-                                {
-                                    src: bioSvg,
-                                    label: "Biophysical Profile",
-                                },
+                                { src: bioSvg, label: "Biophysical Profile" },
                                 { src: earthSvg, label: "ENR Resources" },
                                 {
                                     src: sceSvg,
                                     label: "Socio-Cultural & Economic Profile",
+                                    id: "socio",
                                 },
                             ].map((item, idx) => (
                                 <Reveal key={item.label} delay={180 + idx * 80}>
                                     <a
-                                        href={`#${
-                                            item.label
-                                                .toLowerCase()
-                                                .split(" ")[0]
-                                        }`}
+                                        href={`#${item.id ? item.id : item.label.toLowerCase().split(" ")[0]}`}
                                         className="flex flex-col items-center space-y-3 text-white transition-transform duration-500 hover:scale-105"
                                     >
                                         <img
@@ -682,11 +606,20 @@ const MainPage = () => {
                                             transform transition-all duration-500 
                                             hover:scale-[1.01] hover:shadow-green-500/20"
                                 >
-                                    <div className="relative mb-6 sm:mb-8">
-                                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2">
-                                            Land Resources
-                                        </h2>
-                                        <div className="w-16 sm:w-20 h-1 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full" />
+                                    <div className="flex flex-row items-center justify-between mb-4 sm:mb-6">
+                                        <div className="relative mb-6 sm:mb-8">
+                                            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2">
+                                                Land Resources
+                                            </h2>
+                                            <div className="w-16 sm:w-20 h-1 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full" />
+                                        </div>
+                                        <button
+                                            type="button"
+                                            onClick={() => window.open("https://terramap.cordimap.site", "_blank")}
+                                            className="cursor-pointer -mt-5 md:-mt-10 text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-semibold rounded-lg text-md px-5 py-2.5 text-center me-2 mb-2"
+                                        >
+                                            Visit Terramap
+                                        </button>
                                     </div>
 
                                     {/* Stats */}
@@ -906,29 +839,38 @@ const MainPage = () => {
                                         >
                                             <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-cyan-400/20 via-blue-500/20 to-indigo-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 blur-xl" />
 
-                                            <div className="relative mb-6">
-                                                <h1 className="text-3xl sm:text-4xl font-bold text-white mb-3">
-                                                    Watersheds
-                                                </h1>
-                                                <div className="flex space-x-1 mb-4">
-                                                    <div className="w-24 sm:w-28 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full" />
-                                                </div>
+                                            <div className="flex md:flex-col flex-row justify-between items-start mb-4 sm:mb-6">
+                                                <div className="relative w-full">
+                                                    <div className="flex items-start justify-between">
+                                                        <h1 className="text-3xl sm:text-4xl font-bold text-white mb-3">Watersheds</h1>
+                                                        <button
+                                                            type="button"
+                                                            onClick={() =>
+                                                                window.open(
+                                                                    "https://www.youtube.com/watch?v=V1RPi2MYptM&list=RDV1RPi2MYptM&start_radio=1",
+                                                                    "_blank"
+                                                                )
+                                                            }
+                                                            className="cursor-pointer text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-semibold rounded-lg text-md px-5 py-2.5 text-center me-2 mb-2"
+                                                        >
+                                                            Visit HydroHub
+                                                        </button>
+                                                    </div>
 
-                                                <p className="text-gray-100 leading-relaxed text-base font-light">
-                                                    CAR serves as the{" "}
-                                                    <span className="font-semibold text-cyan-300">
-                                                        watershed of North
-                                                        Luzon.
-                                                    </span>{" "}
-                                                    The region cradles 13
-                                                    watersheds which have been
-                                                    affirmed to have{" "}
-                                                    <span className="font-semibold text-cyan-200">
-                                                        enormous water-bearing
-                                                        capacity.
-                                                    </span>
-                                                </p>
+                                                    <div className="flex space-x-1 mb-4">
+                                                        <div className="w-24 sm:w-28 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full" />
+                                                    </div>
+
+                                                    <p className="text-gray-100 leading-relaxed text-base font-light">
+                                                        CAR serves as the{" "}
+                                                        <span className="font-semibold text-cyan-300">watershed of North Luzon.</span>{" "}
+                                                        The region cradles 13 watersheds which have been affirmed to have{" "}
+                                                        <span className="font-semibold text-cyan-200">enormous water-bearing capacity.</span>
+                                                    </p>
+                                                </div>
                                             </div>
+
+
                                             <div
                                                 className={[
                                                     "bg-cyan-800/30 backdrop-blur-sm rounded-lg p-3 border border-cyan-500/20",
