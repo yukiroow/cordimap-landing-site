@@ -304,7 +304,7 @@ const MainPage = () => {
                         <button
                             onClick={() =>
                             (window.location.href =
-                                "https://www.youtube.com/watch?v=fWRF6BJ1OQk")
+                                "https://hydrohub.cordimap.site/")
                             }
                             className="cursor-pointer text-sm sm:text-base md:text-lg px-6 md:px-8 py-2 rounded-lg bg-blue-600 text-white hover:scale-105 transition"
                         >
@@ -844,7 +844,7 @@ const MainPage = () => {
                                                             type="button"
                                                             onClick={() =>
                                                                 window.open(
-                                                                    "https://www.youtube.com/watch?v=V1RPi2MYptM&list=RDV1RPi2MYptM&start_radio=1",
+                                                                    "https://hydrohub.cordimap.site/",
                                                                     "_blank"
                                                                 )
                                                             }
