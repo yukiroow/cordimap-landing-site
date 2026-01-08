@@ -56,7 +56,7 @@ const MainPage = () => {
                     {/* Desktop Navigation Bar */}
                     {!hideNavOnTitle && (
                         <div className="hidden md:block">
-                            <nav className="fixed top-0 left-0 right-0 z-50 bg-blue-600/85 backdrop-blur-sm shadow-md">
+                            <nav className="fixed top-0 left-0 right-0 z-50 bg-blue-600/85 backdrop-blur-sm shadow-md w-full">
                                 <div className="max-w-6xl mx-auto px-4 sm:px-6">
                                     <div className="flex items-center justify-center h-12 sm:h-14">
                                         <div className="flex items-center gap-3 sm:gap-6">
