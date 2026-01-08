@@ -1357,7 +1357,7 @@ const MainPage = () => {
                         <div className="w-full bg-blue-900 text-white">
                             <div className="max-w-6xl mx-auto px-4 sm:px-6 py-2.5 sm:py-3">
                                 <p className="text-center text-xs sm:text-sm md:text-base font-medium tracking-wide">
-                                    © Copyright @ 2025 Kotl &amp; Acetone. All
+                                    © Copyright @ 2025 Kotl. All
                                     Rights Reserved.
                                 </p>
                             </div>
