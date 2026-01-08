@@ -299,7 +299,7 @@ const MainPage = () => {
                             }
                             className="cursor-pointer text-sm sm:text-base md:text-lg px-6 md:px-8 py-2 rounded-lg bg-green-600 text-white hover:scale-105 transition"
                         >
-                            Land Cover
+                            Terramap
                         </button>
                     </div>
                 </div>
@@ -831,18 +831,6 @@ const MainPage = () => {
                                                 <div className="relative w-full">
                                                     <div className="flex items-start justify-between">
                                                         <h1 className="text-3xl sm:text-4xl font-bold text-white mb-3">Watersheds</h1>
-                                                        <button
-                                                            type="button"
-                                                            onClick={() =>
-                                                                window.open(
-                                                                    "https://hydrohub.cordimap.site/",
-                                                                    "_blank"
-                                                                )
-                                                            }
-                                                            className="cursor-pointer text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-semibold rounded-lg text-md px-5 py-2.5 text-center me-2 mb-2"
-                                                        >
-                                                            Visit HydroHub
-                                                        </button>
                                                     </div>
 
                                                     <div className="flex space-x-1 mb-4">
